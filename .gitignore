@@ -1,3 +1,11 @@
+# node js modules
 data/node_modules/*
-mongoose-free-6.5.exe
+
+# free web server for development evironment
+mongoose-free*.exe
+
+# old or files used to create project files
 *Old*
+data/package.json
+data/sheetWork.js
+makePathwayCompund.js
