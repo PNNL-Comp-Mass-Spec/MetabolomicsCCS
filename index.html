@@ -12,18 +12,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.semanticui.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.2/css/fixedHeader.semanticui.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.semanticui.min.js"></script>
   <script src="https://cdn.datatables.net/fixedheader/3.1.2/js/dataTables.fixedHeader.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.4.1/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <style>
     .ui.table tr.group,
     .ui.table tr.group:hover {
       background-color: #ddd !important;
     }
-
     .ui.table td {
       vertical-align: middle;
     }
@@ -39,6 +40,7 @@
   <!-- Incompatible <script type="text/javascript" src="http://www.pnnl.gov/shared/pnnl.js"></script> -->
   <script type="text/javascript" src="http://www.pnnl.gov/shared/lightbox.js"></script>
   <link rel="stylesheet" type="text/css" href="http://panomics.pnnl.gov/shared/btcr.css" />
+  <link rel="icon" href="/metaboliteResources/images/zs91HYYl_noBack.jpeg">
 </head>
 
 <body class="col2 ncrrdata" style="overflow-x: auto;">
@@ -78,11 +80,20 @@
       <img id="bannerLogoBTRR" src="http://panomics.pnnl.gov/images/pnnlbtrr.jpg" width="940" height="163" alt="Proteomics Banner" />
       <!-- <a id="bannerLogoNIH"  href="http://www.nigms.nih.gov/" target="_blank"><img src="http://panomics.pnnl.gov/images/Logo_NIH_2014_WhiteFill.png" width="95" height="60" alt="National Institutes of Health (NIH)"></a> -->
     </div>
-    <!-- horizontal menu with home and data download -->
+    <!-- horizontal menu with home, about, and data download -->
     <div class="ui menu">
       <a class="item" href="/" title="Back to the home page">Home</a>
+      <a id="about_btn" class="item" title="About">About</a>
       <div class="right menu">
-        <a href="/data/metaboliteTestdata.txt" download target="_self" class="item" title="Download"><i class="ui download icon"></i>Download Data</a>
+        <div id="downloadDropdown" class="ui dropdown icon item">
+          Download Data
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Format</div>
+            <a href="/data/metaboliteTestdata.txt" download target="_self" class="item" title="Download"><i class="ui download icon"></i>TSV</a>
+            <a download target="_self" class="item" title="Download"><i class="ui download icon"></i>Agilent</a>
+          </div>
+        </div>
       </div>
     </div>
     <!-- header for metabolite table -->
@@ -92,7 +103,7 @@
       <table class="ui small celled table" id="tablecontainer" cellspacing="0" width="100%"></table>
     </div>
     <!--load main javascript -->
-    <!-- <script src="/js/moleWeightCalc.js"></script> -->
+    <script src="/js/moleWeightCalc.js"></script>
     <script src="/js/urineMetabolite.js"></script>
 
   </div>
@@ -130,6 +141,16 @@
         <a href="http://www.pnnl.gov/disclaimer.asp">Security &amp; Privacy</a> | <a href="http://www.pnnl.gov/contacts/">Contact PNNL</a>
       </div>
       <span class="footerItem">Last Update: <span class="updatedDate">July 2015</span></span> | <span class="footerItem">Pacific Northwest National Laboratory</span>
+    </div>
+  </div>
+  <div id="about_modal" class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">About</div>
+    <div class="content">
+      <p>Urin Metabolite Project is a collaboration to create a baseline database of all collision cross sections for metabolites located in urin.</p>
+    </div>
+    <div class="extra content">
+      <p>Erin Baker <a>Contact</a></p>
     </div>
   </div>
 </body>
