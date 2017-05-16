@@ -121,8 +121,8 @@ $(document).ready(function() {
       massOffset.push(d);
     }
     return {
-      class: d.Main_Class,
-      subclass: d.Sub_Class,
+      class: d.main_class,
+      subclass: d.subclass,
       kegg: d.kegg,
       name: d.name,
       cas: d.cas,
@@ -161,10 +161,11 @@ $(document).ready(function() {
     let table = $('#tablecontainer').DataTable({
       columns: columnIds,
       fixedHeader: true,
-      dom: '<"ui borderless menu"<"item"l><"right menu"<"item"'
+      dom: '<"ui top attached borderless menu"<"right menu"<"item"'
         +'<"#pathwayFilter.ui search selection dropdown">><"item"'
         +'<"#classFilter.ui multiple search selection dropdown">>'
-        +'<"item"f>>><t>ip',
+        +'<"item"f>>><"ui attached segment"t><"ui bottom attached borderless'
+        +' menu"<"item"i><"item"l><"right menu"<"item"p>>>',
       data: d,
       columnDefs: [{
           visible: false,
@@ -181,6 +182,7 @@ $(document).ready(function() {
       ],
       order: [
         [0, 'asc'],
+        [1, 'asc'],
       ],
       drawCallback: function(settings) {
         let api = this.api();
@@ -215,22 +217,41 @@ $(document).ready(function() {
     });
     // Order by the grouping when clicked
     $('#tablecontainer tbody').on('click', 'tr.group', function() {
-      let currentOrder = table.order()[0];
-      if (currentOrder[0] === 0 && currentOrder[1] === 'asc') {
-        table.order([0, 'desc'])
-          .draw();
+      let ordering = table.order();
+      let currentOrderClass;
+      let currentOrderSubclass;
+      if(ordering.length > 1) {
+        currentOrderClass = table.order()[0];
+        currentOrderSubclass = table.order()[1];
+        if (currentOrderClass[0] === 0 && currentOrderClass[1] === 'asc') {
+          table.order([0, 'desc'], currentOrderSubclass)
+            .draw();
+        } else {
+          table.order([0, 'asc'], currentOrderSubclass)
+            .draw();
+        }
       } else {
-        table.order([0, 'asc'])
+        table.order([0, 'asc'], [0, 'asc'])
           .draw();
       }
     });
     $('#tablecontainer tbody').on('click', 'tr.sub_group', function() {
-      let currentOrder = table.order()[0];
-      if (currentOrder[0] === 1 && currentOrder[1] === 'asc') {
-        table.order([1, 'desc'])
-          .draw();
+      let ordering = table.order();
+      let currentOrderClass;
+      let currentOrderSubclass;
+      if(ordering.length > 1) {
+        currentOrderClass = table.order()[0];
+        currentOrderSubclass = table.order()[1];
+        if (currentOrderSubclass[0] === 1
+          && currentOrderSubclass[1] === 'asc') {
+          table.order(currentOrderClass, [1, 'desc'])
+            .draw();
+        } else {
+          table.order(currentOrderClass, [1, 'asc'])
+            .draw();
+        }
       } else {
-        table.order([1, 'asc'])
+        table.order([0, 'asc'], [1, 'asc'])
           .draw();
       }
     });
@@ -304,7 +325,7 @@ $(document).ready(function() {
           +'</div>'
         ).dropdown({
           onChange: function(value, text, $selectedItem) {
-            table.column(1)
+            table.column(2)
               .search(compoundList[value].join('|'), true, false)
               .draw();
           },
