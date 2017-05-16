@@ -2,6 +2,7 @@ $(document).ready(function() {
   // map column headers to display format
   let columns = {
     'class': 'class',
+    'subclass': 'Subclass',
     'name': 'Name',
     'cas': 'CAS Number',
     'formula': 'Formula',
@@ -95,6 +96,15 @@ $(document).ready(function() {
     return d.class;
   }
   /**
+  * Used with map function to create an array of strings from class property in
+  * all object.
+  * @param {object} d Data object from table.
+  * @return {string} string from class property in object.
+  */
+  function mapSubclasses(d) {
+    return d.subclass;
+  }
+  /**
   * Used with map function to create an array of strings from kegg property in
   * all object.
   * @param {object} d Data object from table.
@@ -103,11 +113,14 @@ $(document).ready(function() {
   function mapCompounds(d) {
     return d.kegg;
   }
-  // include moleWeightCalc.js in script to calculate the mass from formula
-  let MWC = new MolecularWeightCalculator();
-  // parses the tsv data file
-  let massOffset = [];
-  d3.tsv('/data/metaboliteTestdata.txt', function(d) {
+  /**
+  * Used to select elements from the tsv to filter unused properties out.
+  * This allows the tsv to be changed and remapping of the headers so the
+  * variable in the next function don't need to be changed.
+  * @param {object} d each row in the tsv.
+  * @return {object} the object that is used in the next function.
+  */
+  function processTsv(d) {
     // determins the object returned from processing the tsv data file
     let structureImage = '<img class="ui small image"'
       +'src="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/'
@@ -132,17 +145,27 @@ $(document).ready(function() {
       CCS: getCCS(d),
       ccsFound: isCcsAvailable(d),
     };
-  }, function(err, d) {
-    // console.log(JSON.stringify(massOffset));
-    // console.log(massOffset.length);
+  }
+  // include moleWeightCalc.js in script to calculate the mass from formula
+  let MWC = new MolecularWeightCalculator();
+  // parses the tsv data file
+  let massOffset = [];
+  d3.tsv('/data/metaboliteTestdata.txt', processTsv, function(err, d) {
+    // if there's an error with reading the file display the error and stop
+    // processing the page.
     if (err) {
       console.log(err);
       return;
     }
+    // filter out intries that don't have a collision cross section
     d = d.filter(hasCCS);
+    // create class and subclass list for use with filters
     let classes = d.map(mapClasses)
       .filter(removeDups);
     classes.sort(sortStringArrayAsc);
+    let subclasses = d.map(mapSubclasses)
+      .filter(removeDups);
+    subclasses.sort(sortStringArrayAsc);
     let compounds = d.map(mapCompounds)
       .filter(removeDups);
     let columnIds = d.columns;
@@ -164,8 +187,9 @@ $(document).ready(function() {
       dom: '<"ui top attached borderless menu"<"right menu"<"item"'
         +'<"#pathwayFilter.ui search selection dropdown">><"item"'
         +'<"#classFilter.ui multiple search selection dropdown">>'
+        +'<"item"<"#subclassFilter.ui multiple search selection dropdown">>'
         +'<"item"f>>><"ui attached segment"t><"ui bottom attached borderless'
-        +' menu"<"item"i><"item"l><"right menu"<"item"p>>>',
+        +' menu"<"item"l><"item"i><"right menu"<"item"p>>>',
       data: d,
       columnDefs: [{
           visible: false,
@@ -185,6 +209,7 @@ $(document).ready(function() {
         [1, 'asc'],
       ],
       drawCallback: function(settings) {
+        // draw a class and subclass row when applicable
         let api = this.api();
         let rows = api.rows({
           page: 'current',
@@ -196,7 +221,8 @@ $(document).ready(function() {
         .each(function(group, i) {
           if (last !== group) {
             $(rows).eq(i).before(
-              '<tr class="group"><td colspan="6">' + group + '</td></tr>'
+              '<tr class="group"><td colspan="6"><div class="ui mini teal '
+              +'ribbon label">Class</div>' + group + '</td></tr>'
             );
             last = group;
           }
@@ -207,7 +233,8 @@ $(document).ready(function() {
         .each(function(group, i) {
           if (last !== group) {
             $(rows).eq(i).before(
-              '<tr class="sub_group"><td colspan="6">'
+              '<tr class="sub_group"><td colspan="6"><div class="ui mini teal '
+              +'ribbon label">Subclass</div>'
               + group + '</td></tr>'
             );
             last = group;
@@ -215,7 +242,7 @@ $(document).ready(function() {
         });
       },
     });
-    // Order by the grouping when clicked
+    // Order by the class when clicked
     $('#tablecontainer tbody').on('click', 'tr.group', function() {
       let ordering = table.order();
       let currentOrderClass;
@@ -235,6 +262,7 @@ $(document).ready(function() {
           .draw();
       }
     });
+    // Order by the subclass when clicked
     $('#tablecontainer tbody').on('click', 'tr.sub_group', function() {
       let ordering = table.order();
       let currentOrderClass;
@@ -340,6 +368,10 @@ $(document).ready(function() {
     $('#classFilter').parent()
       .attr('title', 'Filter by Class')
       .css('max-width', '340px');
+    // apply max width and title to subclass filter dropdown
+    $('#subclassFilter').parent()
+      .attr('title', 'Filter by Subclass')
+      .css('max-width', '340px');
     // append dropdown information to class filter dropdown.
     $('#classFilter').append(
       '<input type="hidden" name="class">'
@@ -353,6 +385,23 @@ $(document).ready(function() {
     ).dropdown({
       onChange: function(value, text, $selectedItem) {
         table.column(0)
+          .search(value.replace(/,/g, '|'), true, false)
+          .draw();
+      },
+    });
+    // append dropdown information to class filter dropdown.
+    $('#subclassFilter').append(
+      '<input type="hidden" name="subclass">'
+      +'<div class="default text">Subclass</div>'
+      +'<i class="dropdown icon"></i>'
+      +'<div class="menu">'
+      + subclasses.map(function(e) {
+        return '<div class="item" data-value="'+e+'">'+e+'</div>';
+      }).join('')
+      +'</div>'
+    ).dropdown({
+      onChange: function(value, text, $selectedItem) {
+        table.column(1)
           .search(value.replace(/,/g, '|'), true, false)
           .draw();
       },
