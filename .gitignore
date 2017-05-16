@@ -10,5 +10,3 @@ data/package.json
 data/sheetWork.js
 makePathwayCompund.js
 
-# data for project still private
-data/*
