@@ -5,7 +5,7 @@ This is a website created to display collision cross section data for urine meta
 
 To setup the dev environment
 * clone the repository
-* download [Mongoose web server](https://www.cesanta.com/) or some other web server
+* download [Mongoose web server](https://www.cesanta.com/) or some other web server into the repository's directory
 * run server
 
 I use [Atom](https://atom.io/) as my text editor with [eslint](https://atom.io/packages/eslint) and [eslint-config-google](https://devhub.io/repos/google-eslint-config-google).
