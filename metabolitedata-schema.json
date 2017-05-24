@@ -26,14 +26,6 @@
         "unique": true
       },
       "description": "ID",
-      "name": "cas",
-      "type": "string"
-    },
-    {
-      "constraints": {
-        "unique": true
-      },
-      "description": "ID",
       "name": "kegg",
       "type": "string"
     },
@@ -50,6 +42,14 @@
     {
       "description": "Neurtal name",
       "name": "Neutral Name",
+      "type": "string"
+    },
+    {
+      "constraints": {
+        "unique": true
+      },
+      "description": "ID",
+      "name": "cas",
       "type": "string"
     },
     {
