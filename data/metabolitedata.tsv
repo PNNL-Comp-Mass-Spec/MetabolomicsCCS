@@ -1,4 +1,4 @@
-main_class	subclass	cid	kegg	InChi Key	name	Neutral Name	cas	Catalog	Company	formula	mass	mPlusH	mPlusHCCS	mPlusHRsd	mPlusNa	mPlusNaCCS	mPlusNaRsd	mMinusH	mMinusHCCS	mMinusHRsd	mPlusK	mPlusKCCS	mPlusKRSD	mPlusDot	mPlusDotCCS	mPlusDotRsd	mPlus	mPlusCCS	mPlusRsd
+main_class	subclass	cid	kegg	InChi Key	name	Neutral Name	cas	Catalog	Company	formula	mass	mPlusH	mPlusHCCS	mPlusHRsd	mPlusNa	mPlusNaCCS	mPlusNaRsd	mMinusH	mMinusHCCS	mMinusHRsd	mPlusK	mPlusKCCS	mPlusKRsd	mPlusDot	mPlusDotCCS	mPlusDotRsd	mPlus	mPlusCCS	mPlusRsd
 Primary Metabolite	Amino Acid	750	C00037	DHMQDGOQFOQNFH-UHFFFAOYSA-N	Glycine	Glycine	56-40-6	G8898	Sigma-Aldrich	C2H5NO2	75.03203	76.0393	N/A	N/A	98.02125	N/A	N/A	74.02475	N/A	N/A									
 Primary Metabolite	Amino Acid	5950	C00041	QNAYBMKLOCPYGJ-REOHCLBHSA-N	L-Alanine	L-Alanine	56-41-7	A7627	Sigma-Aldrich	C3H7NO2	89.09256	90.09983	N/A	N/A	112.0818	N/A	N/A	88.08528	N/A	N/A									
 Primary Metabolite	Amino Acid	673	C01026	FFDGPVCHZBVARC-UHFFFAOYSA-N	"N,N-Dimethylglycine"	"N,N-Dimethylglycine"	1118-68-9	D1156	Sigma-Aldrich	C4H9NO2	103.1203	104.1276	123.2333	0.123954	126.1096	44.26667	173.2051	102.1131	N/A	N/A									
