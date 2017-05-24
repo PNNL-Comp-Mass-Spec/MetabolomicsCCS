@@ -3,7 +3,7 @@
 * PubChem.
 * @param {object} img The image element.
 */
-function imageError(img) {
+function imageError(img) { // eslint-disable-line no-unused-vars
   if(img.imgError) {
     img.onerror=null;
     img.src='/metaboliteResources/images/default.jpg';
@@ -32,8 +32,8 @@ $(document).ready(function() {
     'mMinusHCCS': 'Average_[M-H]<sup>-</sup>',
     'mMinusHRsd': 'RSD_[M-H]<sup>-</sup>',
     'mPlusDot': '[M<sup>&#x2022;</sup>]<sup>+</sup>',
-    'mPlusDotCCS': 'Average_[M+&#x2022;]',
-    'mPlusDotRsd': 'RSD_[M<sup>+&#x2022;</sup>]',
+    'mPlusDotCCS': 'Average_[M&#x2022;]<sup>+</sup>',
+    'mPlusDotRsd': 'RSD_[M<sup>&#x2022;</sup>]<sup>+</sup>',
     'CCS': '<sup>DT</sup>CCS<sub>N<sub>2</sub></sub>(&#x212B<sup>2</sup>)',
     'structure': 'Structure',
   };

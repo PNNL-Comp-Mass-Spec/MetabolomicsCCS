@@ -1,0 +1,184 @@
+{
+  "dialect": {
+    "delimiter": "\t"
+  },
+  "fields": [
+    {
+      "constraints": {
+        "unique": true
+      },
+      "description": "ID",
+      "name": "cid",
+      "type": "number"
+    },
+    {
+      "constraints": {
+        "unique": true
+      },
+      "description": "ID",
+      "name": "cas",
+      "type": "string"
+    },
+    {
+      "constraints": {
+        "unique": true
+      },
+      "description": "ID",
+      "name": "kegg",
+      "type": "string"
+    },
+    {
+      "description": "Primary class for metabolite",
+      "name": "main_class",
+      "type": "string"
+    },
+    {
+      "description": "Sub class for metabolite",
+      "name": "subclass",
+      "type": "string"
+    },
+    {
+      "description": "Inchi key for metabolite",
+      "name": "InChi Key",
+      "type": "string"
+    },
+    {
+      "description": "Name metabolite",
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "description": "Neurtal name",
+      "name": "Neutral Name",
+      "type": "string"
+    },
+    {
+      "description": "Id from catalog where chemical was purchased",
+      "name": "Catalog",
+      "type": "string"
+    },
+    {
+      "description": "The company where the chemical was purchased",
+      "name": "Company",
+      "type": "string"
+    },
+    {
+      "description": "The chemical formula for the metabolite",
+      "name": "formula",
+      "type": "string"
+    },
+    {
+      "description": "The exact mass for the metabolite",
+      "name": "mass",
+      "type": "number"
+    },
+    {
+      "description": "Mass plus hydrogen",
+      "name": "mPlusH",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus hydrogen collision cross section",
+      "name": "mPlusHCCS",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus hydrogen relative standard deviation",
+      "name": "mPlusHRsd",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus Sodium",
+      "name": "mPlusNa",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus Sodium collision cross section",
+      "name": "mPlusNaCCS",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus Sodium relative standard deviation",
+      "name": "mPlusNaRsd",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass Minus hydrogen",
+      "name": "mMinusH",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass Minus hydrogen collision cross section",
+      "name": "mMinusHCCS",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass Minus hydrogen relative standard deviation",
+      "name": "mMinusHRsd",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus potassium",
+      "name": "mPlusK",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus potassium collision cross section",
+      "name": "mPlusKCCS",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus potassium relative standard deviation",
+      "name": "mPlusKRsd",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus Dot",
+      "name": "mPlusDot",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus Dot collision cross section",
+      "name": "mPlusDotCCS",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus Dot relative standard deviation",
+      "name": "mPlusDotRsd",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus",
+      "name": "mPlus",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus collision cross section",
+      "name": "mPlusCCS",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus relative standard deviation",
+      "name": "mPlusRsd",
+      "type": "number",
+      "missingValues": ["N/A"]
+    }
+  ]
+}

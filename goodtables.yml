@@ -1,0 +1,3 @@
+files:
+  - source: /data/metabolitedata.txt
+    schema: metabolitedata-schema.json
