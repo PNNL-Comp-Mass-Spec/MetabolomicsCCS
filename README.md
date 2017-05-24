@@ -1,4 +1,4 @@
-[![Goodtables](http://goodtables.io/github/PNNL-Comp-Mass-Spec/urineMetabolite.svg)](http://goodtables.io/github/PNNL-Comp-Mass-Spec/urineMetabolite)
+[![Goodtables](http://goodtables.io/badge/github/PNNL-Comp-Mass-Spec/urineMetabolite.svg)](http://goodtables.io/github/PNNL-Comp-Mass-Spec/urineMetabolite)
 # Urine Metabolite
 This is a website created to display collision cross section data for urine metabolites.
 
