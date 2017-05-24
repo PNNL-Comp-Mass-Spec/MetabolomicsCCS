@@ -4,6 +4,16 @@
   },
   "fields": [
     {
+      "description": "Primary class for metabolite",
+      "name": "main_class",
+      "type": "string"
+    },
+    {
+      "description": "Sub class for metabolite",
+      "name": "subclass",
+      "type": "string"
+    },
+    {
       "constraints": {
         "unique": true
       },
@@ -25,16 +35,6 @@
       },
       "description": "ID",
       "name": "kegg",
-      "type": "string"
-    },
-    {
-      "description": "Primary class for metabolite",
-      "name": "main_class",
-      "type": "string"
-    },
-    {
-      "description": "Sub class for metabolite",
-      "name": "subclass",
       "type": "string"
     },
     {
