@@ -1,3 +1,18 @@
+/**
+* Event handler for when an error occures when loading a strcuture image from
+* PubChem.
+* @param {object} img The image element.
+*/
+function imageError(img) {
+  if(img.imgError) {
+    img.onerror=null;
+    img.src='/metaboliteResources/images/default.jpg';
+  } else {
+    img.imgError = setTimeout(function() {
+      img.src = img.src+'?'+ new Date().getTime();
+    }, 500);
+  }
+}
 $(document).ready(function() {
   // map column headers to display format
   let columns = {
@@ -16,7 +31,7 @@ $(document).ready(function() {
     'mMinusH': '[M-H]<sup>-</sup>',
     'mMinusHCCS': 'Average_[M-H]<sup>-</sup>',
     'mMinusHRsd': 'RSD_[M-H]<sup>-</sup>',
-    'mPlusDot': '[M<sup>+&#x2022;</sup>]',
+    'mPlusDot': '[M<sup>&#x2022;</sup>]<sup>+</sup>',
     'mPlusDotCCS': 'Average_[M+&#x2022;]',
     'mPlusDotRsd': 'RSD_[M<sup>+&#x2022;</sup>]',
     'CCS': '<sup>DT</sup>CCS<sub>N<sub>2</sub></sub>(&#x212B<sup>2</sup>)',
@@ -122,12 +137,11 @@ $(document).ready(function() {
   */
   function processTsv(d) {
     // determins the object returned from processing the tsv data file
-    let structureImage = '<img class="ui small image"'
+    let structureImage = '<img class="ui small image structureImage"'
       +'src="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/'
       + (d.cid && d.cid.length > 0
         ? 'cid/' + d.cid : 'name/' + encodeURIComponent(d.name)) + '/PNG"'
-      +' alt="image not found" onerror="this.onerror=null;'
-      +'this.src=\'/metaboliteResources/images/default.jpg\';"/>';
+      +' alt="image not found" onerror="imageError(this)"/>';
     let calculatedMass = MWC.weight(d.formula);
     if(Math.abs(calculatedMass-parseFloat(d.mass))>1.5) {
       d['formulaMass']=calculatedMass;
@@ -183,6 +197,7 @@ $(document).ready(function() {
     // creates a datatable with tsv data file
     let table = $('#tablecontainer').DataTable({
       columns: columnIds,
+      deferRender: true,
       fixedHeader: true,
       dom: '<"ui top attached borderless menu"<"right menu"<"item"'
         +'<"#pathwayFilter.ui search selection dropdown">><"item"'
@@ -412,4 +427,7 @@ $(document).ready(function() {
     $('#about_modal').modal('show');
   });
   $('#downloadDropdown').dropdown();
+  $('#helpBtn').on('click', function(evt) {
+    $('#help_modal').modal('show');
+  });
 });

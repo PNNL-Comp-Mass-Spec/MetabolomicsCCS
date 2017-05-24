@@ -80,10 +80,10 @@
     </div>
   </div>
   <div class="ui container">
-    <div class="ui basic centered segment">
+    <!-- <div class="ui basic centered segment">
       <img id="bannerLogoBTRR" src="http://panomics.pnnl.gov/images/pnnlbtrr.jpg" width="940" height="163" alt="Proteomics Banner" />
-      <!-- <a id="bannerLogoNIH"  href="http://www.nigms.nih.gov/" target="_blank"><img src="http://panomics.pnnl.gov/images/Logo_NIH_2014_WhiteFill.png" width="95" height="60" alt="National Institutes of Health (NIH)"></a> -->
-    </div>
+      < <a id="bannerLogoNIH"  href="http://www.nigms.nih.gov/" target="_blank"><img src="http://panomics.pnnl.gov/images/Logo_NIH_2014_WhiteFill.png" width="95" height="60" alt="National Institutes of Health (NIH)"></a> >
+    </div> -->
     <!-- horizontal menu with home, about, and data download -->
     <div class="ui menu">
       <a class="item" href="/" title="Back to the home page">Home</a>
@@ -98,6 +98,7 @@
             <a download target="_self" class="item" title="Download"><i class="ui download icon"></i>Agilent</a>
           </div>
         </div>
+        <a id="helpBtn" class="item icon button"><i class="help icon"></i></a>
       </div>
     </div>
     <!-- header for metabolite table -->
@@ -151,10 +152,104 @@
     <i class="close icon"></i>
     <div class="header">About</div>
     <div class="content">
-      <p>Urin Metabolite Project is a collaboration to create a baseline database of all collision cross sections for metabolites located in urin.</p>
+      <p>Urine Metabolite Project is a collaboration to create a baseline database of all collision cross sections for metabolites located in urine.</p>
     </div>
     <div class="extra content">
-      <p>Erin Baker <a>Contact</a></p>
+      <div class="ui top attached basic header">
+        Contacts
+      </div>
+      <div class="ui attached basic segment">
+        <div class="ui three column cards">
+          <div class="card">
+            <div class="header">
+              Xueyun Zheng
+              <a class="right floated icon button" href="mailto:xueyun.zheng@pnnl.gov">
+                <i class="mail outline icon"></i>
+              </a>
+            </div>
+            <div class="meta">Post Doctorate RA B, LTE - IO Prototype</div>
+            <div class="description">Scientist</div>
+          </div>
+          <div class="card">
+            <div class="header">
+              Erin S. Baker
+              <a class="right floated icon button" href="mailto:erin.baker@pnnl.gov">
+                <i class="mail outline icon"></i>
+              </a>
+            </div>
+            <div class="meta">Scientist, Integrative Omics</div>
+            <div class="description">Lead Scientist <a href="https://omics.pnl.gov/staff-page/Baker/Erin">Bio</a></div>
+          </div>
+          <!-- <div class="card">
+            <div class="header">
+              Noor A. Aly
+              <a class="right floated icon button" href="mailto:noor.aly@pnnl.gov">
+                <i class="mail outline icon"></i>
+              </a>
+            </div>
+            <div class="meta">Masters Intern, LTE - IO Prototype</div>
+          </div> -->
+          <!-- <div class="card">
+            <div class="header">
+              Kevin T. Dupuis
+              <a class="right floated icon button" href="mailto:kevin.dupuis@pnnl.gov">
+                <i class="mail outline icon"></i>
+              </a>
+            </div>
+            <div class="meta">Tech Student 2, LTE - IO Prototype</div>
+          </div> -->
+
+          <div class="card">
+            <div class="header">
+              Ryan Wilson
+              <a class="right floated icon button" href="mailto:ryan.wilson@pnnl.gov">
+                <i class="mail outline icon"></i>
+              </a>
+            </div>
+            <div class="meta">Post Bachelors RA, IO Compute</div>
+            <div class="description">
+              Website design and implementation.
+            </div>
+          </div>
+          <!-- <div class="card">
+            <div class="header">
+              Aivett Bilboa
+              <a class="right floated icon button" href="mailto:aivett.bilbao@pnnl.gov">
+                <i class="mail outline icon"></i>
+              </a>
+            </div>
+            <div class="meta">Post Doctorate RA C, IO Compute</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="help_modal" class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">Help</div>
+    <div class="content">
+      <div class="ui top attached header">Filters and Sorting</div>
+      <div class="ui bottom attached segment">
+        Filters are a way to slim down the data in the table.
+        <div class="ui divider"></div>
+        The pathway filter will filter the results of the table to show only metabolites loacated in that pathway.
+        Similarly the class and subclass filter will filter the results of the table to show only metabolites loacated in that class or subclass.
+        However, you can choose multiple classes or subclasses. With each of the same type added to the filter it will add the metabolites found with that type.
+        That means it is an "or" operation, where you look for metabolites that have this subclass or that subclass. An example would be Amino Acid and Fatty Acid in the filter,
+        it will show all metabolites that have amino acid or fatty acid as a subclass. The filtering between class and subclass is an "and" opertion,
+        where you look for metabolites that have this class and that subclass. An example would be Secondary Metabolite as the class and Amino Acid as the subclass, it will only show metabolites that
+        have both secondary metabolite as the class and amino acid as the subclass.<br>
+        You can also type in a name, class, subclass, kegg id, cas number, formula, or exact mass into the search box.
+        <div class="ui divider"></div>
+        There are several ways to sort the data in the table, default it sorts the data based on class and subclass. Clicking on the class will change the order the class is sorted but, not the subclass.
+        Clicking the subclass will do the same sorting based on subclass, but not class. You can also sort by name, cas number, formula, exact mass, and CCS.
+        When sorting any filters will affect the results of the ordering.
+      </div>
+      <div class="ui top attached header">Downloading Data</div>
+      <div class="ui bottom attached segment">
+        Being able to download the data for this project is very important to us. We want everyone to use this data as a standard for identifying metabolites from the collision cross section.
+        To download the data click the download button and choose the formate that is appropriate for you. Simple, right?
+      </div>
     </div>
   </div>
 </body>
