@@ -180,5 +180,6 @@
       "type": "number",
       "missingValues": ["N/A"]
     }
-  ]
+  ],
+  "primaryKey": "cas"
 }
