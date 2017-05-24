@@ -5,6 +5,7 @@
 */
 function imageError(img) { // eslint-disable-line no-unused-vars
   if(img.imgError) {
+    clearTimeout(img.imgError);
     img.onerror=null;
     img.src='/metaboliteResources/images/default.jpg';
   } else {
@@ -19,6 +20,7 @@ $(document).ready(function() {
     'class': 'class',
     'subclass': 'Subclass',
     'name': 'Name',
+    'Neutral Name': 'Neutral Name',
     'cas': 'CAS Number',
     'formula': 'Formula',
     'mass': 'Exact Mass',
@@ -28,12 +30,18 @@ $(document).ready(function() {
     'mPlusNa': '[M+Na]<sup>+</sup>',
     'mPlusNaCCS': 'Average_[M+Na]<sup>+</sup>',
     'mPlusNaRsd': 'RSD_[M+Na]<sup>+</sup>',
+    'mPlusK': '[M+K]<sup>+</sup>',
+    'mPlusKCCS': 'Average_[M+K]<sup>+</sup>',
+    'mPlusKRsd': 'RSD_[M+K]<sup>+</sup>',
     'mMinusH': '[M-H]<sup>-</sup>',
     'mMinusHCCS': 'Average_[M-H]<sup>-</sup>',
     'mMinusHRsd': 'RSD_[M-H]<sup>-</sup>',
     'mPlusDot': '[M<sup>&#x2022;</sup>]<sup>+</sup>',
     'mPlusDotCCS': 'Average_[M&#x2022;]<sup>+</sup>',
     'mPlusDotRsd': 'RSD_[M<sup>&#x2022;</sup>]<sup>+</sup>',
+    'mPlus': '[M]<sup>+</sup>',
+    'mPlusCCS': 'Average_[M]<sup>+</sup>',
+    'mPlusRsd': 'RSD_[M]<sup>+</sup>',
     'CCS': '<sup>DT</sup>CCS<sub>N<sub>2</sub></sub>(&#x212B<sup>2</sup>)',
     'structure': 'Structure',
   };
@@ -140,8 +148,8 @@ $(document).ready(function() {
     let structureImage = '<img class="ui small image structureImage"'
       +'src="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/'
       + (d.cid && d.cid.length > 0
-        ? 'cid/' + d.cid : 'name/' + encodeURIComponent(d.name)) + '/PNG"'
-      +' alt="image not found" onerror="imageError(this)"/>';
+        ? 'cid/' + d.cid : 'name/' + encodeURIComponent(d['Neutral Name']))
+        + '/PNG" alt="image not found" onerror="imageError(this)"/>';
     let calculatedMass = MWC.weight(d.formula);
     if(Math.abs(calculatedMass-parseFloat(d.mass))>1.5) {
       d['formulaMass']=calculatedMass;
@@ -151,7 +159,7 @@ $(document).ready(function() {
       class: d.main_class,
       subclass: d.subclass,
       kegg: d.kegg,
-      name: d.name,
+      name: d['Neutral Name'],
       cas: d.cas,
       formula: d.formula,
       structure: structureImage,
