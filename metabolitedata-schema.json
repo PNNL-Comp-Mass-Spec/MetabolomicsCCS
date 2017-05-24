@@ -15,7 +15,8 @@
     },
     {
       "constraints": {
-        "unique": true
+        "unique": true,
+        "required": true
       },
       "description": "ID",
       "name": "cid",
@@ -23,7 +24,8 @@
     },
     {
       "constraints": {
-        "unique": true
+        "unique": true,
+        "required": true
       },
       "description": "ID",
       "name": "kegg",
@@ -46,7 +48,8 @@
     },
     {
       "constraints": {
-        "unique": true
+        "unique": true,
+        "required": true
       },
       "description": "ID",
       "name": "cas",
