@@ -2,7 +2,7 @@
   "name": "metatabolitedata",
   "resources": [
     {
-      "name": "data",
+      "name": "Metabolite Data",
       "path": "./data/metabolitedata.txt",
       "schema": {
         "dialect": {
