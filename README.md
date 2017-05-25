@@ -1,4 +1,4 @@
-# Urine Metabolite
+# Metabolomics Collision Cross Section Database and Server
 This repository hosts two things. First is the source code (js) for a website created to display collision cross section data for metabolites and other small molecules. The second is the underlying CCS dataset. 
 
 ## Data Validity
