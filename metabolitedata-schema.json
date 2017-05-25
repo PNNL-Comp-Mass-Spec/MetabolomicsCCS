@@ -28,6 +28,7 @@
         "required": true
       },
       "description": "ID",
+      "missingValues": [""],
       "name": "kegg",
       "type": "string"
     },
