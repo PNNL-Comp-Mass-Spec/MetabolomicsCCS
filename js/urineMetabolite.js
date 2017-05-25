@@ -443,6 +443,7 @@ $(document).ready(function() {
   $('#about_btn').on('click', function(evt) {
     $('#about_modal').modal('show');
   });
+  // load download dropdown
   $('#downloadDropdown').dropdown();
   $('#helpBtn').on('click', function(evt) {
     $('#help_modal').modal('show');
