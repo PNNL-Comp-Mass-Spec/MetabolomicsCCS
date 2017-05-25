@@ -8,6 +8,9 @@ We use the [Good Tables](http://goodtables.io) data framework for testing data c
 
 [![Goodtables](http://goodtables.io/badge/github/PNNL-Comp-Mass-Spec/urineMetabolite.svg)](http://goodtables.io/github/PNNL-Comp-Mass-Spec/urineMetabolite)
 
+## Data usage
+This data is publically available, created by [Dr. Erin S. Baker](https://omics.pnl.gov/staff-page/Baker/Erin) with funding from the [National Institutes of Health](http://www.nih.gov) grant R01-ES022190.
+
 
 ## Dev Environment
 
@@ -22,5 +25,3 @@ Please conform to the eslint style guide to keep code consistant and easy to rea
 ## Hosting your own webserver
 after starting the server open a modern browser and go to localhost:8080
 
-## Data usage
-This data is publically available, created by [Dr. Erin S. Baker](https://omics.pnl.gov/staff-page/Baker/Erin) with funding from the [National Institutes of Health](http://www.nih.gov) grant R01-ES022190.
