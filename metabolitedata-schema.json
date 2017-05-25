@@ -15,8 +15,7 @@
     },
     {
       "constraints": {
-        "unique": true,
-        "required": true
+        "unique": true
       },
       "description": "ID",
       "name": "cid",
@@ -24,8 +23,7 @@
     },
     {
       "constraints": {
-        "unique": true,
-        "required": true
+        "unique": true
       },
       "description": "ID",
       "missingValues": [""],
@@ -35,16 +33,19 @@
     {
       "description": "Inchi key for metabolite",
       "name": "InChi Key",
+      "missingValues": [""],
       "type": "string"
     },
     {
       "description": "Name metabolite",
       "name": "name",
+      "missingValues": [""],
       "type": "string"
     },
     {
       "description": "Neurtal name",
       "name": "Neutral Name",
+      "missingValues": [""],
       "type": "string"
     },
     {
@@ -53,6 +54,7 @@
         "required": true
       },
       "description": "ID",
+      "missingValues": [""],
       "name": "cas",
       "type": "string"
     },
