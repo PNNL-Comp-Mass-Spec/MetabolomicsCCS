@@ -363,7 +363,10 @@ $(document).ready(function() {
           return compoundList[d.path].length>0
             && compoundList[d.path].in(compounds);
         });
-        data = [{path: '', name: 'No Pathway Filter'}].concat(data);
+        data = [
+          {path: '', name: 'No Pathway Filter'},
+          {path: 'missing', name: 'KEGG ID Unknown'},
+        ].concat(data);
         // append pathway list to pathway filter dropdown
         $('#pathwayFilter').append(
           '<input type="hidden" name="class">'
@@ -376,9 +379,15 @@ $(document).ready(function() {
           +'</div>'
         ).dropdown({
           onChange: function(value, text, $selectedItem) {
-            table.column(2)
-              .search(compoundList[value].join('|'), true, false)
-              .draw();
+            if(value == 'missing') {
+              table.column(2)
+                .search('^$', true, false)
+                .draw();
+            } else {
+              table.column(2)
+                .search(compoundList[value].join('|'), true, false)
+                .draw();
+            }
           },
         });
       });
