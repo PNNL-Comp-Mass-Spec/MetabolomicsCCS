@@ -6,7 +6,7 @@ The growing interest in metabolomic and exposomic studies is also inciting a nee
 ## Data Validity
 We use the [Good Tables](http://goodtables.io) data framework for testing data compliance, according to the format and expected values (see [metabolitedata-schema.json](https://github.com/PNNL-Comp-Mass-Spec/urineMetabolite/blob/master/metabolitedata-schema.json) and [goodtables.yml](https://github.com/PNNL-Comp-Mass-Spec/urineMetabolite/blob/master/goodtables.yml). The badge below shows the current status of the data.
 
-[![Goodtables](http://goodtables.io/badge/github/PNNL-Comp-Mass-Spec/urineMetabolite.svg)](http://goodtables.io/github/PNNL-Comp-Mass-Spec/urineMetabolite)
+[![Goodtables](http://goodtables.io/badge/github/PNNL-Comp-Mass-Spec/MetabolomicsCCS.svg)](http://goodtables.io/github/PNNL-Comp-Mass-Spec/MetabolomicsCCS)
 
 
 ## Data usage
