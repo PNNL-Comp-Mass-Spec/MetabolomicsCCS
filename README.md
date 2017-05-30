@@ -13,9 +13,6 @@ We use the [Good Tables](http://goodtables.io) data framework for testing data c
 ## Data usage
 This data is publically available, created by [Dr. Erin S. Baker](https://omics.pnl.gov/staff-page/Baker/Erin) with funding from the [National Institutes of Health](http://www.nih.gov) grant R01-ES022190.
 
-
-
-
 ## Dev Environment
 
 To setup the dev environment
