@@ -24,4 +24,4 @@ I use [Atom](https://atom.io/) as my text editor with [eslint](https://atom.io/p
 Please conform to the eslint style guide to keep code consistant and easy to read.
 
 ## Hosting your own webserver
-after starting the server open a modern browser and go to localhost:8080
+After starting the [Mongoose web server](https://www.cesanta.com/) open a modern browser and go to localhost:8080
