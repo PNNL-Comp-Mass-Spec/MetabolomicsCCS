@@ -388,6 +388,25 @@ $(document).ready(function() {
                 .search(compoundList[value].join('|'), true, false)
                 .draw();
             }
+            let filteredData = table.rows({filter: 'applied'}).data();
+            let subclass = [];
+            let mainClass = [];
+            filteredData.each(function(d) {
+              if(subclass.indexOf(d.subclass)<0)
+                subclass.push(d.subclass);
+              if(mainClass.indexOf(d.class)<0)
+                mainClass.push(d.class);
+            });
+            $('#classFilter').find('.menu')
+              .empty()
+              .append(mainClass.map(function(e) {
+                return '<div class="item" data-value="'+e+'">'+e+'</div>';
+              }));
+            $('#subclassFilter').find('.menu')
+              .empty()
+              .append(subclass.map(function(e) {
+                return '<div class="item" data-value="'+e+'">'+e+'</div>';
+              }));
           },
         });
       });
@@ -419,6 +438,17 @@ $(document).ready(function() {
         table.column(0)
           .search(value.replace(/,/g, '|'), true, false)
           .draw();
+        let filteredData = table.rows({filter: 'applied'}).data();
+        let subclass = [];
+        filteredData.each(function(d) {
+          if(subclass.indexOf(d.subclass)<0)
+            subclass.push(d.subclass);
+        });
+        $('#subclassFilter').find('.menu')
+          .empty()
+          .append(subclass.map(function(e) {
+            return '<div class="item" data-value="'+e+'">'+e+'</div>';
+          }));
       },
     });
     // append dropdown information to class filter dropdown.
