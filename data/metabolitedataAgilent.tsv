@@ -1,0 +1,721 @@
+###Formula	Mass	Compound name	KEGG	CAS	Polarity	Ion Species	CCS	Z	Gas	CCS Standard	Notes
+#Formula	Mass	Cpd	KEGG	CAS	Polarity	Ion Species	CCS	Z	Gas	CCS Standard	Notes
+C4H9NO2	103.1203	N,N-Dimethylglycine	C01026	1118-68-9	positive	(M+H)+	123.2333		N2		
+C4H9NO2	103.1203	N,N-Dimethylglycine	C01026	1118-68-9	positive	(M+Na)+	44.26667		N2		
+C3H7NO3	105.0419	L-Serine	C00716	56-45-1	negative	(M-H)-	135.933		N2		
+C5H9NO2	115.0633	L-Proline	C00148	147-85-3	positive	(M+H)+	129.1667		N2		
+C5H9NO2	115.0633	L-Proline	C00148	147-85-3	negative	(M-H)-	132.8		N2		
+C5H11NO2	117.079	L-Valine	C00183	72-18-4	positive	(M+H)+	133.5667		N2		
+C5H11NO2	117.079	L-Valine	C00183	72-18-4	positive	(M+Na)+	143.3		N2		
+C5H11NO2	117.079	L-Valine	C00183	72-18-4	negative	(M-H)-	132.167		N2		
+C4H9NO3	119.0582	L-Threonine	C00188	72-19-5	negative	(M-H)-	140.6		N2		
+C5H9NO3	131.0582	Cis-4-hydroxy-L-proline	C03440	618-27-9	negative	(M-H)-	129.3		N2		
+C6H13NO2	131.0946	L-Allo-Isoleucine	C21096	1509-34-8	negative	(M-H)-	133.733		N2		
+C6H13NO2	131.094	L-Leucine	C00123	61-90-5	positive	(M+H)+	138.9		N2		
+C6H13NO2	131.094	L-Leucine	C00123	61-90-5	positive	(M+Na)+	144.8500		N2		
+C6H13NO2	131.094	L-Leucine	C00123	61-90-5	negative	(M-H)-	137.1500		N2		
+C6H13NO2	131.0946	D-Leucine	C01570  	328-38-1	negative	(M-H)-	135.033		N2		
+C6H13NO2	131.0946	L-Isoleucine	C00407	73-32-5	positive	(M+H)+	136.9667		N2		
+C6H13NO2	131.0946	L-Isoleucine	C00407	73-32-5	positive	(M+Na)+	144.0500		N2		
+C6H13NO2	131.0946	L-Isoleucine	C00407	73-32-5	negative	(M-H)-	134.867		N2		
+C4H8N2O3	132.0535	L-Asparagine	C00152	70-47-3	positive	(M+H)+	130.8333		N2		
+C4H8N2O3	132.0535	L-Asparagine	C00152	70-47-3	positive	(M+Na)+	131.2333		N2		
+C4H8N2O3	132.0535	L-Asparagine	C00152	70-47-3	negative	(M-H)-	126.433		N2		
+C5H12N2O2	132.0899	L-Ornithine	C00077	70-26-8	positive	(M+H)+	129.1		N2		
+C5H12N2O2	132.0899	L-Ornithine	C00077	70-26-8	negative	(M-H)-	136.067		N2		
+C4H7NO4	133.0375	L-Aspartic Acid	C00049	56-84-8	negative	(M-H)-	121.267		N2		
+C5H10N2O3	146.0691	L-Glutamine	C00064	56-85-9	positive	(M+H)+	132.7333		N2		
+C5H10N2O3	146.0691	L-Glutamine	C00064	56-85-9	positive	(M+Na)+	137.3667		N2		
+C5H10N2O3	146.0691	L-Glutamine	C00064	56-85-9	negative	(M-H)-	131.4		N2		
+C6H14N2O2	146.1055	L-Lysine	C00047	56-87-1	positive	(M+H)+	132.4		N2		
+C6H14N2O2	146.1055	L-Lysine	C00047	56-87-1	negative	(M-H)-	141		N2		
+C5H9NO4	147.0532	L-Glutamic Acid	C00025	56-86-0	positive	(M+H)+	134.3667		N2		
+C5H9NO4	147.0532	L-Glutamic Acid	C00025	56-86-0	negative	(M-H)-	126.8167		N2		
+C5H11NO2S	149.0511	L-Methionine	C01733	63-68-3	positive	(M+H)+	136.3667		N2		
+C5H11NO2S	149.0511	L-Methionine	C01733	63-68-3	negative	(M-H)-	151.233		N2		
+C6H9N3O2	155.0694	L-Histidine	C00135	71-00-1	positive	(M+H)+	132.8		N2		
+C6H9N3O2	155.0694	L-Histidine	C00135	71-00-1	positive	(M+Na)+	136.2667		N2		
+C6H9N3O2	155.0694	L-Histidine	C00135	71-00-1	negative	(M-H)-	130.767		N2		
+C9H11NO2	165.079	L-Phenylalanine	C02057	63-91-2	positive	(M+H)+	144.4667		N2		
+C9H11NO2	165.079	L-Phenylalanine	C02057	63-91-2	positive	(M+Na)+	141.1333		N2		
+C9H11NO2	165.079	L-Phenylalanine	C02057	63-91-2	negative	(M-H)-	145.733		N2		
+C6H14N4O2	174.1117	L-Arginine	C00062	74-79-3	positive	(M+H)+	137.1333		N2		
+C6H14N4O2	174.1117	L-Arginine	C00062	74-79-3	negative	(M-H)-	131.533		N2		
+C6H13N3O3	175.0957	L-Citrulline	C00327	372-75-8	negative	(M-H)-	138.767		N2		
+C9H11NO3	181.0739	L-Tyrosine	C00082	60-18-4	positive	(M+H)+	147.7		N2		
+C9H11NO3	181.0739	L-Tyrosine	C00082	60-18-4	negative	(M-H)-	147.467		N2		
+C11H12N2O2	204.0899	L-Tryptophan	C00806	73-22-3	positive	(M+H)+	153.4		N2		
+C11H12N2O2	204.0899	L-Tryptophan	C00806	73-22-3	negative	(M-H)-	157.733		N2		
+C7H14N2O4S	222.0674	L-Cystathionine	C00542	535-34-2	negative	(M-H)-	143.633		N2		
+C13H16N2O4	264.111	Phenylacetyl L-Glutamine	C04148	28047-15-6	positive	(M+H)+	160.0667		N2		
+C13H16N2O4	264.111	Phenylacetyl L-Glutamine	C04148	28047-15-6	positive	(M+Na)+	170.3333		N2		
+C13H16N2O4	264.111	Phenylacetyl L-Glutamine	C04148	28047-15-6	negative	(M-H)-	168.267		N2		
+C9H10ClNO2	199.04	2-Chloro-L-Phenylalanine	C00079	103616-89-3	positive	(M+H)+	148.0667		N2		
+C4H9NO2S	135.0348	L-Homocysteine	C05330	454-29-5	positive	(M+H)+	129.8333		N2		
+C4H9NO2S	135.0348	L-Homocysteine	C05330	454-29-5	negative	(M-H)-	158.77		N2		
+C6H8O6	176.0321	L-Ascorbic acid	C00072	50-81-7	positive	(M+H)+	143.3		N2		
+C6H8O6	176.0321	L-Ascorbic acid	C00072	50-81-7	positive	(M+Na)+	145.3333		N2		
+C6H8O6	176.0321	L-Ascorbic acid	C00072	50-81-7	negative	(M-H)-	129.967		N2		
+C10H17N3O6S	307.0838	Glutathione	C00051	70-18-8	positive	(M+Na)+	167.3333		N2		
+C10H17N3O6S	307.0838	Glutathione	C00051	70-18-8	negative	(M-H)-	163.367		N2		
+C24H40O7S	472.2493	Chenodeoxycholic Acid 3-Sulfate		59132-32-0	negative	(M-H)-	205.4667		N2		
+C24H40O8S	488.2443	Cholic Acid 7-sulfate		60320-05-0	negative	(M-H)-	209.9333		N2		
+C24H40O5	408.287557	Cholic Acid	C00695	81-25-4	negative	(M-H)-	203.53		N2		
+C24H40O7S	472.2493	Deoxycholic Acid Sulfate	C04483	83-44-3	negative	(M-H)-	208.7333		N2		
+C26H43NO8S	529.2709238	Glycochenodeoxycholic Acid Sulfate	C05466	16564-43-5	negative	(M-H)-	217.6333		N2		
+C26H43NO9S	545.2658388	Glycocholic Acid Sulfate	C01921	1192657-83-2	negative	(M-H)-	218.1333		N2		
+C26H43NO8S	529.2709238	Glycodeoxycholic Acid Sulfate	C05464	16409-34-0	negative	(M-H)-	217.7667		N2		
+C26H43NO7S	513.2759	Glycolithocholic Acid Sulfate	C15557	24404-83-9	negative	(M-H)-	217.7333		N2		
+C26H45NO6S	521.2787	Taurochenodeoxycholic Acid 	C05465	6009-98-9	positive	(M+H)+	210.9667		N2		
+C26H45NO6S	521.2787	Taurochenodeoxycholic Acid 	C05465	6009-98-9	positive	(M+Na)+	219.1667		N2		
+C26H45NO6S	521.2787	Taurochenodeoxycholic Acid 	C05465	6009-98-9	negative	(M-H)-	208.667		N2		
+C26H45NO9S2	579.25356	Taurochenodeoxycholic Acid Sulfate		516-35-8	negative	(M-H)-	220.5667		N2		
+C26H45NO10S2	595.248475	Taurocholic Acid Sulfate	C05122	345909-26-4	negative	(M-H)-	220.8		N2		
+C26H45NO9S2	579.25356	Taurodeoxycholic Acid Sulfate	C05463	207737-97-1	negative	(M-H)-	220.6		N2		
+C24H40O7S	472.249461	Ursodeoxycholic Acid Sulfate	C07880	128-13-2	negative	(M-H)-	207.8667		N2		
+C24H40O6S	456.6373	Sulfolithocholic Acid		34669-57-3	negative	(M-H)-	211.0667		N2		
+C24H40O5	408.287557	Ursocholic Acid	C17644	2955-27-3	negative	(M-H)-	204		N2		
+C24H40O5	408.287557	α-Muricholic Acid	C17647	2393-58-0	negative	(M-H)-	206.33		N2		
+C24H40O5	408.287557	β-Muricholic Acid	C17726	2393-59-1	negative	(M-H)-	201.93		N2		
+C24H40O5	408.287557	Hyocholic Acid	C17649	547-75-1	negative	(M-H)-	204.90		N2		
+C16H30O2	254.224	Palmitoleic acid	C08362	373-49-9	positive	(M+Na)+	171.7		N2		
+C16H30O2	254.224	Palmitoleic acid	C08362	373-49-9	negative	(M-H)-	166.97		N2		
+C20H36O2	308.2709	Icosadienoic acid	C16525	2091-39-6	positive	(M+Na)+	183.0666667		N2		
+C20H36O2	308.2709	Icosadienoic acid	C16525	2091-39-6	negative	(M-H)-	181.40		N2		
+C18H34O2	282.2553	Oleic acid	C00712	112-80-1	positive	(M+Na)+	180.4		N2		
+C18H34O2	282.2553	Oleic acid	C00712	112-80-1	negative	(M-H)-	175.13		N2		
+C20H32O2	304.2396	Arachidonic acid	C00219	506-32-1	positive	(M+Na)+	180		N2		
+C20H32O2	304.2396	Arachidonic acid	C00219	506-32-1	negative	(M-H)-	181.23		N2		
+C12H24O2	200.1771	Lauric Acid	C02679	143-07-7	negative	(M-H)-	154.13		N2		
+C15H30O2	242.224	Pentadecylic acid	C16537	1002-84-2	negative	(M-H)-	164.70		N2		
+C17H34O2	270.2553	Heptadecanoic Acid		506-12-7	positive	(M+Na)+	180.8333333		N2		
+C17H34O2	270.2553	Heptadecanoic Acid		506-12-7	negative	(M-H)-	172.57		N2		
+C18H32O2	280.2397	Linoleic acid	C01595	60-33-3	positive	(M+Na)+	175.4333333		N2		
+C18H32O2	280.2397	Linoleic acid	C01595	60-33-3	negative	(M-H)-	174.43		N2		
+C20H38O2	310.2866	Eicosenoic acid	C16526	5561-99-9	positive	(M+Na)+	187.5666667		N2		
+C20H38O2	310.2866	Eicosenoic acid	C16526	5561-99-9	negative	(M-H)-	182.97		N2		
+C16H32O2	256.2397	Palmitic Acid	C00249	57-10-3	positive	(M+Na)+	184.2333		N2		
+C16H32O2	256.2397	Palmitic Acid	C00249	57-10-3	negative	(M-H)-	168.27		N2		
+C18H36O2	284.271	Stearic Acid	C01530	57-11-4	positive	(M+Na)+	190.8		N2		
+C18H36O2	284.271	Stearic Acid	C01530	57-11-4	negative	(M-H)-	177		N2		
+C18H30O2	278.224	Linlenic Acid	C06427	463-40-1	positive	(M+Na)+	171.1		N2		
+C18H30O2	278.224	Linlenic Acid	C06427	463-40-1	negative	(M-H)-	173.60		N2		
+C20H40O2	312.3023	Arachidic Acid	C06425	506-30-9	positive	(M+Na)+	198.9		N2		
+C20H40O2	312.3023	Arachidic Acid	C06425	506-30-9	negative	(M-H)-	185.37		N2		
+C20H34O2	306.2553	Bishomo-gamma-linolenic acid	C03242	1783-84-2	positive	(M+Na)+	182.4		N2		
+C20H34O2	306.2553	Bishomo-gamma-linolenic acid	C03242	1783-84-2	negative	(M-H)-	181.67		N2		
+C24H48O2	368.3649	Lignoceric acid	C08320	557-59-5	positive	(M+Na)+	215.7		N2		
+C24H48O2	368.3649	Lignoceric acid	C08320	557-59-5	negative	(M-H)-	199.50		N2		
+C22H36O2	332.2709	Adrenic acid	C16527	28874-58-0	positive	(M+H)+	188.4		N2		
+C22H36O2	332.2709	Adrenic acid	C16527	28874-58-0	positive	(M+Na)+	191.8000		N2		
+C22H36O2	332.2709	Adrenic acid	C16527	28874-58-0	negative	(M-H)-	189.9000		N2		
+C22H32O2	328.2396	Docosahexaenoic acid	C06429	6217-54-5	positive	(M+H)+	183.6333		N2		
+C22H32O2	328.2396	Docosahexaenoic acid	C06429	6217-54-5	positive	(M+Na)+	184.0667		N2		
+C22H32O2	328.2396	Docosahexaenoic acid	C06429	6217-54-5	negative	(M-H)-	190.1000		N2		
+C24H50NO7P	495.3325	LPC 16:0		17364-16-8	positive	(M+H)+	230.1667		N2		
+C24H50NO7P	495.3325	LPC 16:0		17364-16-8	positive	(M+Na)+	233.8333		N2		
+C21H44NO7P	453.28486	LPC 13:0		20559-17-5	positive	(M+H)+	219.53333		N2		
+C21H44NO7P	453.28486	LPC 13:0		20559-17-5	positive	(M+Na)+	224.2		N2		
+C22H44NPO9	497.27524	LPS (16:0/0:0)		143077-66-1	positive	(M+H)+	221.6		N2		
+C22H44NPO9	497.27524	LPS (16:0/0:0)		143077-66-1	positive	(M+Na)+	227.4666667		N2		
+C22H44NPO9	497.27524	LPS (16:0/0:0)		143077-66-1	negative	(M-H)-	221.5333		N2		
+C26H52NO7P	521.34746	LPC 18:1		19420-56-5	positive	(M+H)+	234.33333		N2		
+C26H52NO7P	521.34746	LPC 18:1		19420-56-5	positive	(M+Na)+	236.0666667		N2		
+C30H60NO8P	593.40497	PC (11:0/11:0)		27869-47-2	positive	(M+H)+	255.7		N2		
+C30H60NO8P	593.40497	PC (11:0/11:0)		27869-47-2	positive	(M+Na)+	259.2		N2		
+C36H69NO8	643.50163	GalCer (d18:1/12:0)		111956-48-0	positive	(M+H)+	269.7		N2		
+C36H69NO8	643.50163	GalCer (d18:1/12:0)		111956-48-0	positive	(M+Na)+	265.4		N2		
+C36H69NO8	643.50163	GalCer (d18:1/12:0)		111956-48-0	negative	(M-H)-	260.6333		N2		
+C34H66NO10P	679.4423	PS (14:0/14:0)		105405-50-3	negative	(M-H)-	260.6333333		N2		
+C34H67O10P	666.4470	BMP (14:0/14:0)		325466-03-3	positive	(M+H)+	268.7333		N2		
+C34H67O10P	666.4470	BMP (14:0/14:0)		325466-03-3	negative	(M-H)-	260.6000		N2		
+C40H81N2O6P	716.58253	SM (d18:1/17:0)		121999-64-2	positive	(M+H)+	288.56667		N2		
+C40H81N2O6P	716.58253	SM (d18:1/17:0)		121999-64-2	positive	(M+Na)+	290.3333333		N2		
+C40H76NO8P	729.5376	PC (16:1/16:1) (del9-cis)		4724-96-3	positive	(M+H)+	278.6667		N2		
+C40H76NO8P	729.5376	PC (16:1/16:1) (del9-cis)		4724-96-3	positive	(M+Na)+	285.3666667		N2		
+C41H78NO8P	743.5465	PE (18:1/18:1) (del9-cis)		4004-05-01	positive	(M+H)+	282.13333		N2		
+C41H78NO8P	743.5465	PE (18:1/18:1) (del9-cis)		4004-05-01	positive	(M+Na)+	289.2333333		N2		
+C41H78NO8P	743.5465	PE (18:1/18:1) (del9-cis)		4004-05-01	negative	(M-H)-	276.1667		N2		
+C41H78NO8P	743.5465	PE (18:1/18:1) (del9-trans)		19805-18-6	positive	(M+H)+	282.5		N2		
+C41H78NO8P	743.5465	PE (18:1/18:1) (del9-trans)		19805-18-6	positive	(M+Na)+	287		N2		
+C41H78NO8P	743.5465	PE (18:1/18:1) (del9-trans)		19805-18-6	negative	(M-H)-	274.9667		N2		
+C47H88O6	748.65739	TG (14:0/16:1/14:0)		875584-25-1	positive	(M+H)+	301.2000		N2		
+C47H88O6	748.65739	TG (14:0/16:1/14:0)		875584-25-1	positive	(M+Na)+	299.8500		N2		
+C38H71NO13	749.49185	LacCer (d18:1/8:0)		939036-94-9	positive	(M+H)+	279.46667		N2		
+C38H71NO13	749.49185	LacCer (d18:1/8:0)		939036-94-9	positive	(M+Na)+	279.1666667		N2		
+C38H71NO13	749.49185	LacCer (d18:1/8:0)		939036-94-9	negative	(M-H)-	268.6667		N2		
+C40H79O10P	750.54094	PG(17:0/17:0)		799268-52-3	positive	(M+Na)+	95.96666667		N2		
+C40H79O10P	750.54094	PG(17:0/17:0)		799268-52-3	negative	(M-H)-	275.9667		N2		
+C42H82NO8P	759.57711	PC(18:1(9Z)/16:0)		59491-62-2	positive	(M+H)+	290.23333		N2		
+C42H82NO8P	759.57711	PC(18:1(9Z)/16:0)		59491-62-2	positive	(M+Na)+	292.0666667		N2		
+C40H79O10P	774.54039	PG (18:1/18:1) (del9-trans)		322647-40-5	positive	(M+H)+	293.23333		N2		
+C40H79O10P	774.54039	PG (18:1/18:1) (del9-trans)		322647-40-5	positive	(M+Na)+	283.7333333		N2		
+C40H79O10P	774.54039	PG (18:1/18:1) (del9-trans)		322647-40-5	negative	(M-H)-	281.5000		N2		
+C40H79O10P	774.54039	PG (18:1/18:1) (del9-cis)		67254-28-8	positive	(M+H)+	292.9		N2		
+C40H79O10P	774.54039	PG (18:1/18:1) (del9-cis)		67254-28-8	positive	(M+Na)+	287.7666667		N2		
+C40H79O10P	774.54039	PG (18:1/18:1) (del9-cis)		67254-28-8	negative	(M-H)-	281.1667		N2		
+C44H84NO8P	785.59276	PC (18:1/18:1) (del9-cis)		56391-91-4	positive	(M+H)+	294.83333		N2		
+C44H84NO8P	785.59276	PC (18:1/18:1) (del9-cis)		56391-91-4	positive	(M+Na)+	296.4333333		N2		
+C44H84NO8P	785.59276	PC (18:1/18:1) (del9-trans)		56782-46-8	positive	(M+H)+	295.7		N2		
+C44H84NO8P	785.59276	PC (18:1/18:1) (del9-trans)		56782-46-8	positive	(M+Na)+	299.1333		N2		
+C46H91O10P	834.63429	PG (16:0/16:0) 4Me		474967-73-2	positive	(M+H)+	309.73333		N2		
+C46H91O10P	834.63429	PG (16:0/16:0) 4Me		474967-73-2	positive	(M+Na)+	308.7666667		N2		
+C46H91O10P	834.63429	PG (16:0/16:0) 4Me		474967-73-2	negative	(M-H)-	293.1000		N2		
+C20H32O4	336.2294	Leukotriene B4	C02165	71160-24-2	positive	(M+Na)+	195		N2		
+C20H32O4	336.2294	Leukotriene B4	C02165	71160-24-2	negative	(M-H)-	186.4333		N2		
+C20H32O5	352.225	Lipoxin A4	C06314	89663-86-5	positive	(M+Na)+	196.8333		N2		
+C20H32O5	352.225	Lipoxin A4	C06314	89663-86-5	negative	(M-H)-	192.967		N2		
+C20H32O5	352.225	Prostaglandin E2	C00584	363-24-6	positive	(M+Na)+	197.4667		N2		
+C20H32O5	352.225	Prostaglandin E2	C00584	363-24-6	negative	(M-H)-	191.033		N2		
+C18H32O3	296.2351	13-Hydroxyoctadecadienoic acid	C14762	73804-64-5	positive	(M+Na)+	190.8		N2		
+C18H32O3	296.2351	13-Hydroxyoctadecadienoic acid	C14762	73804-64-5	negative	(M-H)-	182.133		N2		
+C20H32O3	320.2351	11,12-epoxy-5Z,8Z,14Z-eicosatrienoic acid	C14770	81276-02-0	positive	(M+H)+	188.5		N2		
+C20H32O3	320.2351	11,12-epoxy-5Z,8Z,14Z-eicosatrienoic acid	C14770	81276-02-0	positive	(M+Na)+	186.0667		N2		
+C20H32O3	320.2351	11,12-epoxy-5Z,8Z,14Z-eicosatrienoic acid	C14770	81276-02-0	negative	(M-H)-	185.8		N2		
+C18H32O3	296.2351	9-hydroxy-10E,12Z-octadecadienoic acid	C14767	98524-19-7	positive	(M+Na)+	188.1333		N2		
+C18H32O3	296.2351	9-hydroxy-10E,12Z-octadecadienoic acid	C14767	98524-19-7	negative	(M-H)-	179.667		N2		
+C20H32O3	320.2345	5-Hydroxyeicosatetraenoic acid	C04805	70608-72-9	positive	(M+Na)+	187.2		N2		
+C20H32O3	320.2345	5-Hydroxyeicosatetraenoic acid	C04805	70608-72-9	negative	(M-H)-	186.2		N2		
+C20H32O3	320.2345	12(S)-Hydroxyeicosatetraenoic acid	C14777	54397-83-0	positive	(M+Na)+	192.3		N2		
+C20H32O3	320.2345	12(S)-Hydroxyeicosatetraenoic acid	C14777	54397-83-0	negative	(M-H)-	183.833		N2		
+C20H34O5	354.2406	8-Epi-prostaglandin F2alpha	C13809	27415-26-5	positive	(M+Na)+	197.9667		N2		
+C20H34O5	354.2406	8-Epi-prostaglandin F2alpha	C13809	27415-26-5	negative	(M-H)-	196.2		N2		
+C20H32O3	320.2351	8(S)-hydroxyeicosatetraenoic acid	C14776	98462-03-04	positive	(M+Na)+	186.2333		N2		
+C20H32O3	320.2351	8(S)-hydroxyeicosatetraenoic acid	C14776	98462-03-04	negative	(M-H)-	184.867		N2		
+C20H34O6	370.2349	Thromboxane B2	C05963	54397-85-2	positive	(M+Na)+	201		N2		
+C20H34O6	370.2349	Thromboxane B2	C05963	54397-85-2	negative	(M-H)-	193.4		N2		
+C20H34O5	354.2406	8-iso-15R-PGF2a	C00639	214748-65-9	positive	(M+Na)+	197.1		N2		
+C20H34O5	354.2406	8-iso-15R-PGF2a	C00639	214748-65-9	negative	(M-H)-	196.7		N2		
+C22H32O3	344.2351	17S-hydroxy-4Z,7Z,10Z,13Z,15E,19Z-docosahexaenoic acid		92693-03-03	positive	(M+Na)+	190.5		N2		
+C22H32O3	344.2351	17S-hydroxy-4Z,7Z,10Z,13Z,15E,19Z-docosahexaenoic acid		92693-03-03	negative	(M-H)-	193.8		N2		
+C22H36O3	348.2664	Carbocyclic Thromboxane A2	C02198	74034-56-3	negative	(M-H)-	197.967		N2		
+C11H15N5O5	297.1073	1-Methylguanosine		2140-65-0	positive	(M+H)+	167.9		N2		
+C11H15N5O5	297.1073	1-Methylguanosine		2140-65-0	positive	(M+Na)+	179.8333		N2		
+C11H15N5O5	297.1073	1-Methylguanosine		2140-65-0	negative	(M-H)-	166.033		N2		
+C10H13N5O3	251.1018	5'-Deoxyadenosine	C05198	4754-39-6	positive	(M+H)+	161.2333		N2		
+C10H13N5O3	251.1018	5'-Deoxyadenosine	C05198	4754-39-6	positive	(M+Na)+	171.0667		N2		
+C10H13N5O3	251.1018	5'-Deoxyadenosine	C05198	4754-39-6	negative	(M-H)-	159.333		N2		
+C9H10O4	257.1012	5-Methylcytidine		2140-61-6	positive	(M+H)+	156.6667		N2		
+C9H10O4	257.1012	5-Methylcytidine		2140-61-6	positive	(M+Na)+	168.0667		N2		
+C9H10O4	257.1012	5-Methylcytidine		2140-61-6	negative	(M-H)-	159.6		N2		
+C10H12N4O5	268.0808	Inosine	C00294	58-63-9	positive	(M+H)+	158.4		N2		
+C10H12N4O5	268.0808	Inosine	C00294	58-63-9	positive	(M+Na)+	174.4333		N2		
+C10H12N4O5	268.0808	Inosine	C00294	58-63-9	negative	(M-H)-	160.833		N2		
+C9H12N2O6  	244.0695	Uridine	C00299	58-96-8	positive	(M+H)+	158.8333		N2		
+C9H12N2O6  	244.0695	Uridine	C00299	58-96-8	positive	(M+Na)+	164.2667		N2		
+C9H12N2O6  	244.0695	Uridine	C00299	58-96-8	negative	(M-H)-	153.567		N2		
+C10H12N4O6	284.0757	Xanthosine	C01762	146-80-5	positive	(M+H)+	165.6		N2		
+C10H12N4O6	284.0757	Xanthosine	C01762	146-80-5	positive	(M+Na)+	176.5		N2		
+C10H12N4O6	284.0757	Xanthosine	C01762	146-80-5	negative	(M-H)-	160.5		N2		
+C5H6N2O2	126.0429	Thymine	C00178	65-71-4	positive	(M+H)+	128.2667		N2		
+C5H6N2O2	126.0429	Thymine	C00178	65-71-4	positive	(M+Na)+	146.2		N2		
+C10H14N5O7P	347.0631	Adenosine 5'-Monophosphate (AMP)	C00020	61-19-8	positive	(M+H)+	172.0833		N2		
+C10H14N5O7P	347.0631	Adenosine 5'-Monophosphate (AMP)	C00020	61-19-8	positive	(M+Na)+	185.3500		N2		
+C10H14N5O7P	347.0631	Adenosine 5'-Monophosphate (AMP)	C00020	61-19-8	negative	(M-H)-	175.15		N2		
+C10H15N5O10P2	427.0294	Adenosine 5'-Diphosphate (From Bacterial Source)	C00008	58-64-0	positive	(M+H)+	187.6		N2		
+C10H15N5O10P2	427.0294	Adenosine 5'-Diphosphate (From Bacterial Source)	C00008	58-64-0	positive	(M+Na)+	195.8667		N2		
+C10H15N5O10P2	427.0294	Adenosine 5'-Diphosphate (From Bacterial Source)	C00008	58-64-0	negative	(M-H)-	185.867		N2		
+C16H25N5O15P2	589.0822	Adenosine 5'-Diphosphoglucose	C00498	2140-58-1	positive	(M+H)+	217.1333		N2		
+C16H25N5O15P2	589.0822	Adenosine 5'-Diphosphoglucose	C00498	2140-58-1	positive	(M+Na)+	224.6667		N2		
+C16H25N5O15P2	589.0822	Adenosine 5'-Diphosphoglucose	C00498	2140-58-1	negative	(M-H)-	217.967		N2		
+C27H33N9O15P2	785.1571	Flavin Adenine Dinucleotide	C00016	146-14-5	negative	(M-H)-	241		N2		
+C10H13N4O8P	348.0471	Inosine 5'-Monophosphate	C00130	131-99-7	positive	(M+H)+	176.6333		N2		
+C10H13N4O8P	348.0471	Inosine 5'-Monophosphate	C00130	131-99-7	positive	(M+Na)+	173.6333		N2		
+C10H13N4O8P	348.0471	Inosine 5'-Monophosphate	C00130	131-99-7	negative	(M-H)-	173.433		N2		
+C9H14N3O8P	323.0519	Cytidine 5'-Monophosphate	C00055	63-37-6	positive	(M+H)+	167.9		N2		
+C9H14N3O8P	323.0519	Cytidine 5'-Monophosphate	C00055	63-37-6	positive	(M+Na)+	170.7		N2		
+C9H14N3O8P	323.0519	Cytidine 5'-Monophosphate	C00055	63-37-6	negative	(M-H)-	167.533		N2		
+C9H14N3O8P	363.058	Guanosine 5' Monophosphate	C00144	85-32-5	positive	(M+H)+	181.2333		N2		
+C9H14N3O8P	363.058	Guanosine 5' Monophosphate	C00144	85-32-5	positive	(M+Na)+	177		N2		
+C9H14N3O8P	363.058	Guanosine 5' Monophosphate	C00144	85-32-5	negative	(M-H)-	171.367		N2		
+C21H27N7O14P2	663.1091	alpha-Nicotinamide Adenine Dinucleotide (Sacchatomyces Cerevisiae)		7298-93-3	positive	(M+H)+	240.6333		N2		
+C21H27N7O14P2	663.1091	alpha-Nicotinamide Adenine Dinucleotide (Sacchatomyces Cerevisiae)		7298-93-3	positive	(M+Na)+	233.4		N2		
+C21H27N7O14P2	663.1091	alpha-Nicotinamide Adenine Dinucleotide (Sacchatomyces Cerevisiae)		7298-93-3	negative	(M-H)-	225.933		N2		
+C21H27N7O14P2	663.1091	NAD+ beta-Nicotinamide Adenine Dinucleotide NAD+	C00003	53-84-9	positive	(M+H)+	228.2333		N2		
+C21H27N7O14P2	663.1091	NAD+ beta-Nicotinamide Adenine Dinucleotide NAD+	C00003	53-84-9	positive	(M+Na)+	225.0333		N2		
+C21H27N7O14P2	663.1091	NAD+ beta-Nicotinamide Adenine Dinucleotide NAD+	C00003	53-84-9	negative	(M-H)-	226.9		N2		
+C21H29N7O14P2	665.1248	NADH beta-Nicotinamide Adenine Dinucleotide 	C00004	58-68-4	positive	(M+H)+	237.0667		N2		
+C21H29N7O14P2	665.1248	NADH beta-Nicotinamide Adenine Dinucleotide 	C00004	58-68-4	positive	(M+Na)+	236.4667		N2		
+C21H29N7O14P2	665.1248	NADH beta-Nicotinamide Adenine Dinucleotide 	C00004	58-68-4	negative	(M-H)-	224.4		N2		
+C17H21N4O9P	456.1046	Riboflavin 5'-Monophosphate	C00061	146-17-8	positive	(M+H)+	200.4		N2		
+C17H21N4O9P	456.1046	Riboflavin 5'-Monophosphate	C00061	146-17-8	positive	(M+Na)+	209.5333		N2		
+C17H21N4O9P	456.1046	Riboflavin 5'-Monophosphate	C00061	146-17-8	negative	(M-H)-	199.7		N2		
+C10H15N2O8P	322.0566	Thymidine 5'-Monophosphate	C00364	365-07-1	positive	(M+H)+	162.9667		N2		
+C10H15N2O8P	322.0566	Thymidine 5'-Monophosphate	C00364	365-07-1	positive	(M+Na)+	168.8333		N2		
+C9H13N2O9P	324.0359	Uridine 5'-Monophosphate	C00105	58-97-9	negative	(M-H)-	164.6		N2		
+C12H18N4O4PS+	345.0786	Thiamine Monophosphate	C01081	10023-48-0	positive	(M+H)+	171.4		N2		
+C12H18N4O4PS+	345.0786	Thiamine Monophosphate	C01081	10023-48-0	positive	(M+Na)+	172		N2		
+C21H30O5	362.2087	Cortisol	C00735	50-23-7	positive	(M+H)+	187.8667		N2		
+C21H30O5	362.2087	Cortisol	C00735	50-23-7	positive	(M+Na)+	212.77		N2		
+C21H30O5	362.2087	Cortisol	C00735	50-23-7	negative	(M-H)-	262.73		N2		
+C6H10O6	179.0556	2-Keto-3-deoxy-D-gluconic acid 	C00204 	17510-99-5	negative	(M-H)-	133.6		N2		
+C21H30O2	314.2239	Progesterone	C00410	57-83-0	positive	(M+H)+	185.7333		N2		
+C21H30O2	314.2239	Progesterone	C00410	57-83-0	positive	(M+Na)+	212.8333		N2		
+C21H30O3	330.2194	17a-Hydroxyprogesterone	C01176	68-96-2	positive	(M+H)+	186.5667		N2		
+C21H30O3	330.2194	17a-Hydroxyprogesterone	C01176	68-96-2	positive	(M+Na)+	209.1333		N2		
+C21H30O3	330.2194	17a-Hydroxyprogesterone	C01176	68-96-2	negative	(M-H)-	186.633		N2		
+C21H32O3	332.235	17α-Hydroxypregnenolone	C05138	387-79-1	positive	(M+H)+	189.4333		N2		
+C21H32O3	332.235	17α-Hydroxypregnenolone	C05138	387-79-1	positive	(M+Na)+	209.3667		N2		
+C21H32O3	332.2351	2,1-Hydroxypregnenolone	C05485	1164-98-3	positive	(M+H)+	189.5		N2		
+C21H32O3	332.2351	2,1-Hydroxypregnenolone	C05485	1164-98-3	positive	(M+Na)+	209.5		N2		
+C21H28O5	360.1937	Aldosterone	C01780	52-39-1	positive	(M+H)+	195		N2		
+C21H28O5	360.1937	Aldosterone	C01780	52-39-1	positive	(M+Na)+	203		N2		
+C21H28O5	360.1937	Aldosterone	C01780	52-39-1	negative	(M-H)-	187.3		N2		
+C19H26O2	286.1933	Androstenedione	C00280	63-05-8	positive	(M+H)+	182.9667		N2		
+C19H26O2	286.1933	Androstenedione	C00280	63-05-8	positive	(M+Na)+	203.6333		N2		
+C21H36O5	368.2563	Beta-Cortol		667-65-2	positive	(M+Na)+	203.5		N2		
+C21H36O5	368.2563	Beta-Cortol		667-65-2	negative	(M-H)-	201.567		N2		
+C21H32O2	316.2402	Pregnenolone	C01953	145-13-1	positive	(M+H)+	176.3		N2		
+C21H32O2	316.2402	Pregnenolone	C01953	145-13-1	positive	(M+Na)+	215		N2		
+C19H24O3	300.1725	2-Methoxyestrone	C05299	362-08-3	positive	(M+H)+	173.5333		N2		
+C19H24O3	300.1725	2-Methoxyestrone	C05299	362-08-3	positive	(M+Na)+	200.6333		N2		
+C19H24O3	300.1725	2-Methoxyestrone	C05299	362-08-3	negative	(M-H)-	183.567		N2		
+C19H28O2	288.2089	Testosterone	C00535	58-22-0	positive	(M+H)+	182.8333		N2		
+C19H28O2	288.2089	Testosterone	C00535	58-22-0	positive	(M+Na)+	204.9667		N2		
+C6H13O9P	260.0291	D-Fructose-1-phosphate	C01094	15978-08-02	positive	(M+Na)+	156.7667		N2		
+C6H13O9P	260.0291	D-Fructose-1-phosphate	C01094	15978-08-02	negative	(M-H)-	146.767		N2		
+C5H10O5	150.0528	D-Arabinose	C00216	10323-20-3	positive	(M+Na)+	142.5		N2		
+C5H10O5	150.0528	L-Arabinose	C00259	147-81-9	positive	(M+Na)+	141.1		N2		
+C5H10O5	150.0528	D-Ribose	C00121	50-69-1	positive	(M+Na)+	136.0834		N2		
+C5H10O5	150.0528	L-Ribulose	C00508	2042-27-5	positive	(M+Na)+	132.1		N2		
+C5H10O5	150.0528	D-Xylulose	C05052	551-84-8	positive	(M+Na)+	141		N2		
+C5H10O5	150.0528	D-(+)-Xylose	C00181	58-86-6	positive	(M+Na)+	133.1834		N2		
+C6H12O6	180.0634	D-Glucose	C00221	50-99-7	positive	(M+Na)+	148.7		N2		
+C6H12O6	180.0634	D-Galactose	C00124	59-23-4	positive	(M+Na)+	141.6333		N2		
+C6H12O6	180.0627	D-Fructose	C10906	57-48-7	positive	(M+Na)+	143.3		N2		
+C6H12O6	180.0627	D-Fructose	C10906	57-48-7	negative	(M-H)-	125		N2		
+C6H12O6	180.0634	D-Mannose	C00159	3458-28-4	positive	(M+Na)+	141.0667		N2		
+C4H9O7P	200.0086	D-Erythrose 4-Phosphate	C00279	585-18-2	positive	(M+Na)+	153.0667		N2		
+C4H9O7P	200.0086	D-Erythrose 4-Phosphate	C00279	585-18-2	negative	(M-H)-	148.367		N2		
+C7H14O7	210.074	D-Sedoheptulose	C08355	3019-74-7	positive	(M+Na)+	151.1333		N2		
+C7H14O7	210.074	D-Sedoheptulose	C08355	3019-74-7	negative	(M-H)-	149.633		N2		
+C5H11O8P	230.0185	D-Ribose 5-phosphate	C00117	4300-28-1	positive	(M+H)+	166.8333		N2		
+C5H11O8P	230.0185	D-Ribose 5-phosphate	C00117	4300-28-1	positive	(M+Na)+	154.25		N2		
+C5H11O8P	230.0185	D-Ribose 5-phosphate	C00117	4300-28-1	negative	(M-H)-	141.15		N2		
+C5H11O8P	230.0185	D-Ribulose-5-phosphate	C00199	4151-19-3	positive	(M+Na)+	152.35		N2		
+C5H11O8P	230.0185	D-Ribulose-5-phosphate	C00199	4151-19-3	negative	(M-H)-	140.1835		N2		
+C6H14NO8P	259.0457	D-Glucosamine 6-Phosphate	C00352	3616-42-0	positive	(M+H)+	155.7333		N2		
+C6H14NO8P	259.0457	D-Glucosamine 6-Phosphate	C00352	3616-42-0	positive	(M+Na)+	160.5		N2		
+C6H14NO8P	259.0457	D-Glucosamine 6-Phosphate	C00352	3616-42-0	negative	(M-H)-	150		N2		
+C6H13O9P	260.0291	D-Glucose 6-phosphate	C03251	56-73-5	positive	(M+Na)+	160.63		N2		
+C6H13O9P	260.0291	D-Glucose 6-phosphate	C03251	56-73-5	negative	(M-H)-	148.625		N2		
+C6H13O9P 	260.0297	D-Fructose 6-Phosphate	C00085	643-13-0	positive	(M+Na)+	155.6		N2		
+C6H13O9P 	260.0297	D-Fructose 6-Phosphate	C00085	643-13-0	negative	(M-H)-	146.8165		N2		
+C6H13O9P	260.0291	D-Glucose-1-phosphate	C00103	59-56-3	positive	(M+Na)+	160.85835		N2		
+C6H13O9P	260.0291	D-Glucose-1-phosphate	C00103	59-56-3	negative	(M-H)-	150.5335		N2		
+C10H18O9	282.0951	Xylobiose	C01630	6860-47-5	positive	(M+Na)+	165.08335		N2		
+C10H18O9	282.0951	Xylobiose	C01630	6860-47-5	negative	(M-H)-	163.733		N2		
+C22H18O6	340.0254	D-Fructose 1,6 Bisphosphate	C05378	38099-82-0	negative	(M-H)-	156.667		N2		
+C6H13O10P	276.0246	6-Phosphogluconic acid	C00345	921-62-0	positive	(M+Na)+	166.2667		N2		
+C6H13O10P	276.0246	6-Phosphogluconic acid	C00345	921-62-0	negative	(M-H)-	144.97		N2		
+C12H22O11	342.1162	Cellobiose	C00185	528-50-7	positive	(M+Na)+	177.7		N2		
+C12H22O11	342.1162	Cellobiose	C00185	528-50-7	negative	(M-H)-	166.967		N2		
+C12H22O11	342.1162	Beta-Gentiobiose	C08240	554-91-6	positive	(M+Na)+	180.0667		N2		
+C12H22O11	342.1162	Beta-Gentiobiose	C08240	554-91-6	negative	(M-H)-	177.4		N2		
+C12H22O11	342.1162	Isomaltose	C00252	499-40-1	positive	(M+Na)+	177.0667		N2		
+C12H22O11	342.1162	Isomaltose	C00252	499-40-1	negative	(M-H)-	179.8		N2		
+C12H22O11	342.1162	Lactulose	C07064	4618-18-2	positive	(M+Na)+	179.3333		N2		
+C12H22O11	342.1162	2a-Mannobiose		15548-39-7	positive	(M+Na)+	173.9		N2		
+C12H22O11	342.1162	D-Maltose	C00208	69-79-4	positive	(M+Na)+	180.9		N2		
+C12H22O11	342.1162	D-Maltose	C00208	69-79-4	negative	(M-H)-	189.533		N2		
+C12H22O11	342.1162	Maltulose	C19633	17606-72-3	positive	(M+Na)+	180.3		N2		
+C12H22O11	342.1162	Maltulose	C19633	17606-72-3	negative	(M-H)-	179.633		N2		
+C12H22O11	342.1162	Melibiose	C05402	585-99-9	positive	(M+Na)+	180.1667		N2		
+C12H22O11	342.1162	Melibiose	C05402	585-99-9	negative	(M-H)-	50.4		N2		
+C12H22O11	342.1162	Palatinose 	C01742	13718-94-0	positive	(M+Na)+	176.3667		N2		
+C12H22O11	342.1162	Palatinose 	C01742	13718-94-0	negative	(M-H)-	184.933		N2		
+C12H22O11	342.1162	Sophorose	C08250 	20880-64-2	positive	(M+H)+	176.3333		N2		
+C12H22O11	342.1162	Sophorose	C08250 	20880-64-2	positive	(M+Na)+	181.7667		N2		
+C12H22O11	342.1162	D-Sucrose	C00089	57-50-1	positive	(M+Na)+	173		N2		
+C12H22O11	342.1162	D-Sucrose	C00089	57-50-1	negative	(M-H)-	167.567		N2		
+C12H22O11	342.1162	D-(+)-Trehalose	C01083	99-20-7	positive	(M+Na)+	176.8667		N2		
+C12H22O11	342.1162	D-(+)-Trehalose	C01083	99-20-7	negative	(M-H)-	177.7335		N2		
+C12H22O11	342.1162	D-(+)-Turanose	C19636	547-25-1	positive	(M+Na)+	176.4667		N2		
+C12H23O14P	422.0825	Trehalose 6-Phosphate	C00689	4484-88-2	positive	(M+Na)+	191.4		N2		
+C12H23O14P	422.0825	Trehalose 6-Phosphate	C00689	4484-88-2	negative	(M-H)-	180.567		N2		
+C18H32O16	504.169	Cellotriose	C06219	33404-34-1	positive	(M+Na)+	214.5333		N2		
+C18H32O16	504.169	Cellotriose	C06219	33404-34-1	negative	(M-H)-	207.267		N2		
+C18H32O16	504.169	Isomaltotriose	C02160	3371-50-4	positive	(M+Na)+	209.7		N2		
+C18H32O16	504.169	Isomaltotriose	C02160	3371-50-4	negative	(M-H)-	201.833		N2		
+C18H32O16	504.169	1-Kestose	C03661	470-69-9	positive	(M+Na)+	204.4		N2		
+C18H32O16	504.169	1-Kestose	C03661	470-69-9	negative	(M-H)-	203.7		N2		
+C18H32O16	504.169	Maltotriose	C01835	1109-28-0	positive	(M+Na)+	211.4		N2		
+C18H32O16	504.169	Maltotriose	C01835	1109-28-0	negative	(M-H)-	211.867		N2		
+C18H32O16	504.169	D-(+)-Melezitose	C08243	597-12-6	negative	(M-H)-	202.433		N2		
+C18H32O16	504.169	D-Raffinose	C00492 	512-69-6	positive	(M+Na)+	208.25		N2		
+C18H32O16	504.169	D-Raffinose	C00492 	512-69-6	negative	(M-H)-	197.15		N2		
+C24H42O21	666.2219	Cellotetraose	C02013	38819-01-01	positive	(M+Na)+	223.8		N2		
+C24H42O21	666.2219	Cellotetraose	C02013	38819-01-01	negative	(M-H)-	193.7		N2		
+C24H42O21	666.2219	Maltotetraose	C02052	34612-38-9	positive	(M+Na)+	229.2333		N2		
+C24H42O21	666.2219	Maltotetraose	C02052	34612-38-9	negative	(M-H)-	219.9		N2		
+C24H42O21	666.2219	Mannotetraose		3634-02-04	positive	(M+Na)+	232.8667		N2		
+C24H42O21	666.2219	Mannotetraose		3634-02-04	negative	(M-H)-	222.067		N2		
+C26H45NO21	707.2484	Lacto-N-Neotetraose (LNnT)	G00536	13007-32-4	positive	(M+Na)+	239.3		N2		
+C26H45NO21	707.2484	Lacto-N-Neotetraose (LNnT)	G00536	13007-32-4	negative	(M-H)-	253.367		N2		
+C26H45NO21	707.2484	Lacto-N-Tetraose (LNT)	G00395	14116-68-8	positive	(M+Na)+	237.9		N2		
+C26H45NO21	707.2484	Lacto-N-Tetraose (LNT)	G00395	14116-68-8	negative	(M-H)-	239.6		N2		
+C30H52O26	828.2747	Cellopentaose	C06218	2240-27-9	positive	(M+H)+	250.6333		N2		
+C30H52O26	828.2747	Cellopentaose	C06218	2240-27-9	positive	(M+Na)+	249.7		N2		
+C30H52O26	828.2747	Cellopentaose	C06218	2240-27-9	negative	(M-H)-	245.967		N2		
+C30H52O26	828.2747	Maltopentaose	G00343	34620-76-3	positive	(M+Na)+	255.6667		N2		
+C30H52O26	828.2747	Maltopentaose	G00343	34620-76-3	negative	(M-H)-	254.7		N2		
+C30H52O26	828.2747	3alpha,6alpha-Mannopentaose 	G07153	112828-69-0  	positive	(M+Na)+	258.9333		N2		
+C30H52O26	828.2747	3alpha,6alpha-Mannopentaose 	G07153	112828-69-0  	negative	(M-H)-	250.8		N2		
+C30H52O26	828.2747	1,4-beta-D-Mannopentaose 	G00556	70281-35-5	positive	(M+Na)+	248.7667		N2		
+C30H52O26	828.2747	1,4-beta-D-Mannopentaose 	G00556	70281-35-5	negative	(M-H)-	247.3		N2		
+C32H55NO25	853.3063	Lacto-N-Fucopentaose 1 (LNPF 1)		7578-25-8	positive	(M+Na)+	273.4333		N2		
+C32H55NO25	853.3063	Lacto-N-Fucopentaose 2 (LNPF2)	G00623	21973-23-9	positive	(M+Na)+	267.6		N2		
+C32H55NO25	853.3063	Lacto-N-Fucopentaose 3 (LNPF3)	G01053	25541-09-07	positive	(M+Na)+	266.3667		N2		
+C32H55NO25	853.3063	Lacto-N-Fucopentaose 3 (LNPF3)	G01053	25541-09-07	negative	(M-H)-	276.1		N2		
+C36H62O31	1013.3	Maltohexaose	C01936	34620-77-4	positive	(M+Na)+	278.2		N2		
+C36H62O31	1013.3	Maltohexaose	C01936	34620-77-4	negative	(M-H)-	269.8		N2		
+C40H68N2O31	1072.381	Lacto-N-hexaose (LNH)	G00993	64003-51-6	positive	(M+Na)+	300.35		N2		
+C40H68N2O31	1072.381	Lacto-N-neohexaose (LNnH)	G00555	36824-93-8	positive	(M+Na)+	295.9		N2		
+C29H50O2	430.3805	alpha-Tocopherol	C02477	59-02-9	positive	(M+H)+	214.4		N2		
+C29H50O2	430.3805	alpha-Tocopherol	C02477	59-02-9	negative	(M-H)-	209.60		N2		
+C28H48O2	416.3648	gamma- + -beta-Tocopherol	C02483	54-28-4	positive	(M+H)+	211.1		N2		
+C28H48O2	416.3648	gamma- + -beta-Tocopherol	C02483	54-28-4	negative	(M-H)-	208.63		N2		
+C20H25N7O6	459.186	5-Methyltetrahydrofolate	C00440	134-35-0	positive	(M+H)+	195.9333		N2		
+C20H25N7O6	459.186	5-Methyltetrahydrofolate	C00440	134-35-0	positive	(M+Na)+	198.97		N2		
+C20H25N7O6	459.186	5-Methyltetrahydrofolate	C00440	134-35-0	negative	(M-H)-	198.50		N2		
+C8H10NO6P	247.0246	Pyridoxal 5'-Phosphate	C00018	54-47-7	positive	(M+H)+	152.25		N2		
+C8H10NO6P	247.0246	Pyridoxal 5'-Phosphate	C00018	54-47-7	positive	(M+Na)+	162.6667		N2		
+C8H10NO6P	247.0246	Pyridoxal 5'-Phosphate	C00018	54-47-7	negative	(M-H)-	149.73		N2		
+C6H8N2	108.0687	1,2 Phenylenediamine	C14402	95-54-5	positive	(M+H)+	129.2667		N2		
+C6H7N5	149.0701	1-Methyladenine	C02216	5142-22-3	positive	(M+H)+	127.6667		N2		
+C6H7N5	149.0701	1-Methyladenine	C02216	5142-22-3	negative	(M-H)-	130.267		N2		
+C6H7N5	125.0953	1-Methylhistamine 	C05127	501-75-7	positive	(M+H)+	121.9		N2		
+C5H5NO2	111.032	3,4-Dihydroxypyridine	C02932	10182-48-6	positive	(M+H)+	126.0667		N2		
+C3H7O6P	169.9974	D-Glyceraldehyde 3-Phosphate	C00118	591-57-1	positive	(M+H)+	135.1333		N2		
+C3H7O6P	169.9974	D-Glyceraldehyde 3-Phosphate	C00118	591-57-1	positive	(M+Na)+	149.5667		N2		
+C3H7O6P	169.9974	D-Glyceraldehyde 3-Phosphate	C00118	591-57-1	negative	(M-H)-	127.133		N2		
+C4H6N4O3	158.044	Allantoin	C01551	97-59-6	positive	(M+H)+	147.3000		N2		
+C4H6N4O3	158.044	Allantoin	C01551	97-59-6	positive	(M+Na)+	144.8333		N2		
+C4H6N4O3	158.044	Allantoin	C01551	97-59-6	negative	(M-H)-	127.7		N2		
+C10H18N2O3	214.1317	d-Desthiobiotin	C01909	533-48-2	positive	(M+H)+	145		N2		
+C10H18N2O3	214.1317	d-Desthiobiotin	C01909	533-48-2	positive	(M+Na)+	158.2667		N2		
+C10H18N2O3	214.1317	d-Desthiobiotin	C01909	533-48-2	negative	(M-H)-	157.167		N2		
+C3H7O6P	169.998	Dihydroxyacetone Phosphate	C00111	57-04-5	positive	(M+Na)+	143.3		N2		
+C3H10O6P	172.0136744	sn-Glycerol 3-phosphate	C00093	17989-41-2	positive	(M+Na)+	141.4000		N2		
+C3H10O6P	172.0136744	sn-Glycerol 3-phosphate	C00093	17989-41-2	negative	(M-H)-	130.10		N2		
+C5H4N4O	136.0385	Hypoxanthine	C00262	68-94-0	positive	(M+H)+	135.0667		N2		
+C5H4N4O	136.0385	Hypoxanthine	C00262	68-94-0	positive	(M+Na)+	138.1333		N2		
+C5H4N4O	136.0385	Hypoxanthine	C00262	68-94-0	negative	(M-H)-	125.7		N2		
+C6H12O6	180.0627	Inositol	C00137	87-89-8	positive	(M+Na)+	151.1333		N2		
+C6H12O6	180.0627	Inositol	C00137	87-89-8	negative	(M-H)-	143.5		N2		
+C2H5O5P	139.9875	Acetyl phosphate	C00227	590-54-5	positive	(M+Na)+	124.7667		N2		
+C43H66N12O12S2	1006.436	Oxytocin	C00746	50-56-6	positive	(M+H)+	327.8333		N2		
+C43H66N12O12S2	1006.436	Oxytocin	C00746	50-56-6	negative	(M-H)-	297.367		N2		
+C4H4O4	116.011	Fumaric Acid	C00122	110-17-8	positive	(M+Na)+	132.8667		N2		
+C9H9NO3	179.0582	Hippuric Acid	C01586	495-69-2	positive	(M+H)+	146.0333		N2		
+C9H9NO3	179.0582	Hippuric Acid	C01586	495-69-2	positive	(M+Na)+	153.2333		N2		
+C9H9NO3	179.0582	Hippuric Acid	C01586	495-69-2	negative	(M-H)-	147.433		N2		
+C5H4N4O2	152.0334	Xanthine	C00385	69-89-6	positive	(M+H)+	137.3667		N2		
+C5H4N4O2	152.0334	Xanthine	C00385	69-89-6	positive	(M+Na)+	151.8333		N2		
+C5H4N4O2	152.0334	Xanthine	C00385	69-89-6	negative	(M-H)-	123.7		N2		
+C8H7N	117.0572	Indole	C00463	120-72-9	positive	(M+H)+	84.1		N2		
+C8H7N	117.0572	Indole	C00463	120-72-9	positive	(M+Na)+	48		N2		
+C8H8NO	120.0575	Tyramine	C00483	51-67-2	positive	(M+H)+	122.7667		N2		
+C8H8NO	120.0575	Tyramine	C00483	51-67-2	positive	(M+Na)+	139.2333		N2		
+C7H6O3	138.0311	Salicylic Acid	C00805	69-72-7	negative	(M-H)-	122.7		N2		
+C10H9N	143.0735	Tryptamine	C00398	61-54-1	positive	(M+H)+	127.7333		N2		
+C7H10O5	174.0522	Shikimic Acid	C00493	138-59-0	positive	(M+H)+	148.7		N2		
+C7H10O5	174.0522	Shikimic Acid	C00493	138-59-0	negative	(M-H)-	139.8		N2		
+C9H11NO4	197.0687	3,4-Dihydroxy-L-phenylalanine	C00355	59-92-7	positive	(M+H)+	153.4667		N2		
+C9H11NO4	197.0687	3,4-Dihydroxy-L-phenylalanine	C00355	59-92-7	positive	(M+Na)+	150.3		N2		
+C9H11NO4	197.0687	3,4-Dihydroxy-L-phenylalanine	C00355	59-92-7	negative	(M-H)-	143.5		N2		
+C11H12N2O3	220.0841	5-Hydroxy-L-Tryptophan	C00643	4350-09-8	positive	(M+H)+	157.0333		N2		
+C11H12N2O3	220.0841	5-Hydroxy-L-Tryptophan	C00643	4350-09-8	positive	(M+Na)+	155.6333		N2		
+C11H12N2O3	220.0841	5-Hydroxy-L-Tryptophan	C00643	4350-09-8	negative	(M-H)-	152.9		N2		
+C9H12O7S	264.0303722	4-Hydroxy-3 Methoxyphenylglycol Sulfate		71324-20-4	negative	(M-H)-	157		N2		
+C9H12O7S	264.0303722	4-Hydroxy-3 Methoxyphenylglycol Sulfate		71324-20-4	positive	(M+K)+	180.4667		N2		
+C6H9NOS	143.0482	4-Methyl-5-Thiazolethanol	C04294	137-00-8	positive	(M+H)+	144.5667		N2		
+C12H13N3O4S	295.0627	N-Acetyl Sulfamethoxazole	C13061	21312-10-7	positive	(M+H)+	170.5333		N2		
+C12H13N3O4S	295.0627	N-Acetyl Sulfamethoxazole	C13061	21312-10-7	positive	(M+Na)+	177.5667		N2		
+C12H13N3O4S	295.0627	N-Acetyl Sulfamethoxazole	C13061	21312-10-7	negative	(M-H)-	171.133		N2		
+C3H5O6P	167.982376	Phosphoenol Pyruvic Acid 	C00074	138-08-9	negative	(M-H)-	163.4		N2		
+C9H12O4	184.0736	rac 4-hydroxy-3-methoxyphenylethylene glycol	C05594	534-82-7	positive	(M+Na)+	158.2		N2		
+C3H8O3	92.04734	Glycerol	C00116	56-81-5	positive	(M+H)+	136.4333		N2		
+C9H15O6P	250.060622	Tris (2-carboxyethyl) Phosphine		5961-85-3	negative	(M-H)-	148.833		N2		
+C11H13NO3	207.0895	N-(3-Phenylpropionyl)Glycine		56613-60-6	positive	(M+H)+	148.6667		N2		
+C11H13NO3	207.0895	N-(3-Phenylpropionyl)Glycine		56613-60-6	positive	(M+Na)+	149.8		N2		
+C23H38N7O17P3S	809.1257688	Acetyl coenzyme A	C00024	72-89-9	positive	(M+H)+	248.4667		N2		
+C23H38N7O17P3S	809.1257688	Acetyl coenzyme A	C00024	72-89-9	positive	(M+Na)+	261.6667		N2		
+C23H46O2	354.3498	Methyl Behenate		929-77-1	positive	(M+H)+	119.3333		N2		
+C23H46O2	354.3498	Methyl Behenate		929-77-1	negative	(M-H)-	155.3		N2		
+C19H34O2	294.2559	Methyl Linoleate		112-63-0	positive	(M+H)+	186.2		N2		
+C19H34O2	294.2559	Methyl Linoleate		112-63-0	positive	(M+Na)+	186.0667		N2		
+C19H34O2	294.2559	Methyl Linoleate		112-63-0	negative	(M-H)-	182.2		N2		
+C25H50O2	382.3811	Methyl Tetracosanoate		2442-49-1	positive	(M+H)+	186.5333		N2		
+C7H11NO3	157.0739	Tiglyl Glycine		35842-45-6	positive	(M+Na)+	145.9		N2		
+C7H11NO3	157.0739	Tiglyl Glycine		35842-45-6	negative	(M-H)-	142.167		N2		
+H4P2O7	177.9432	Pyrophosphoric Acid	C00013	2466-09-03	positive	(M+Na)+	144.8		N2		
+C10H18N4O6	290.122	Argininosuccinic acid	C03406	‎2387-71-5 	positive	(M+H)+	166.5		N2		
+C10H18N4O6	290.122	Argininosuccinic acid	C03406	‎2387-71-5 	positive	(M+Na)+	171.3		N2		
+C10H18N4O6	290.122	Argininosuccinic acid	C03406	‎2387-71-5 	negative	(M-H)-	168.167		N2		
+C6H11NO4	161.0688	DL-2-Aminoadipic Acid	C00956	542-32-5	negative	(M-H)-	131.4		N2		
+C9H8O2	148.0524	Cinnamic acid	C00423	140-10-3	positive	(M+H)+	144.5333		N2		
+C9H8O2	148.0524	Cinnamic acid	C00423	140-10-3	negative	(M-H)-	96.27		N2		
+C6H6O6	174.0164	Cis-Aconitic acid	C00417	585-84-2	positive	(M+H)+	151.4		N2		
+C6H6O6	174.0164	Cis-Aconitic acid	C00417	585-84-2	positive	(M+Na)+	146		N2		
+C6H6O6	174.0164	Cis-Aconitic acid	C00417	585-84-2	negative	(M-H)-	131.67		N2		
+C6H6O6	174.0164	Trans-Aconitic acid	C02341	4023-65-8	positive	(M+H)+	152.2		N2		
+C6H6O6	174.0164	Trans-Aconitic acid	C02341	4023-65-8	positive	(M+Na)+	148.3333		N2		
+C6H6O6	174.0164	Trans-Aconitic acid	C02341	4023-65-8	negative	(M-H)-	131.17		N2		
+C6H8O7	192.0263	Citric Acid	C00158	77-92-9	positive	(M+Na)+	146.008325		N2		
+C6H8O7	192.0263	Citric Acid	C00158	77-92-9	negative	(M-H)-	128.9		N2		
+C7H10O4	158.0579	4,6-Dioxoheptanoic Acid	C10111	51568-18-4	positive	(M+Na)+	138.7		N2		
+C7H10O4	158.0579	4,6-Dioxoheptanoic Acid	C10111	51568-18-4	negative	(M-H)-	130.733		N2		
+C10H11NO3	193.0739	2-Methylhippuric Acid		42013-20-7	positive	(M+Na)+	155.7667		N2		
+C10H11NO3	193.0739	2-Methylhippuric Acid		42013-20-7	negative	(M-H)-	152.83		N2		
+C4H8O3	104.0473	2-Hydroxybutyric acid	C05984	600-15-7	negative	(M-H)-	124		N2		
+C8H8O3	152.0473	4-Hydroxyphenylacetic acid	C00642	156-38-7	negative	(M-H)-	134.5		N2		
+C9H8O4	180.0423	4-Hydroxyphenylpyruvic acid	C01179	156-39-8	negative	(M-H)-	144.967		N2		
+C6H8O7	192.0263	Isocitric Acid	C00311	320-77-4	positive	(M+Na)+	145.91665		N2		
+C6H8O7	192.0263	Isocitric Acid	C00311	320-77-4	negative	(M-H)-	129.9886667		N2		
+C9H10O4	182.0579	Homovanillic acid	C05582	306-08-1	positive	(M+Na)+	148.7667		N2		
+C9H10O4	182.0579	Homovanillic acid	C05582	306-08-1	negative	(M-H)-	140		N2		
+C10H9NO2	175.0633	3-Indoleacetic Acid	C00954	87-51-4	positive	(M+H)+	137.3667		N2		
+C10H9NO2	175.0633	3-Indoleacetic Acid	C00954	87-51-4	negative	(M-H)-	133.533		N2		
+C6H11NO3	145.0739	Isobutyrylamino Acetic Acid		15926-18-8	negative	(M-H)-	140.4		N2		
+C5H6O5	146.0215	alpha-Ketoglutaric Acid	C00026	328-50-7	negative	(M-H)-	123.767		N2		
+C10H7NO3	189.0426	Kynurenic acid	C01717	492-27-3	positive	(M+H)+	140.2333		N2		
+C10H7NO3	189.0426	Kynurenic acid	C01717	492-27-3	positive	(M+Na)+	153.3000		N2		
+C10H7NO3	189.0426	Kynurenic acid	C01717	492-27-3	negative	(M-H)-	136.567		N2		
+C3H6O3	90.03169	L-Lactic acid	C01432	79-33-4	negative	(M-H)-	119.7		N2		
+C4H6O5	134.0215	L-Malic Acid	C00711	97-67-6	positive	(M+H)+	136.3		N2		
+C4H6O5	134.0215	L-Malic Acid	C00711	97-67-6	negative	(M-H)-	118.233		N2		
+C6H12O4	148.0736	Mevalonic acid	C00418	17817-88-8	positive	(M+Na)+	136.9667		N2		
+C6H12O4	148.0736	Mevalonic acid	C00418	17817-88-8	negative	(M-H)-	133.267		N2		
+C6H14O10P2	308.0062	Mevalonic Acid 5-Pyrophosphate		1492-08-6	negative	(M-H)-	152.40		N2		
+C6H13O7P 	228.0399	Mevalonic Acid 5-Phosphate	C01107	1189-94-2	positive	(M+Na)+	151.4667		N2		
+C6H13O7P 	228.0399	Mevalonic Acid 5-Phosphate	C01107	1189-94-2	negative	(M-H)-	139.267		N2		
+C5H8O3	116.0474	2-Oxovaleric acid	C06255	1821-02-09	positive	(M+Na)+	130.9333		N2		
+C4H4O5	132.0052	Oxaloacetic acid	C00036	328-42-7	positive	(M+H)+	138.7		N2		
+C3H7O7P	185.9923	3-Phosphoglycerate	C00597	2553-59-5	negative	(M-H)-	126.967		N2		
+C3H7O7P	185.9923	2-Phosphoglycerate	C00631	3443-58-1	negative	(M-H)-	124.933		N2		
+C7H12O6	192.0634	Quinic acid	C00296	77-95-2	positive	(M+H)+	145.5667		N2		
+C7H12O6	192.0634	Quinic acid	C00296	77-95-2	positive	(M+Na)+	152.9		N2		
+C7H12O6	192.0634	Quinic acid	C00296	77-95-2	negative	(M-H)-	137.733		N2		
+C7H5NO4	167.0219	Quinolinic acid	C03722	89-00-9	positive	(M+H)+	138.2333		N2		
+C7H5NO4	167.0219	Quinolinic acid	C03722	89-00-9	negative	(M-H)-	129.333		N2		
+C4H6O4	118.0266	Succinic acid	C00042	110-15-6	negative	(M-H)-	119.2		N2		
+C4H9N3O2	131.0694734	Creatine	C00300	57-00-1	positive	(M+H)+	128.3		N2		
+C4H9N3O2	131.0694734	Creatine	C00300	57-00-1	positive	(M+Na)+	136		N2		
+C4H7N3O	113.0583	Creatinine	C00791	60-27-5	positive	(M+H)+	123.2667		N2		
+C4H7N3O	113.0583	Creatinine	C00791	60-27-5	positive	(M+Na)+	132.70		N2		
+C4H7N3O	113.0583	Creatinine	C00791	60-27-5	negative	(M-H)-	120		N2		
+C5H4N4O3	168.0283	Uric Acid	C00366	69-93-2	positive	(M+H)+	145.5667		N2		
+C5H4N4O3	168.0283	Uric Acid	C00366	69-93-2	positive	(M+Na)+	151.2		N2		
+C5H4N4O3	168.0283	Uric Acid	C00366	69-93-2	negative	(M-H)-	128.067		N2		
+C10H14N2	162.1157	Anabasine	C06180	40774-73-0	positive	(M+H)+	139.4333		N2		
+C8H10N2O4	198.0641	L-Mimosine	C04771	500-44-7	positive	(M+H)+	142.7		N2		
+C15H11O6+	287.0556	Cyanidin 	C05905	528-58-5	positive	(M+H)+	171.2		N2		
+C15H11O6+	287.0556	Cyanidin 	C05905	528-58-5	positive	(M+Na)+	125.6333		N2		
+C15H11O6+	287.0556	Cyanidin 	C05905	528-58-5	positive	(M)+	167.433		N2		
+C15H11O7+	303.0505	Delphinidin	C05908	13270-61-6	positive	(M+H)+	170.4333		N2		
+C15H11O7+	303.0505	Delphinidin	C05908	13270-61-6	positive	(M)+	170.433		N2		
+C21H22O11	450.1162	Astilbin	C17449	29838-67-3	positive	(M+H)+	204.7667		N2		
+C21H22O11	450.1162	Astilbin	C17449	29838-67-3	positive	(M+Na)+	211.5		N2		
+C21H22O11	450.1162	Astilbin	C17449	29838-67-3	negative	(M-H)-	197.267		N2		
+C15H10O8	318.0376	Myricetin	C10107	529-44-2	positive	(M+H)+	173.4667		N2		
+C15H10O8	318.0376	Myricetin	C10107	529-44-2	positive	(M+Na)+	192.8667		N2		
+C15H10O8	318.0376	Myricetin	C10107	529-44-2	negative	(M-H)-	56.4333		N2		
+C15H12O5	272.0685	Naringenin	C00509	480-41-1	positive	(M+H)+	167.0667		N2		
+C15H12O5	272.0685	Naringenin	C00509	480-41-1	negative	(M-H)-	166.433		N2		
+C30H18O10	538.09	Amentoflavone	C10018	1617-53-4	positive	(M+H)+	228.9333		N2		
+C30H18O10	538.09	Amentoflavone	C10018	1617-53-4	negative	(M-H)-	216.067		N2		
+C21H22O8	580.1792	Naringin	C10112	10236-47-2	positive	(M+H)+	239.3333		N2		
+C21H22O8	580.1792	Naringin	C10112	10236-47-2	positive	(M+Na)+	232.7667		N2		
+C21H22O8	580.1792	Naringin	C10112	10236-47-2	negative	(M-H)-	216.167		N2		
+C27H30O16	610.1534	Rutin	C05625	153-18-4	positive	(M+H)+	234.9333		N2		
+C27H30O16	610.1534	Rutin	C05625	153-18-4	positive	(M+Na)+	250.2667		N2		
+C27H30O16	610.1534	Rutin	C05625	153-18-4	negative	(M-H)-	234.233		N2		
+C20H20O7	372.1209	Tangeretin	C10190	481-53-8	positive	(M+H)+	186.9		N2		
+C20H20O7	372.1209	Tangeretin	C10190	481-53-8	positive	(M+Na)+	207.0333		N2		
+C16H12O4	268.0736	Formononetin	C00858	485-72-3	positive	(M+Na)+	175.2		N2		
+C16H12O4	268.0736	Formononetin	C00858	485-72-3	negative	(M-H)-	168.133		N2		
+C15H12O6	288.0634	Eriodictyol	C05631	552-58-9	positive	(M+H)+	169.5667		N2		
+C15H12O6	288.0634	Eriodictyol	C05631	552-58-9	positive	(M+Na)+	181.2		N2		
+C15H12O6	288.0634	Eriodictyol	C05631	552-58-9	negative	(M-H)-	169.7		N2		
+C17H15O7+	331.0818	Malvidin	C08716	10463-84-0	positive	(M+H)+	177.6		N2		
+C17H15O7+	331.0818	Malvidin	C08716	10463-84-0	positive	(M)+	179.100		N2		
+C18H16O7	344.0896	5-7-Dihydroxy-3'-4'-5'-Trimethoxyflavone	C19807	18103-42-9	positive	(M+H)+	184.6		N2		
+C18H16O7	344.0896	5-7-Dihydroxy-3'-4'-5'-Trimethoxyflavone	C19807	18103-42-9	positive	(M+Na)+	208.8667		N2		
+C18H16O7	344.0896	5-7-Dihydroxy-3'-4'-5'-Trimethoxyflavone	C19807	18103-42-9	negative	(M-H)-	190.633		N2		
+C15H14O6	290.079	Catechin	C06562	7295-85-4	positive	(M+H)+	164.3		N2		
+C15H14O6	290.079	Catechin	C06562	7295-85-4	positive	(M+Na)+	183.4333		N2		
+C15H14O6	290.079	Catechin	C06562	7295-85-4	negative	(M-H)-	159.1		N2		
+C15H10O6	286.0477	Kaempferol	C05903	520-18-3	positive	(M+H)+	165.1		N2		
+C15H10O6	286.0477	Kaempferol	C05903	520-18-3	positive	(M+Na)+	186.2		N2		
+C15H10O6	286.0477	Kaempferol	C05903	520-18-3	negative	(M-H)-	165.033		N2		
+C16H12O6	302.079	Hesperetin	C10038	520-33-2	positive	(M+H)+	175.6		N2		
+C16H12O6	302.079	Hesperetin	C10038	520-33-2	positive	(M+Na)+	183.4667		N2		
+C16H12O6	302.079	Hesperetin	C10038	520-33-2	negative	(M-H)-	177.533		N2		
+C16H12O7	316.0583	Isorhamnetin	C10084	480-19-3	positive	(M+H)+	172.0333		N2		
+C16H12O7	316.0583	Isorhamnetin	C10084	480-19-3	positive	(M+Na)+	194.8667		N2		
+C16H12O7	316.0583	Isorhamnetin	C10084	480-19-3	negative	(M-H)-	173.667		N2		
+C17H26O10	390.1526	Loganin	C01433	18524-94-2	positive	(M+Na)+	194.6		N2		
+C16H12O5	284.0685	Acacetin	C01470	480-44-4	positive	(M+H)+	166.1667		N2		
+C16H12O5	284.0685	Acacetin	C01470	480-44-4	positive	(M+Na)+	187.6333		N2		
+C16H12O5	284.0685	Acacetin	C01470	480-44-4	negative	(M-H)-	172		N2		
+C24H38N7O19P3S	853.1156	Malonyl-CoA	C00083	524-14-1	negative	(M-H)-	251.7		N2		
+C10H16O	152.1201	Camphor	C00809	76-22-2	positive	(M+H)+	142.0333		N2		
+C10H16O	152.1201	Camphor	C00809	76-22-2	negative	(M-H)-	91.6667		N2		
+C15H26O	222.1984	Farnesol	C01126	4602-84-0	negative	(M-H)-	50.8333		N2		
+C10H18O	154.1358	Cineole	C09844	470-82-6	positive	(M+H)+	126.5333		N2		
+C10H18O	154.1358	Cineole	C09844	470-82-6	positive	(M+Na)+	194.4		N2		
+C15H12O4	256.0736	Isoliquiritigenin	C08650	961-29-5	positive	(M+H)+	164.1667		N2		
+C15H12O4	256.0736	Isoliquiritigenin	C08650	961-29-5	positive	(M+Na)+	186.3667		N2		
+C15H12O4	256.0736	Isoliquiritigenin	C08650	961-29-5	negative	(M-H)-	163.367		N2		
+C9H8O	132.0575	Cinnamaldehyde	C00903	104-55-2	positive	(M+H)+	133.5333		N2		
+C15H10O4	254.0579	Daidzein	C10208	486-66-8	positive	(M+Na)+	172.4		N2		
+C15H10O4	254.0579	Daidzein	C10208	486-66-8	negative	(M-H)-	161.9		N2		
+C15H10O5	270.0528	Genistein	C06563	446-72-0	positive	(M+H)+	162.5333		N2		
+C15H10O5	270.0528	Genistein	C06563	446-72-0	positive	(M+Na)+	176.1333		N2		
+C15H10O5	270.0528	Genistein	C06563	446-72-0	negative	(M-H)-	109.333		N2		
+C16H14O4	270.0892	Pinostrobin	C16419	480-37-5	positive	(M+H)+	163.3667		N2		
+C16H14O4	270.0892	Pinostrobin	C16419	480-37-5	negative	(M-H)-	167.9		N2		
+C9H6O3	162.0317	Umbelliferone	C09315	93-35-6	positive	(M+Na)+	153.6333		N2		
+C9H6O3	162.0317	Umbelliferone	C09315	93-35-6	negative	(M-H)-	129.867		N2		
+C16H12O5	284.0685	Prunetin	C10521	552-59-0	positive	(M+H)+	165.3667		N2		
+C16H12O5	284.0685	Prunetin	C10521	552-59-0	positive	(M+Na)+	180.4667		N2		
+C16H12O5	284.0685	Prunetin	C10521	552-59-0	negative	(M-H)-	174.233		N2		
+C5H12O5	152.0685	Xylitol	C00379	87-99-0	positive	(M+Na)+	140.0333		N2		
+C5H12O5	152.0685	Xylitol	C00379	87-99-0	negative	(M-H)-	127.233		N2		
+C10H16	136.1252	Camphene	C06076	79-92-5	positive	(M+H)+	129.9333		N2		
+C10H16	136.1252	Camphene	C06076	79-92-5	positive	(M+Na)+	132.3		N2		
+C10H16O	152.1201	Thujone	C09906	546-80-5	positive	(M+H)+	141.0667		N2		
+C10H18O	154.1358	Linalool	C03985	78-70-6	positive	(M+Na)+	139.8		N2		
+C17H24O10	388.1369	Secologanin	C01852	19351-63-4	positive	(M+Na)+	190.9333		N2		
+C17H24O10	388.1369	Secologanin	C01852	19351-63-4	negative	(M-H)-	190.567		N2		
+C9H9Br2NO3	336.8949	3,5-Dibromo-L-tyrosine	C03224	300-38-9	positive	(M+H)+	168.8667		N2		
+C9H9Br2NO3	336.8949	3,5-Dibromo-L-tyrosine	C03224	300-38-9	positive	(M+Na)+	162.7333		N2		
+C9H9Br2NO3	336.8949	3,5-Dibromo-L-tyrosine	C03224	300-38-9	negative	(M-H)-	155.60		N2		
+C16H12O5	284.0685	Biochanin A	C00814	491-80-5	negative	(M-H)-	169.5		N2		
+C5H8	68.0626	Isoprene	C16521	78-79-5	positive	(M+Na)+	73.16667		N2		
+C15H20O4	264.1362	Abscisic Acid	C06082	21293-29-8	positive	(M+H)+	159.7		N2		
+C15H20O4	264.1362	Abscisic Acid	C06082	21293-29-8	positive	(M+Na)+	175.2333		N2		
+C15H20O4	264.1362	Abscisic Acid	C06082	21293-29-8	negative	(M-H)-	173.467		N2		
+C5H11NO2	117.079	Betaine	C00719	107-43-7	positive	(M+H)+	167.667		N2		
+C5H11NO2	117.079	Betaine	C00719	107-43-7	positive	(M+Na)+	177.600		N2		
+C5H14NO+	104.1075	Choline	C00114	62-49-7	positive	(M+H)+	119.567		N2		
+C15H10O5	270.0528	Emodin	C10343	518-82-1	positive	(M+H)+	160.4333		N2		
+C15H10O5	270.0528	Emodin	C10343	518-82-1	negative	(M-H)-	156.067		N2		
+C6H6O2	110.0368	Hydroquinone	C00530	123-31-9	positive	(M+H)+	114.033		N2		
+C6H4N4O2	164.0334	Lumazine	C03212	487-21-8	positive	(M+H)+	137.4333		N2		
+C6H4N4O2	164.0334	Lumazine	C03212	487-21-8	positive	(M+Na)+	138.9		N2		
+C6H4N4O2	164.0334	Lumazine	C03212	487-21-8	negative	(M-H)-	127.867		N2		
+C19H18O11	422.0849	Mangiferin	C10077	4773-96-0	positive	(M+H)+	195.5667		N2		
+C19H18O11	422.0849	Mangiferin	C10077	4773-96-0	positive	(M+Na)+	205.2		N2		
+C19H18O11	422.0849	Mangiferin	C10077	4773-96-0	negative	(M-H)-	194.767		N2		
+C11H14O2	178.0994	Methyl Eugenol	C10454	93-15-2	positive	(M+H)+	138.2		N2		
+C11H14O2	178.0994	Methyl Eugenol	C10454	93-15-2	positive	(M+Na)+	159.5		N2		
+C11H14O2	178.0994	Methyl Eugenol	C10454	93-15-2	negative	(M-H)-	132.967		N2		
+C11H12O3	192.0786	Myristicin	C10480	607-91-0	positive	(M+H)+	140.9333		N2		
+C23H22O6	394.1416	Rotenone	C07593	83-79-4	positive	(M+H)+	198.5667		N2		
+C23H22O6	394.1416	Rotenone	C07593	83-79-4	positive	(M+Na)+	212.0333		N2		
+C23H22O6	394.1416	Rotenone	C07593	83-79-4	negative	(M-H)-	201.433		N2		
+C8H10O2	138.0681	Tyrosol	C06044	501-94-0	negative	(M-H)-	137.967		N2		
+C4H4N2O2	112.0273	Uracil	C00106	66-22-8	positive	(M+H)+	127.8		N2		
+C4H4N2O2	112.0273	Uracil	C00106	66-22-8	positive	(M+Na)+	154.6		N2		
+C4H4N2O2	112.0273	Uracil	C00106	66-22-8	negative	(M-H)-	157.233		N2		
+C18H32CaN2O10	476.1683	Calcium Pantothenate	C12276	137-08-6	positive	(M+H)+	203.1667		N2		
+C10H16N2O3S	244.0882	D-Biotin	C00120	58-85-5	positive	(M+H)+	153.3333		N2		
+C10H16N2O3S	244.0882	D-Biotin	C00120	58-85-5	positive	(M+Na)+	163.5667		N2		
+C10H16N2O3S	244.0882	D-Biotin	C00120	58-85-5	negative	(M-H)-	158.867		N2		
+C6H6N2O	122.048	Niacinamide	C00153	98-92-0	positive	(M+H)+	131.1667		N2		
+C6H6N2O	122.048	Niacinamide	C00153	98-92-0	positive	(M+Na)+	149.4333		N2		
+C8H9NO3	167.0582	Pyridoxal 	C00250	65-22-5	positive	(M+H)+	134.7		N2		
+C8H9NO3	167.0582	Pyridoxal 	C00250	65-22-5	negative	(M-H)-	131.8		N2		
+C8H12N2O2	168.0899	Pyridoxamine 	C00534	85-87-0	positive	(M+H)+	135.0667		N2		
+C8H12N2O2	168.0899	Pyridoxamine 	C00534	85-87-0	positive	(M+Na)+	147.7		N2		
+C8H12N2O2	168.0899	Pyridoxamine 	C00534	85-87-0	negative	(M-H)-	139.367		N2		
+C17H20N4O6	376.1383	Riboflavin	C00255	83-88-5	positive	(M+Na)+	198.3333		N2		
+C17H20N4O6	376.1383	Riboflavin	C00255	83-88-5	negative	(M-H)-	188.333		N2		
+C63H88CoN14O14P	1354.567	Vitamin B12	C02823	68-19-9	positive	(M+H)+	199.4667		N2		
+C63H88CoN14O14P	1354.567	Vitamin B12	C02823	68-19-9	negative	(M-H)-	337.167		N2		
+C31H40O2	444.3028	Vitamin K2	D00100	863-61-6	positive	(M+H)+	197.6		N2		
+C20H23N7O7	473.165888	Leucovorin 	D01211	1492-18-8	positive	(M+H)+	197.7333		N2		
+C20H23N7O7	473.165888	Leucovorin 	D01211	1492-18-8	negative	(M-H)-	201.267		N2		
+C12H14N4O2S  	278.0837	Sulfisomidin	D01526	515-64-0	positive	(M+H)+	55.8		N2		
+C12H14N4O2S  	278.0837	Sulfisomidin	D01526	515-64-0	positive	(M+Na)+	179.1667		N2		
+C12H14N4O2S  	278.0837	Sulfisomidin	D01526	515-64-0	negative	(M-H)-	169.633		N2		
+C10H8	128.0626	Naphthalene	C00829	91-20-3	positive	(M+H)+	119.63		N2		
+C11H10	142.0783	1-methylnaphthalene	C14082	90-12-0	positive	(M+H)+	124.53		N2		
+C11H10	142.0783	2-methylnaphthalene	C14098	91-57-6	positive	(M+H)+	123.9		N2		
+C12H8	152.0626	Acenaphthylene		208-96-8	positive	(M+H)+	125.03		N2		
+C12H12	156.0939	1, 2-Dimethylnaphthalene	C14329	573-98-8	positive	(M+H)+	130.23		N2		
+C12H12	156.0939	1,6-Dimethylnaphthalene	C14217	575-43-9	positive	(M+H)+	129.43		N2		
+C12H12	156.0939	2, 7-Dimethylnaphthalene		582-16-1	positive	(M+H)+	130.3		N2		
+C13H8O	180.0575	Perinaphthenon		548-39-0	positive	(M+H)+	133.87		N2		
+C12H6O2	182.0368	Acenaphthenequinone	C02807	82-86-0	positive	(M+H)+	144.73		N2		
+C15H12	192.0939	2-Methylanthracene		613-12-7	positive	(M+H)+	137.87		N2		
+C16H10	202.0783	Pyrene	C14335	129-00-0	positive	(M+H)+	137.23		N2		
+C20H12	202.0783	Fluoranthene	C19425	206-44-0	positive	(M+H)+	138.1		N2		
+C16H14	206.1095	2, 3-Dimethylanthracene		613-06-9	positive	(M+H)+	145.37		N2		
+C16H14	206.1095	3,6-Dimethylphenanthrene		1576-67-6	positive	(M+H)+	144.8		N2		
+C14H8O2	208.0524	Anthraquinone	C16207	84-65-1	positive	(M+H)+	141.13		N2		
+C17H10O	230.0732	Benzanthrone		82-05-3	positive	(M+H)+	144.93		N2		
+C16H8O2	232.0524	Pyrene-4,5 dione	C18251	6217-22-7	positive	(M+H)+	143.53		N2		
+C20H12	252.0939	Benz(j)aceanthrylene	C19195	202-33-5	positive	(M+H)+	154.25		N2		
+C20H12	252.0939	Benzo(k)fluoranthene	C14321	207-08-9	positive	(M+H)+	153.53		N2		
+C20H12	252.0939	Benzo(a)Pyrene	C07535	50-32-8	positive	(M+H)+	151.23		N2		
+C18H10O2	258.0681	5, 12-naphthacene quinone		1090-13-7	positive	(M+H)+	156.7		N2		
+C22H12	276.0939	Benzo(g,h,i)perylene	C14318	191-24-2	positive	(M+H)+	156.47		N2		
+C22H12	276.0939	Indeno(1,2,3-cd)pyrene	C19251	193-39-5	positive	(M+H)+	158.8		N2		
+C24H14	302.1095	Dibenzo(a,h)pyrene	C19222	189-64-0	positive	(M+H)+	165.6		N2		
+C26H16	302.1095	Dibenzochrysene		191-68-4	positive	(M+H)+	165.8		N2		
+C8H14ClN5	215.0931	Atrazine	C06551	1912-24-9	positive	(M+H)+	149.9333		N2		
+C9H10Cl2N2O	232.0164	Diuron	C18428	330-54-1	positive	(M+H)+	152.5		N2		
+C9H10Cl2N2O	232.0164	Diuron	C18428	330-54-1	positive	(M+Na)+	161.8333		N2		
+C9H10Cl2N2O	232.0164	Diuron	C18428	330-54-1	negative	(M-H)-	149.067		N2		
+C16H20FN5	301.1703	Indaziflam		950782-86-2	positive	(M+H)+	168.3667		N2		
+C16H20FN5	301.1703	Indaziflam		950782-86-2	positive	(M+Na)+	173.6667		N2		
+C16H20FN5	301.1703	Indaziflam		950782-86-2	negative	(M-H)-	179.7		N2		
+C13H15N3O3	261.1113	Imazapyr		81334-34-1	positive	(M+H)+	156.9667		N2		
+C13H15N3O3	261.1113	Imazapyr		81334-34-1	positive	(M+Na)+	175.1333		N2		
+C13H15N3O3	261.1113	Imazapyr		81334-34-1	negative	(M-H)-	164.067		N2		
+C5H12NO4P	181.0503	Glufosinate	C05042	51276-47-2	positive	(M+H)+	139.4		N2		
+C5H12NO4P	181.0503	Glufosinate	C05042	51276-47-2	positive	(M+Na)+	141.9333		N2		
+C5H12NO4P	181.0503	Glufosinate	C05042	51276-47-2	negative	(M-H)-	134.7		N2		
+C3H8NO5P	169.014	Glyphosate	C01705	1071-83-6	positive	(M+Na)+	141.3		N2		
+C14H20ClNO2	269.1183	Acetochlor	C10925	34256-82-1	positive	(M+H)+	159.2333		N2		
+C14H20ClNO2	269.1183	Acetochlor	C10925	34256-82-1	positive	(M+Na)+	173.6667		N2		
+C6H3Cl3N2O2	239.926	Picloram	C14310	1918-02-01	positive	(M+H)+	142.0667		N2		
+C6H3Cl3N2O2	239.926	Picloram	C14310	1918-02-01	positive	(M+Na)+	155.5333		N2		
+C6H3Cl3N2O2	239.926	Picloram	C14310	1918-02-01	negative	(M-H)-	136.133		N2		
+C13H15ClN6O7S	434.0411	Halosulfuron-methyl	C18442	100784-20-1	positive	(M+H)+	195.4333		N2		
+C13H15ClN6O7S	434.0411	Halosulfuron-methyl	C18442	100784-20-1	positive	(M+Na)+	200.3333		N2		
+C13H15ClN6O7S	434.0411	Halosulfuron-methyl	C18442	100784-20-1	negative	(M-H)-	194.3		N2		
+C10H19N5S	241.1361	Terbutryn	C18811	886-50-0	positive	(M+H)+	160.3667		N2		
+C8H6Cl2O3	219.9694	Dicamba	C18597	1918-00-9	positive	(M+Na)+	156.3667		N2		
+C15H22ClNO2	283.1339	Metolachlor	C10953	51218-45-2	positive	(M+H)+	160.6		N2		
+C15H22ClNO2	283.1339	Metolachlor	C10953	51218-45-2	positive	(M+Na)+	174.9		N2		
+C12H20N4O2	252.1586	Hexazinone	C10926	51235-04-02	positive	(M+H)+	162.3		N2		
+C12H20N4O2	252.1586	Hexazinone	C10926	51235-04-02	positive	(M+Na)+	178.5333		N2		
+C13H19N3O4	281.1376	Pendimethalin	C11019	40487-42-1	positive	(M+H)+	161.7333		N2		
+C13H19N3O4	281.1376	Pendimethalin	C11019	40487-42-1	positive	(M+Na)+	186.7667		N2		
+C13H19N3O4	281.1376	Pendimethalin	C11019	40487-42-1	negative	(M-H)-	166.567		N2		
+C19H16ClNO4	357.0768	Indomethacin	C01926	53-86-1	positive	(M+H)+	182.5667		N2		
+C19H16ClNO4	357.0768	Indomethacin	C01926	53-86-1	positive	(M+Na)+	194.9333		N2		
+C10H10O4	194.0579	Monoethyl Phthalate		2306-33-4	positive	(M+Na)+	154.8333		N2		
+C10H10O4	194.0579	Monoethyl Phthalate		2306-33-4	negative	(M-H)-	147.433		N2		
+C12H14N4O2S	278.0837	Sulfamethazine	C19530	57-68-1	positive	(M+Na)+	175.1333		N2		
+C12H14N4O2S	278.0837	Sulfamethazine	C19530	57-68-1	negative	(M-H)-	167.733		N2		
+C9H13N3O5	243.085522	Cytidine	C00475	65-46-3	positive	(M+H)+	154.4		N2		
+C9H13N3O5	243.085522	Cytidine	C00475	65-46-3	positive	(M+Na)+	163.5		N2		
+C9H13N3O5	243.085522	Cytidine	C00475	65-46-3	negative	(M-H)-	152.43		N2		
+C11H12N2O2	204.089878	D-Tryptophan	C00525	153-94-6	positive	(M+H)+	154.3		N2		
+C11H12N2O2	204.089878	D-Tryptophan	C00525	153-94-6	positive	(M+Na)+	150.5		N2		
+C11H12N2O2	204.089878	D-Tryptophan	C00525	153-94-6	negative	(M-H)-	156.93		N2		
+C9H13NO3	183.089544	-(-)- Epinephrine	C00788	51-43-4	positive	(M+H)+	144.9		N2		
+C9H13NO3	183.089544	-(-)- Epinephrine	C00788	51-43-4	negative	(M-H)-	144.4		N2		
+C19H19N7O6	441.139683	Folic Acid	C00504	59-30-3	positive	(M+H)+	195.6		N2		
+C19H19N7O6	441.139683	Folic Acid	C00504	59-30-3	positive	(M+Na)+	205.3		N2		
+C19H19N7O6	441.139683	Folic Acid	C00504	59-30-3	negative	(M-H)-	194.33		N2		
+C2H7NO3S	125.014666	Taurine	C00245	107-35-7	negative	(M-H)-	122.07		N2		
+C15H24N2O17P2	566.055029	UDP-Galactose	C00029	133-89-1	negative	(M-H)-	211.5		N2		
+C10H13N5O4	267.096755	Adenosine	C00212	58-61-7	positive	(M+H)+	156.7		N2		
+C10H13N5O4	267.096755	Adenosine	C00212	58-61-7	positive	(M+Na)+	173		N2		
+C10H13N5O4	267.096755	Adenosine	C00212	58-61-7	negative	(M-H)-	161.8		N2		
