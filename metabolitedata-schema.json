@@ -14,11 +14,14 @@
       "type": "string"
     },
     {
-      "constraints": {
-      },
-      "description": "ID",
-      "name": "cid",
-      "type": "number"
+      "description": "Id from catalog where chemical was purchased",
+      "name": "Catalog",
+      "type": "string"
+    },
+    {
+      "description": "The company where the chemical was purchased",
+      "name": "Company",
+      "type": "string"
     },
     {
       "constraints": {
@@ -29,14 +32,15 @@
       "type": "string"
     },
     {
-      "description": "Inchi key for metabolite",
-      "name": "InChi Key",
-      "missingValues": [""],
-      "type": "string"
+      "constraints": {
+      },
+      "description": "ID",
+      "name": "cid",
+      "type": "number"
     },
     {
-      "description": "Name metabolite",
-      "name": "name",
+      "description": "Inchi key for metabolite",
+      "name": "InChi",
       "missingValues": [""],
       "type": "string"
     },
@@ -54,16 +58,6 @@
       "description": "ID",
       "missingValues": [""],
       "name": "cas",
-      "type": "string"
-    },
-    {
-      "description": "Id from catalog where chemical was purchased",
-      "name": "Catalog",
-      "type": "string"
-    },
-    {
-      "description": "The company where the chemical was purchased",
-      "name": "Company",
       "type": "string"
     },
     {
@@ -131,24 +125,6 @@
       "missingValues": ["N/A"]
     },
     {
-      "description": "Mass plus potassium",
-      "name": "mPlusK",
-      "type": "number",
-      "missingValues": ["N/A"]
-    },
-    {
-      "description": "Mass plus potassium collision cross section",
-      "name": "mPlusKCCS",
-      "type": "number",
-      "missingValues": ["N/A"]
-    },
-    {
-      "description": "Mass plus potassium relative standard deviation",
-      "name": "mPlusKRSD",
-      "type": "number",
-      "missingValues": ["N/A"]
-    },
-    {
       "description": "Mass plus Dot",
       "name": "mPlusDot",
       "type": "number",
@@ -166,24 +142,6 @@
       "type": "number",
       "missingValues": ["N/A"]
     },
-    {
-      "description": "Mass plus",
-      "name": "mPlus",
-      "type": "number",
-      "missingValues": ["N/A"]
-    },
-    {
-      "description": "Mass plus collision cross section",
-      "name": "mPlusCCS",
-      "type": "number",
-      "missingValues": ["N/A"]
-    },
-    {
-      "description": "Mass plus relative standard deviation",
-      "name": "mPlusRsd",
-      "type": "number",
-      "missingValues": ["N/A"]
-    }
   ],
   "primaryKey": "cas"
 }
