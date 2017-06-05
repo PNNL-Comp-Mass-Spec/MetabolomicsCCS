@@ -52,7 +52,6 @@
     },
     {
       "constraints": {
-        "unique": true,
         "required": true
       },
       "description": "ID",
