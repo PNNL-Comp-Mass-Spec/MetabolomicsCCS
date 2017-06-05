@@ -1,4 +1,4 @@
-main_class	subclass	Catalog	Company	KEGG	CID	InChi	Neutral Name	cas	formula	mass	mPlusH	mPlusHCCS	mPlusHRsd	mPlusNa	mPlusNaCCS	mPlusNaRsd	mMinusH	mMinusHCCS	mMinusHRsd	mPlusDot	mPlusDotCCS	mPlusDotRSD
+main_class	subclass	Catalog	Company	kegg	cid	InChi	Neutral Name	cas	formula	mass	mPlusH	mPlusHCCS	mPlusHRsd	mPlusNa	mPlusNaCCS	mPlusNaRsd	mMinusH	mMinusHCCS	mMinusHRsd	mPlusDot	mPlusDotCCS	mPlusDotRSD
 Primary Metabolite	Amino Acid	H54409	Sigma-Aldrich	C01157	5810	PMMYEEVYMWASQN-DMTCNVIQSA-N	Trans-4-Hydroxy-L-proline	51-35-4	C5H9NO3	131.0576	132.0655	130.23	0.51	154.0473	N/A	N/A	130.0496	N/A	N/A			
 Primary Metabolite	Amino Acid	sc-215594	Santa Cruz Biotechnology		99715	HXFOXFJUNFFYMO-BYPYZUCNSA-N	N-Alpha-Acetyl-L-Asparagine	4033-40-3	C6H10N2O4	174.0634	175.0713	N/A	N/A	197.0532	N/A	N/A	173.0555	137.87	0.45			
 Primary Metabolite	Amino Acid	A7007	Sigma-Aldrich	C00019	34755	MEFKEPWMEQBLKI-AIRLBKTGSA-N	S-Adenosyl-L-methionine	29908-03-0	C15H22N6O5S	398.1371	399.1451	186.46	0.25	421.1269	N/A	N/A	397.1292	N/A	N/A			
