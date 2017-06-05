@@ -15,7 +15,6 @@
     },
     {
       "constraints": {
-        "unique": true
       },
       "description": "ID",
       "name": "cid",
@@ -23,7 +22,6 @@
     },
     {
       "constraints": {
-        "unique": true
       },
       "description": "ID",
       "missingValues": [""],
@@ -146,7 +144,7 @@
     },
     {
       "description": "Mass plus potassium relative standard deviation",
-      "name": "mPlusKRsd",
+      "name": "mPlusKRSD",
       "type": "number",
       "missingValues": ["N/A"]
     },
