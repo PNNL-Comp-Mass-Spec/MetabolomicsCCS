@@ -1,3 +1,4 @@
+const githubRepositoryBase = 'https://raw.githubusercontent.com/PNNL-Comp-Mass-Spec/MetabolomicsCCS/master/';
 /**
 * Event handler for when an error occures when loading a strcuture image from
 * PubChem.
@@ -7,7 +8,7 @@ function imageError(img) { // eslint-disable-line no-unused-vars
   if(img.imgError) {
     clearTimeout(img.imgError);
     img.onerror=null;
-    img.src='/metaboliteResources/images/default.jpg';
+    img.src= githubRepositoryBase + 'metaboliteResources/images/default.jpg';
   } else {
     img.imgError = setTimeout(function() {
       img.src = img.src+'?'+ new Date().getTime();
@@ -66,6 +67,8 @@ $(document).ready(function() {
     if(isNaN(parseFloat(d.mPlusHCCS)) &&
       isNaN(parseFloat(d.mPlusNaCCS)) &&
       isNaN(parseFloat(d.mMinusHCCS)) &&
+      isNaN(parseFloat(d.mPlusKCCS)) &&
+      isNaN(parseFloat(d.mPlusCCS)) &&
       isNaN(parseFloat(d.mPlusDotCCS)))
         return false;
     return true;
@@ -90,15 +93,27 @@ $(document).ready(function() {
     return a==b?0:a>b?1:-1;
   }
   /**
+  * @param {object} display
+  * @param {object} value
+  * @return {string}
+  */
+  function ccsString(display, value) {
+    if(value)
+      return display + ': ' + parseNumber(value)+'<br>';
+    return '';
+  }
+  /**
   * Formats collision cross section for display in table cell.
   * @param {object} d Data object from table.
   * @return {string} the collision cross section formated for display
   */
   function getCCS(d) {
-    return columns.mPlusH + ': ' + parseNumber(d.mPlusHCCS) + '<br>'
-      + columns.mPlusNa + ': ' + parseNumber(d.mPlusNaCCS) + '<br>'
-      + columns.mMinusH + ': ' + parseNumber(d.mMinusHCCS) + '<br>'
-      + columns.mPlusDot + ': ' + parseNumber(d.mPlusDotCCS);
+    return ccsString(columns.mPlusH, d.mPlusHCCS)
+      + ccsString(columns.mPlusNa, d.mPlusNaCCS)
+      + ccsString(columns.mMinusH, d.mMinusHCCS)
+      + ccsString(columns.mPlusK, d.mPlusKCCS)
+      // + ccsString(columns.mPlus, d.mPlusCCS)
+      + ccsString(columns.mPlusDot, d.mPlusDotCCS);
   }
   /**
   * Used with filter function to remove elements from array that don't have a
@@ -119,10 +134,10 @@ $(document).ready(function() {
     return d.class;
   }
   /**
-  * Used with map function to create an array of strings from class property in
-  * all object.
+  * Used with map function to create an array of strings from subclass property
+  * in all object.
   * @param {object} d Data object from table.
-  * @return {string} string from class property in object.
+  * @return {string} string from subclass property in object.
   */
   function mapSubclasses(d) {
     return d.subclass;
@@ -150,14 +165,9 @@ $(document).ready(function() {
       + (d.cid && d.cid.length > 0
         ? 'cid/' + d.cid : 'name/' + encodeURIComponent(d['Neutral Name']))
         + '/PNG" alt="image not found" onerror="imageError(this)"/>';
-    let calculatedMass = MWC.weight(d.formula);
-    if(Math.abs(calculatedMass-parseFloat(d.mass))>1.5) {
-      d['formulaMass']=calculatedMass;
-      massOffset.push(d);
-    }
     return {
       class: d.main_class,
-      subclass: d.subclass,
+      subclass: d.subclass || 'N/A',
       kegg: d.kegg,
       name: d['Neutral Name'],
       cas: d.cas,
@@ -170,16 +180,18 @@ $(document).ready(function() {
   }
   // include moleWeightCalc.js in script to calculate the mass from formula
   let MWC = new MolecularWeightCalculator();
+  let pathwayModal;
   // parses the tsv data file
-  let massOffset = [];
-  d3.tsv('/data/metaboliteTestdata.txt', processTsv, function(err, d) {
+  d3.tsv(githubRepositoryBase+'data/metabolitedata.tsv',
+    processTsv,
+    function(err, d) {
     // if there's an error with reading the file display the error and stop
     // processing the page.
     if (err) {
       console.log(err);
       return;
     }
-    // filter out intries that don't have a collision cross section
+    // filter out entries that don't have a collision cross section
     d = d.filter(hasCCS);
     // create class and subclass list for use with filters
     let classes = d.map(mapClasses)
@@ -337,14 +349,16 @@ $(document).ready(function() {
     };
 
     let compoundList;
+
     // read compound list file
     $.ajax({
-      url: '/metaboliteResources/compoundList.json',
+      url: githubRepositoryBase + 'metaboliteResources/compoundList.json',
+      dataType: 'json',
     }).done(function(d) {
       compoundList = d;
       // read pathway list file
       $.ajax({
-        url: '/metaboliteResources/pathwayList.txt',
+        url: githubRepositoryBase + 'metaboliteResources/pathwayList.txt',
       }).done(function(data) {
         data = data.split('\n')
           .filter(function(line) {
@@ -359,10 +373,16 @@ $(document).ready(function() {
         data.sort(function(a, b) {
           return a.name==b.name?0:a.name>b.name?1:-1;
         });
+
         data = data.filter(function(d) {
           return compoundList[d.path].length>0
             && compoundList[d.path].in(compounds);
         });
+        let pathwayMap = data.reduce(function(a, d) {
+          if(!a.hasOwnProperty(d.path))
+            a[d.path] = d.name;
+          return a;
+        }, {});
         data = [
           {path: '', name: 'No Pathway Filter'},
           {path: 'missing', name: 'KEGG ID Unknown'},
@@ -407,6 +427,25 @@ $(document).ready(function() {
               .append(subclass.map(function(e) {
                 return '<div class="item" data-value="'+e+'">'+e+'</div>';
               }));
+            $('#pathway_modal .content').empty();
+            $('#pathway_modal .header').html(pathwayMap[value]);
+            if(value && value != 'missing') {
+              pathwayModal = new Pathway({
+                pathwayId: value,
+                container: '#pathway_modal .content',
+                tooltip: function(d) {
+                  return d.name + '<br>' + d.CCS;
+                },
+                color: function(d) {
+                  return 'red';
+                },
+                data: filteredData.reduce(function(a, d) {
+                  if(!a.hasOwnProperty(d.kegg))
+                    a[d.kegg] = d;
+                  return a;
+                }, {}),
+              });
+            }
           },
         });
       });
@@ -433,7 +472,8 @@ $(document).ready(function() {
         return '<div class="item" data-value="'+e+'">'+e+'</div>';
       }).join('')
       +'</div>'
-    ).dropdown({
+    )
+    .dropdown({
       onChange: function(value, text, $selectedItem) {
         table.column(0)
           .search(value.replace(/,/g, '|'), true, false)
@@ -477,5 +517,9 @@ $(document).ready(function() {
   $('#downloadDropdown').dropdown();
   $('#helpBtn').on('click', function(evt) {
     $('#help_modal').modal('show');
+  });
+  $('#pathway_btn').on('click', function(evt) {
+    $('#pathway_modal').modal('show');
+    pathwayModal && pathwayModal.showTooltips();
   });
 });

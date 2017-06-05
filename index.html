@@ -6,15 +6,16 @@
 <head>
   <title>PNNL: BTRR Proteomics Resource - Data</title>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <meta name="description" content="A Structural Examination and Collision Cross Section Database for Over 500 Metabolites and Xenobiotics Using Drift Tube Ion Mobility Spectrometry" />
+  <meta name="keywords" content="metabolite, xenobiotic, collision, cross, section, database, ion, mobility, spectrometry, drift, tube, mass, pnnl, emsl" />
+  <meta name="author" content="Ryan Wilson"/>
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.semanticui.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.2/css/fixedHeader.semanticui.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+  <script src="/js/Semantic-UI-CSS-master/semantic.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.semanticui.min.js"></script>
   <script src="https://cdn.datatables.net/fixedheader/3.1.2/js/dataTables.fixedHeader.min.js"></script>
@@ -88,14 +89,15 @@
     <div class="ui menu">
       <a class="item" href="/" title="Back to the home page">Home</a>
       <a id="about_btn" class="item" title="About">About</a>
+      <a id="pathway_btn" class="item" title="View in Pathway">Show Pathway</a>
       <div class="right menu">
         <div id="downloadDropdown" class="ui dropdown icon item">
           Download Data
           <i class="ui dropdown icon"></i>
           <div class="menu">
             <div class="header">Format</div>
-            <a href="/data/metaboliteTestdata.txt" download target="_self" class="item" title="Download"><i class="ui download icon"></i>TSV</a>
-            <a href="/data/metabolitedataAgilent.tsv" download target="_self" class="item" title="Download"><i class="ui download icon"></i>Agilent</a>
+            <a href="https://raw.githubusercontent.com/PNNL-Comp-Mass-Spec/MetabolomicsCCS/master/data/metabolitedata.tsv" download target="_self" class="item" title="Download"><i class="ui download icon"></i>TSV</a>
+            <a href="https://raw.githubusercontent.com/PNNL-Comp-Mass-Spec/MetabolomicsCCS/master/data/metabolitedataAgilent.tsv" download target="_self" class="item" title="Download"><i class="ui download icon"></i>Agilent</a>
           </div>
         </div>
         <a id="helpBtn" class="item icon button"><i class="help icon"></i></a>
@@ -109,7 +111,8 @@
     </div>
     <!--load main javascript -->
     <script src="/js/moleWeightCalc.js"></script>
-    <script src="/js/urineMetabolite.js"></script>
+    <script src="/js/MetabolomicsCCS.js"></script>
+    <script src="/js/pathway.js"></script>
 
   </div>
 
@@ -122,13 +125,13 @@
         (function(i, s, o, g, r, a, m) {
           i['GoogleAnalyticsObject'] = r;
           i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
+            (i[r].q = i[r].q || []).push(arguments);//eslint-disable-line
           }, i[r].l = 1 * new Date();
           a = s.createElement(o),
             m = s.getElementsByTagName(o)[0];
           a.async = 1;
           a.src = g;
-          m.parentNode.insertBefore(a, m)
+          m.parentNode.insertBefore(a, m);
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-444452-2', 'auto');
         ga('send', 'pageview');
@@ -181,27 +184,8 @@
               </a>
             </div>
             <div class="meta">Scientist, Integrative Omics</div>
-            <div class="description">Lead Scientist <a href="https://omics.pnl.gov/staff-page/Baker/Erin">Bio</a></div>
+            <div class="description">Lead Scientist<br><a href="https://omics.pnl.gov/staff-page/Baker/Erin">Bio</a></div>
           </div>
-          <!-- <div class="card">
-            <div class="header">
-              Noor A. Aly
-              <a class="right floated icon button" href="mailto:noor.aly@pnnl.gov">
-                <i class="mail outline icon"></i>
-              </a>
-            </div>
-            <div class="meta">Masters Intern, LTE - IO Prototype</div>
-          </div> -->
-          <!-- <div class="card">
-            <div class="header">
-              Kevin T. Dupuis
-              <a class="right floated icon button" href="mailto:kevin.dupuis@pnnl.gov">
-                <i class="mail outline icon"></i>
-              </a>
-            </div>
-            <div class="meta">Tech Student 2, LTE - IO Prototype</div>
-          </div> -->
-
           <div class="card">
             <div class="header">
               Ryan Wilson
@@ -214,18 +198,14 @@
               Website design and implementation.
             </div>
           </div>
-          <!-- <div class="card">
-            <div class="header">
-              Aivett Bilboa
-              <a class="right floated icon button" href="mailto:aivett.bilbao@pnnl.gov">
-                <i class="mail outline icon"></i>
-              </a>
-            </div>
-            <div class="meta">Post Doctorate RA C, IO Compute</div>
-          </div> -->
         </div>
       </div>
     </div>
+  </div>
+  <div id="pathway_modal" class="ui modal">
+    <i class="close icon"></i>
+    <div class="header"></div>
+    <div class="content"></div>
   </div>
   <div id="help_modal" class="ui modal">
     <i class="close icon"></i>
@@ -255,6 +235,11 @@
         Clicking the subclass will do the same sorting based on subclass, but not class. You can also sort by name, cas number, formula, exact mass, and CCS.
         When sorting, any filters will affect the results of the ordering.
       </div>
+      <div class="ui top attached header">Pathway View</div>
+      <div class="ui bottom attached segment">
+        After selecting a pathway in the pathway filter you can click the view pathway button which will display a pathway with the current CCS data displayed on it. Red highlighting means 
+        the molecule is found in that pathway, when you hover you can see the CCS values for that molecule.
+      </div>
       <div class="ui top attached header">Downloading Data</div>
       <div class="ui bottom attached segment">
         Being able to download the data for this project is very important to us. We want everyone to use this data as a standard for identifying metabolites from the collision cross section.
@@ -263,5 +248,4 @@
     </div>
   </div>
 </body>
-
 </html>
