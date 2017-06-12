@@ -93,13 +93,14 @@ $(document).ready(function() {
     return a==b?0:a>b?1:-1;
   }
   /**
-  * @param {object} display
-  * @param {object} value
-  * @return {string}
+  * Formats ccs information for display
+  * @param {string} display The adduct as a string
+  * @param {float} value The value of the ccs
+  * @return {string} the proper display or an empty string
   */
   function ccsString(display, value) {
     if(value)
-      return display + ': ' + parseNumber(value)+'<br>';
+      return display + ': ' + parseNumber(value) + '<br>';
     return '';
   }
   /**
@@ -213,9 +214,8 @@ $(document).ready(function() {
         data: e,
       };
     });
-    /* eslint new-cap:0*/
     // creates a datatable with tsv data file
-    let table = $('#tablecontainer').DataTable({
+    let table = $('#tablecontainer').DataTable({ // eslint-disable-line
       columns: columnIds,
       deferRender: true,
       fixedHeader: true,
@@ -445,6 +445,8 @@ $(document).ready(function() {
                   return a;
                 }, {}),
               });
+            } else {
+              $('#pathway_modal .content').html('No Pathway Selected');
             }
           },
         });
@@ -484,6 +486,14 @@ $(document).ready(function() {
           if(subclass.indexOf(d.subclass)<0)
             subclass.push(d.subclass);
         });
+        if(pathwayModal) {
+          pathwayModal.data(filteredData.reduce(function(a, d) {
+            if(!a.hasOwnProperty(d.kegg))
+              a[d.kegg] = d;
+            return a;
+          }, {}))
+          .draw();
+        }
         $('#subclassFilter').find('.menu')
           .empty()
           .append(subclass.map(function(e) {
@@ -506,6 +516,15 @@ $(document).ready(function() {
         table.column(1)
           .search(value.replace(/,/g, '|'), true, false)
           .draw();
+        let filteredData = table.rows({filter: 'applied'}).data();
+        if(pathwayModal) {
+          pathwayModal.data(filteredData.reduce(function(a, d) {
+            if(!a.hasOwnProperty(d.kegg))
+              a[d.kegg] = d;
+            return a;
+          }, {}))
+          .draw();
+        }
       },
     });
   });
@@ -515,11 +534,15 @@ $(document).ready(function() {
   });
   // load download dropdown
   $('#downloadDropdown').dropdown();
+  // load help modal when help button clicked
   $('#helpBtn').on('click', function(evt) {
     $('#help_modal').modal('show');
   });
+  // load pathway modal when pathway button clicked
   $('#pathway_btn').on('click', function(evt) {
+    // show modal
     $('#pathway_modal').modal('show');
+    // if pathwayModal exists reinitialize tooltips
     pathwayModal && pathwayModal.showTooltips();
   });
 });

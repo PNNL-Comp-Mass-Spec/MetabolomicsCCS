@@ -1,0 +1,22 @@
+{
+  "extends": "eslint-config-google",
+  "plugins": [
+    "html"
+  ],
+  "settings": {
+    "html/html-extensions": [
+      ".html"
+    ]
+    },
+  "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+  "rules": {
+    "no-invalid-this": 0,
+  }
+}

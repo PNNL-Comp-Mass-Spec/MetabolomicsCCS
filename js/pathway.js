@@ -7,13 +7,14 @@ class Pathway { // eslint-disable-line
    * options = { data: {<kegg ids>: {<any data>},
    *   container: <dom selector>,
    *   pathwayId: <the kegg pathway id>,
-   *   tooltip: <a function that returns html string to display param is the
+   *   tooltip: <a function that returns html string to display. param is the
    *    any data element from options.data.<kegg id>>,
-   *   color: <a function that returns a color param is the
+   *   color: <a function that returns a color. param is the
    *    any data element from options.data.<kegg id> }
    */
   constructor(options) {
     this.options = options;
+    this.options.prevData = {};
     this.keggBase = 'http://rest.kegg.jp/';
     this.getKgml();
   }
@@ -74,7 +75,8 @@ class Pathway { // eslint-disable-line
       newImage.src = src;
     };
 
-    this.svg = d3.select(this.options.container||'body').append('svg');
+    this.svg = d3.select(this.options.container || 'body')
+      .append('svg');
     addImage(this.kgml.find('pathway').attr('image'));
   }
   /**
@@ -273,7 +275,7 @@ class Pathway { // eslint-disable-line
       });
   }
   /**
-  * Uses passed in data to highlight the svg elements when found
+  * Uses passed in data to highlight the svg elements
   */
   highlightData() {
     let _this = this;
@@ -299,7 +301,49 @@ class Pathway { // eslint-disable-line
       });
   }
   /**
-  * to initialize the tooltips
+  * Clears highlights from previous data set
+  */
+  clearHighlight() {
+    let _this = this;
+    _this.svg.selectAll('.entry')
+      .filter(function(d) {
+        return Object.keys(_this.options.prevData)
+          .indexOf(d.parentElement.attributes.name.value.split(':')[1]) >=0;
+      })
+      .attr('data-html', null)
+      .style('fill', 'transparent');
+    _this.highlightsCleared = true;
+  }
+  /**
+  * this function allows the user to change the data
+  * @param {object} data
+  * @return {object}
+  */
+  data(data) {
+    if(!data) {
+      return data;
+    }
+    if(this.highlightsCleared) {
+      this.options.prevData = this.options.data;
+    } else {
+      $.extend(this.options.prevData, this.options.data);
+    }
+    this.options.data = data;
+    return this;
+  }
+  /**
+  * This function will clear and then rehighlight the overlay
+  * @return {object}
+  */
+  draw() {
+    // clear highlights
+    this.clearHighlight();
+    // reapply highlights
+    this.highlightData();
+    return this;
+  }
+  /**
+  * to initialize the tooltips so there is no race conditions
   */
   showTooltips() {
     // tooltips
