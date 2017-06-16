@@ -1,7 +1,8 @@
 const githubRepositoryBase = 'https://raw.githubusercontent.com/PNNL-Comp-Mass-Spec/MetabolomicsCCS/master/';
 /**
-* Event handler for when an error occures when loading a strcuture image from
-* PubChem.
+* Event handler for when an error occurs when loading a strcuture image from
+* PubChem. If error occurs during downloading image it will wait .5 seconds then
+* try again. If another error occurs it will load a default "not found" image.
 * @param {object} img The image element.
 */
 function imageError(img) { // eslint-disable-line no-unused-vars
@@ -186,7 +187,7 @@ $(document).ready(function() {
   d3.tsv(githubRepositoryBase+'data/metabolitedata.tsv',
     processTsv,
     function(err, d) {
-    // if there's an error with reading the file display the error and stop
+    // if there's an error with reading the file, display the error and stop
     // processing the page.
     if (err) {
       console.log(err);
@@ -219,12 +220,12 @@ $(document).ready(function() {
       columns: columnIds,
       deferRender: true,
       fixedHeader: true,
-      dom: '<"ui top attached borderless menu"<"right menu"<"item"'
-        +'<"#pathwayFilter.ui search selection dropdown">><"item"'
-        +'<"#classFilter.ui multiple search selection dropdown">>'
-        +'<"item"<"#subclassFilter.ui multiple search selection dropdown">>'
-        +'<"item"f>>><"ui attached segment"t><"ui bottom attached borderless'
-        +' menu"<"item"l><"item"i><"right menu"<"item"p>>>',
+      dom: '<"#pathwayMenu.ui top attached borderless menu"<"item"<"'
+        +'#pathwayFilter.ui search selection dropdown">>><"ui attached '
+        +'borderless menu"<"right menu"<"item"<"#classFilter.ui multiple search'
+        +' selection dropdown">><"item"<"#subclassFilter.ui multiple search '
+        +'selection dropdown">><"item"f>>><"ui attached segment"t><"ui bottom '
+        +'attached borderless menu"<"item"l><"item"i><"right menu"<"item"p>>>',
       data: d,
       columnDefs: [{
           visible: false,
@@ -360,6 +361,16 @@ $(document).ready(function() {
       $.ajax({
         url: githubRepositoryBase + 'metaboliteResources/pathwayList.txt',
       }).done(function(data) {
+        // load pathway modal when pathway button clicked
+        $('#pathwayMenu')
+          .append('<a id="pathway_btn" class="item">Show Pathway</a>')
+          .find('#pathway_btn')
+          .on('click', function(evt) {
+          // show modal
+          $('#pathway_modal').modal('show');
+          // if pathwayModal exists reinitialize tooltips
+          pathwayModal && pathwayModal.showTooltips();
+        });
         data = data.split('\n')
           .filter(function(line) {
             return line.length>0;
@@ -537,12 +548,5 @@ $(document).ready(function() {
   // load help modal when help button clicked
   $('#helpBtn').on('click', function(evt) {
     $('#help_modal').modal('show');
-  });
-  // load pathway modal when pathway button clicked
-  $('#pathway_btn').on('click', function(evt) {
-    // show modal
-    $('#pathway_modal').modal('show');
-    // if pathwayModal exists reinitialize tooltips
-    pathwayModal && pathwayModal.showTooltips();
   });
 });
