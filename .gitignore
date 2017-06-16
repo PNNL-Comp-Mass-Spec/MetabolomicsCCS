@@ -11,3 +11,4 @@ data/sheetWork.js
 makePathwayCompund.js
 
 data/*Test*
+data/metabolitedata.tsv
