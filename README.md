@@ -23,5 +23,7 @@ To setup the dev environment
 I use [Atom](https://atom.io/) as my text editor with [eslint](https://atom.io/packages/eslint) and [eslint-config-google](https://devhub.io/repos/google-eslint-config-google).
 Please conform to the eslint style guide to keep code consistant and easy to read.
 
+Check [DevReadme](DevReadme.md) for nuances about the code that might not be evedent from the comments.
+
 ## Hosting your own webserver
 After starting the [Mongoose web server](https://www.cesanta.com/) open a modern browser and go to localhost:8080
