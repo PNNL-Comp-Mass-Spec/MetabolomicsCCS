@@ -13,6 +13,8 @@ We use the [Good Tables](http://goodtables.io) data framework for testing data c
 ## Data usage
 This data is publically available, created by [Dr. Erin S. Baker](https://omics.pnl.gov/staff-page/Baker/Erin) with funding from the [National Institutes of Health](http://www.nih.gov) grant R01-ES022190.
 
+Because we are using CAS numbers as a primary id excel sometimes mistakes these as dates if imported as general data. To open in excel, start excel, go to data tab, select get external data from text. Follow the importing process using delimited with tabs, and set the data format for all columns as text, not general.
+
 ## Dev Environment
 
 To setup the dev environment
