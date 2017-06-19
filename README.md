@@ -13,7 +13,12 @@ We use the [Good Tables](http://goodtables.io) data framework for testing data c
 ## Data usage
 This data is publically available, created by [Dr. Erin S. Baker](https://omics.pnl.gov/staff-page/Baker/Erin) with funding from the [National Institutes of Health](http://www.nih.gov) grant R01-ES022190.
 
-Because we are using CAS numbers as a primary id excel sometimes mistakes these as dates if imported as general data. To open in excel, start excel, go to data tab, select get external data from text. Follow the importing process using delimited with tabs, and set the data format for all columns as text, not general.
+Within the dataset, we are using CAS numbers as a primary identifier. If you download the .tsv version of this dataset and try to view within Microsoft Excel there can be some problems, as Excel sometimes mistakes the CAS number as dates if imported as general data. If you want to use Excel to view the data, please follow these instructions.
+- start excel 
+- go to data tab, select get external data from text. 
+- Follow the importing process using delimited with tabs, and set the data format for all columns as text, not general.
+
+This should allow you to see the CAS numbers as "12-23-543" instead of "December 23rd, 543 AD"
 
 ## Dev Environment
 
