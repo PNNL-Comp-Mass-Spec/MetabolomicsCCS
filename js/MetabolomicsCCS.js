@@ -12,6 +12,7 @@ function imageError(img) { // eslint-disable-line no-unused-vars
     img.src= githubRepositoryBase + 'metaboliteResources/images/default.jpg';
   } else {
     img.imgError = setTimeout(function() {
+      // added date to the end will force image to load from source, not cache
       img.src = img.src+'?'+ new Date().getTime();
     }, 500);
   }
@@ -95,7 +96,7 @@ $(document).ready(function() {
   }
   /**
   * Formats ccs information for display
-  * @param {string} display The adduct as a string
+  * @param {string} display The adduct as a string, i.e. (M+H)+
   * @param {float} value The value of the ccs
   * @return {string} the proper display or an empty string
   */
@@ -169,7 +170,7 @@ $(document).ready(function() {
         + '/PNG" alt="image not found" onerror="imageError(this)"/>';
     return {
       class: d.main_class,
-      subclass: d.subclass || 'N/A',
+      subclass: d.subclass || 'Others',
       kegg: d.kegg,
       name: d['Neutral Name'],
       cas: d.cas,
@@ -336,8 +337,8 @@ $(document).ready(function() {
 
     /* eslint no-extend-native:0*/
     /**
-    * Used to check if element from arr is in this array.
-    * @param {array} arr array.
+    * Used to check if an element from arr is in this array.
+    * @param {array} arr array passed in to compare with.
     * @return {boolean} true if element in arr found in this array, false
     * otherwise.
     */
