@@ -24,7 +24,7 @@ This should allow you to see the CAS numbers as "12-23-543" instead of "December
 
 To setup the dev environment
 * clone the repository
-* download [Mongoose web server](https://www.cesanta.com/) or some other web server into the repository's directory
+* download [Mongoose web server](https://www.cesanta.com/products/binary) or some other web server into the repository's directory
 * run server
 
 I use [Atom](https://atom.io/) as my text editor with [eslint](https://atom.io/packages/eslint) and [eslint-config-google](https://devhub.io/repos/google-eslint-config-google).
