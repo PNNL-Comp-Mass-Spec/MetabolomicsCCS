@@ -139,3 +139,37 @@ C6H7N5O	165.0651	7-Methylguanine	C02242	578-76-7	positive	(M+Na)+	149.72		N2
 C6H7N5O	165.0651	7-Methylguanine	C02242	578-76-7	negative	(M-H)-	136.62		N2		
 C9H18O8	254.1002	2-(Beta-Glucosyl)glycerol		10588-30-4	positive	(M+Na)+	160.5		N2		
 C9H18O8	254.1002	2-(Beta-Glucosyl)glycerol		10588-30-4	negative	(M-H)-	157.27		N2		
+C20H34O5	354.2399	11B-PGF2a	C05959	38432-87-0	positive	(M+Na)+	200.2		N2		
+C20H32O3	320.2351	12R-HETE	C14822	82337-46-0	positive	(M+Na)+	194.4		N2		
+C20H32O3	320.2351	12R-HETE	C14822	82337-46-0	negative	(M-H)-	184.1		N2		
+C20H32O3	320.2351	14(15)-EET	C14771	81276-03-1	positive	(M+H)+	182.43		N2		
+C20H32O3	320.2351	14(15)-EET	C14771	81276-03-1	positive	(M+Na)+	187.07		N2		
+C20H32O3	320.2351	14(15)-EET	C14771	81276-03-1	negative	(M-H)-	187.6		N2		
+C26H42N7O17P3S	849.1564	3-Methylcrotonyl-CoA	C03069	793193-48-3	positive	(M+H)+	180.03		N2		
+C5H11N3O2	145.0851	4-Guanidinobutanoate	C01035	463-00-3	positive	(M+H)+	132.8		N2		
+C20H32O3	320.2351	8(9)-EET	C14769	81246-85-7	positive	(M+Na)+	186.83		N2		
+C20H32O3	320.2351	8(9)-EET	C14769	81246-85-7	negative	(M-H)-	184.63		N2		
+C19H37NO4+	343.2716	Lauroyl L-carnitine (C12:0)		25518-54-1	positive	(M+H)+	201.47		N2		
+C19H37NO4+	343.2716	Lauroyl L-carnitine (C12:0)		25518-54-1	positive	(M+Na)+	217.5		N2		
+C23H45NO4+	399.3342	Palmitoyl L-carnitine (C16:0)		1935-18-8	positive	(M+H)+	216.1		N2		
+C23H45NO4+	399.3342	Palmitoyl L-carnitine (C16:0)		1935-18-8	positive	(M+Na)+	230.37		N2		
+C25H47NO4+	425.3498	Oleoyl L-carnitine (C18:1(Del9-cis))		13962-05-5	positive	(M+H)+	218.73		N2		
+C25H47NO4+	425.3498	Oleoyl L-carnitine (C18:1(Del9-cis))		13962-05-5	positive	(M+Na)+	228.6		N2		
+C36H62O31	990.3275	Cellohexaose	C06217	2478-35-5	positive	(M+Na)+	283.13		N2		
+C36H62O31	990.3275	Cellohexaose	C06217	2478-35-5	negative	(M-H)-	286.2		N2		
+C5H12O8P	230.0191536	D-Xylose 5-phosphate	C6814	66768-39-6	positive	(M+Na)+	151.4		N2		
+C5H12O8P	230.0191536	D-Xylose 5-phosphate	C6814	66768-39-6	negative	(M-H)-	139.3		N2		
+C40H68N2O31	1072.3806	Lacto-N-hexaose(LNH)	G00993	64003-51-6	positive	(M+Na)+	301.6		N2		
+C40H68N2O31	1072.3806	Lacto-N-hexaose(LNH)	G00993	64003-51-6	negative	(M-H)-	317.6		N2		
+C40H68N2O31	1072.3806	Lacto-N-neohexaose (LNnH)	G00555	64309-00-8	positive	(M+Na)+	297.57		N2		
+C40H68N2O31	1072.3806	Lacto-N-neohexaose (LNnH)	G00555	64309-00-8	negative	(M-H)-	320.5		N2		
+C36H62O31	990.3275	Mannohexaose	G06241	70281-36-6	positive	(M+Na)+	281.7		N2		
+C36H62O31	990.3275	Mannohexaose	G06241	70281-36-6	negative	(M-H)-	277.27		N2		
+C11H19N3O6	289.1274	Ophthalmic acid	C21016	495-27-2	positive	(M+H)+	167.23		N2		
+C11H19N3O6	289.1274	Ophthalmic acid	C21016	495-27-2	positive	(M+Na)+	165.7		N2		
+C11H19N3O6	289.1274	Ophthalmic acid	C21016	495-27-2	negative	(M-H)-	163.7		N2		
+C8H20NO6P+	258.110643	sn-Glycero-3-phosphocholine	C00670	28319-77-9	positive	(M+H)+	157.17		N2		
+C8H20NO6P+	258.110643	sn-Glycero-3-phosphocholine	C00670	28319-77-9	positive	(M+Na)+	161.8		N2		
+C24H42O21	666.2218	Stachyose	C01613	470-55-3	positive	(M+Na)+	236.4		N2		
+C24H42O21	666.2218	Stachyose	C01613	470-55-3	negative	(M-H)-	226.67		N2		
+C12H17N4O4PS+	345.0786	Thiamine Monophosphate	C01081	495-23-8	positive	(M+H)+	172.53		N2		
