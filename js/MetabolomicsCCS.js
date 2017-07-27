@@ -295,7 +295,7 @@ $(document).ready(function() {
             .draw();
         }
       } else {
-        table.order([0, 'asc'], [0, 'asc'])
+        table.order([0, 'asc'], [1, 'asc'])
           .draw();
       }
     });
