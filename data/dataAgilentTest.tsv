@@ -134,3 +134,8 @@ C10H18O9	282.0951	Xylobiose	C01630	6860-47-5	positive	(M+Na)+	167.30		N2
 C10H18O9	282.0951	Xylobiose	C01630	6860-47-5	negative	(M-H)-	167.03		N2		
 C9H12N2O6	244.0689	?-Pseudouridine	C02067	1445-07-4	positive	(M+Na)+	164.10		N2		
 C9H12N2O6	244.0689	?-Pseudouridine	C02067	1445-07-4	negative	(M-H)-	150.77		N2		
+C6H7N5O	165.0651	7-Methylguanine	C02242	578-76-7	positive	(M+H)+	134.33		N2		
+C6H7N5O	165.0651	7-Methylguanine	C02242	578-76-7	positive	(M+Na)+	149.72		N2		
+C6H7N5O	165.0651	7-Methylguanine	C02242	578-76-7	negative	(M-H)-	136.62		N2		
+C9H18O8	254.1002	2-(Beta-Glucosyl)glycerol		10588-30-4	positive	(M+Na)+	160.5		N2		
+C9H18O8	254.1002	2-(Beta-Glucosyl)glycerol		10588-30-4	negative	(M-H)-	157.27		N2		
