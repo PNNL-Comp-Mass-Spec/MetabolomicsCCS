@@ -93,8 +93,8 @@ C6H13NO2	131.0946	L-Norleucine	C01933	327-57-1	negative	(M-H)-	140.07		N2
 C9H11NO2	165.0783	L-Phenylalanine	C00079	63-91-2	positive	(M+H)+	142.87		N2		
 C9H11NO2	165.0783	L-Phenylalanine	C00079	63-91-2	negative	(M-H)-	143.40		N2		
 C6H12O5	164.0685	L-Rhamnose	C00507	3615-41-6	positive	(M+Na)+	146.30		N2		
-C5H10O6	166.0477	L-Ribonic acid	C01685�	710941-59-6	positive	(M+Na)+	143.47		N2		
-C5H10O6	166.0477	L-Ribonic acid	C01685�	710941-59-6	negative	(M-H)-	128.37		N2		
+C5H10O6	166.0477	L-Ribonic acid	C01685	710941-59-6	positive	(M+Na)+	143.47		N2		
+C5H10O6	166.0477	L-Ribonic acid	C01685	710941-59-6	negative	(M-H)-	128.37		N2		
 C4H8O5	136.0372	L-Threonic acid	C01620	7306-96-9	positive	(M+Na)+	136.93		N2		
 C4H8O5	136.0372	L-Threonic acid	C01620	7306-96-9	negative	(M-H)-	122.20		N2		
 C4H6O6	150.0164	Meso-Tartaric Acid	C00552	147-73-9	negative	(M-H)-	120.87		N2		
@@ -110,7 +110,7 @@ C14H14O3	230.0936	Naproxen	D00118	22204-53-1	positive	(M+H)+	154.83		N2
 C14H14O3	230.0936	Naproxen	D00118	22204-53-1	positive	(M+Na)+	163.87		N2		
 C6H11NO3S	177.0460	N-Formyl-L-methionine	C03145	4289-98-9	positive	(M+Na)+	149.53		N2		
 C6H11NO3S	177.0460	N-Formyl-L-methionine	C03145	4289-98-9	negative	(M-H)-	140.73		N2		
-C6H6N2O	122.0479	Niacinamide	C00153�	98-92-0	positive	(M+H)+	131.67		N2		
+C6H6N2O	122.0479	Niacinamide	C00153	98-92-0	positive	(M+H)+	131.67		N2		
 C5H4N2O4	156.0171	Orotic acid	C00295	65-86-1	positive	(M+H)+	138.85		N2		
 C5H4N2O4	156.0171	Orotic acid	C00295	65-86-1	positive	(M+Na)+	181.87		N2		
 C5H4N2O4	156.0171	Orotic acid	C00295	65-86-1	negative	(M-H)-	125.20		N2		
