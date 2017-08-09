@@ -185,7 +185,7 @@ $(document).ready(function() {
   let MWC = new MolecularWeightCalculator();
   let pathwayModal;
   // parses the tsv data file
-  d3.tsv(githubRepositoryBase+'data/metabolitedata.tsv',
+  d3.tsv(githubRepositoryBase + 'data/metabolitedata.tsv',
     processTsv,
     function(err, d) {
     // if there's an error with reading the file, display the error and stop
