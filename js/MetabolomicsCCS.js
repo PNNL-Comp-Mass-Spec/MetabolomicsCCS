@@ -45,6 +45,9 @@ $(document).ready(function() {
     'mPlus': '[M]<sup>+</sup>',
     'mPlusCCS': 'Average_[M]<sup>+</sup>',
     'mPlusRsd': 'RSD_[M]<sup>+</sup>',
+    'mPlusTwoH': '[M+H<sub>2</sub>]<sup>+</sup>',
+    'mPlusTwoHCCS': 'Average_[M+H<sub>2</sub>]<sup>+</sup>',
+    'mPlusTwoHRsd': 'RSD_[M+H<sub>2</sub>]<sup>+</sup>',
     'CCS': '<sup>DT</sup>CCS<sub>N<sub>2</sub></sub>(&#x212B<sup>2</sup>)',
     'structure': 'Structure',
   };
@@ -116,6 +119,7 @@ $(document).ready(function() {
       + ccsString(columns.mMinusH, d.mMinusHCCS)
       + ccsString(columns.mPlusK, d.mPlusKCCS)
       // + ccsString(columns.mPlus, d.mPlusCCS)
+      + ccsString(columns.mPlusTwoHCCS, d.mPlusTwoHCCS)
       + ccsString(columns.mPlusDot, d.mPlusDotCCS);
   }
   /**
@@ -162,16 +166,17 @@ $(document).ready(function() {
   * @return {object} the object that is used in the next function.
   */
   function processTsv(d) {
+     let pubChemId = d.cid || d['PubChem CID'];
     // determins the object returned from processing the tsv data file
     let structureImage = '<img class="ui small image structureImage"'
       +'src="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/'
-      + (d.cid && d.cid.length > 0
-        ? 'cid/' + d.cid : 'name/' + encodeURIComponent(d['Neutral Name']))
+      + (pubChemId && pubChemId.length > 0
+        ? 'cid/' + pubChemId : 'name/' + encodeURIComponent(d['Neutral Name']))
         + '/PNG" alt="image not found" onerror="imageError(this)"/>';
     return {
       class: d.main_class,
       subclass: d.subclass || 'Others',
-      kegg: d.kegg,
+      kegg: d.kegg || d.KEGG,
       name: d['Neutral Name'],
       cas: d.cas,
       formula: d.formula,
