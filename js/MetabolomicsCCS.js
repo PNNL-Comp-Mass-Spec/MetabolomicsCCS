@@ -69,12 +69,14 @@ $(document).ready(function() {
   * @return {boolean} True if at least one valid number is available in object.
   */
   function isCcsAvailable(d) {
-    if(isNaN(parseFloat(d.mPlusHCCS)) &&
-      isNaN(parseFloat(d.mPlusNaCCS)) &&
-      isNaN(parseFloat(d.mMinusHCCS)) &&
-      isNaN(parseFloat(d.mPlusKCCS)) &&
-      isNaN(parseFloat(d.mPlusCCS)) &&
-      isNaN(parseFloat(d.mPlusDotCCS)))
+    if(   isNaN(parseFloat(d.mPlusHCCS))
+       && isNaN(parseFloat(d.mPlusNaCCS))
+       && isNaN(parseFloat(d.mMinusHCCS))
+       && isNaN(parseFloat(d.mPlusKCCS))
+       // Ignore: && isNaN(parseFloat(d.mPlusCCS))
+       // Ignore: && isNaN(parseFloat(d.mPlusDotCCS))
+       // Ignore: && isNaN(parseFloat(d.mPlusTwoHCCS)) 
+      )
         return false;
     return true;
   }
@@ -115,12 +117,12 @@ $(document).ready(function() {
   */
   function getCCS(d) {
     return ccsString(columns.mPlusH, d.mPlusHCCS)
-      + ccsString(columns.mPlusNa, d.mPlusNaCCS)
-      + ccsString(columns.mMinusH, d.mMinusHCCS)
-      + ccsString(columns.mPlusK, d.mPlusKCCS)
-      // + ccsString(columns.mPlus, d.mPlusCCS)
-      + ccsString(columns.mPlusTwoHCCS, d.mPlusTwoHCCS)
-      + ccsString(columns.mPlusDot, d.mPlusDotCCS);
+         + ccsString(columns.mPlusNa, d.mPlusNaCCS)
+         + ccsString(columns.mMinusH, d.mMinusHCCS)
+         + ccsString(columns.mPlusK, d.mPlusKCCS)
+      // Ignore: + ccsString(columns.mPlus, d.mPlusCCS)
+      // Ignore: + ccsString(columns.mPlusTwoHCCS, d.mPlusTwoHCCS)
+      // Ignore: + ccsString(columns.mPlusDot, d.mPlusDotCCS);
   }
   /**
   * Used with filter function to remove elements from array that don't have a
