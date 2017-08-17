@@ -106,8 +106,11 @@ $(document).ready(function() {
   * @return {string} the proper display or an empty string
   */
   function ccsString(display, value) {
-    if(value)
-      return display + ': ' + parseNumber(value) + '<br>';
+    if(value) {
+      let parsedValue = parseFloat(value);
+      if (!isNaN(parsedValue))
+        return display + ': ' + parseNumber(value) + '<br>';
+    }
     return '';
   }
   /**
