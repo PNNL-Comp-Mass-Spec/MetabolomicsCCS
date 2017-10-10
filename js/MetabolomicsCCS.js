@@ -45,8 +45,8 @@ $(document).ready(function() {
     'mPlus': '[M]<sup>+</sup>',
     'mPlusCCS': 'Average_[M]<sup>+</sup>',
     'mPlusRsd': 'RSD_[M]<sup>+</sup>',
-    'mPlusTwoH': '[M+H<sub>2</sub>]<sup>+</sup>',
-    'mPlusTwoHCCS': 'Average_[M+H<sub>2</sub>]<sup>+</sup>',
+    'mPlusTwoH': '[M+2H]<sup>2+</sup>',
+    'mPlusTwoHCCS': 'Average_[M+2H]<sup>2+</sup>',
     'mPlusTwoHRsd': 'RSD_[M+H<sub>2</sub>]<sup>+</sup>',
     'CCS': '<sup>DT</sup>CCS<sub>N<sub>2</sub></sub>(&#x212B<sup>2</sup>)',
     'structure': 'Structure',
@@ -70,12 +70,14 @@ $(document).ready(function() {
   * @return {boolean} True if at least one valid number is available in object.
   */
   function isCcsAvailable(d) {
-    if (isNaN(parseFloat(d.mPlusHCCS)) &&
-      isNaN(parseFloat(d.mPlusNaCCS)) &&
-      isNaN(parseFloat(d.mMinusHCCS)) &&
-      isNaN(parseFloat(d.mPlusKCCS)) &&
-      isNaN(parseFloat(d.mPlusCCS)) &&
-      isNaN(parseFloat(d.mPlusDotCCS))) {
+    if (isNaN(parseFloat(d.mPlusHCCS))
+       && isNaN(parseFloat(d.mPlusNaCCS))
+       && isNaN(parseFloat(d.mMinusHCCS))
+       && isNaN(parseFloat(d.mPlusKCCS))
+       && isNaN(parseFloat(d.mPlusCCS))
+       && isNaN(parseFloat(d.mPlusDotCCS))
+       && isNaN(parseFloat(d.mPlusTwoHCCS))
+       ) {
         return false;
       }
     return true;
@@ -107,7 +109,10 @@ $(document).ready(function() {
   */
   function ccsString(display, value) {
     if (value) {
-      return display + ': ' + parseNumber(value) + '<br>';
+      let parsedValue = parseFloat(value);
+      if (!isNaN(parsedValue)) {
+        return display + ': ' + parseNumber(value) + '<br>';
+      }
     }
     return '';
   }
@@ -118,12 +123,12 @@ $(document).ready(function() {
   */
   function getCCS(d) {
     return ccsString(columns.mPlusH, d.mPlusHCCS)
-      + ccsString(columns.mPlusNa, d.mPlusNaCCS)
-      + ccsString(columns.mMinusH, d.mMinusHCCS)
-      + ccsString(columns.mPlusK, d.mPlusKCCS)
-      // + ccsString(columns.mPlus, d.mPlusCCS)
-      + ccsString(columns.mPlusTwoHCCS, d.mPlusTwoHCCS)
-      + ccsString(columns.mPlusDot, d.mPlusDotCCS);
+         + ccsString(columns.mPlusNa, d.mPlusNaCCS)
+         + ccsString(columns.mMinusH, d.mMinusHCCS)
+         + ccsString(columns.mPlusK, d.mPlusKCCS)
+         + ccsString(columns.mPlus, d.mPlusCCS)
+         + ccsString(columns.mPlusTwoH, d.mPlusTwoHCCS)
+         + ccsString(columns.mPlusDot, d.mPlusDotCCS);
   }
   /**
   * Used with filter function to remove elements from array that don't have a

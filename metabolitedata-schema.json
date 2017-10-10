@@ -28,14 +28,14 @@
       },
       "description": "ID",
       "missingValues": [""],
-      "name": "kegg",
+      "name": "KEGG",
       "type": "string"
     },
     {
       "constraints": {
       },
       "description": "ID",
-      "name": "cid",
+      "name": "PubChem CID",
       "type": "number"
     },
     {
@@ -45,7 +45,7 @@
       "type": "string"
     },
     {
-      "description": "Neurtal name",
+      "description": "Neutral name",
       "name": "Neutral Name",
       "missingValues": [""],
       "type": "string"
