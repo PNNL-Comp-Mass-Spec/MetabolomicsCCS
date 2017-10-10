@@ -6,7 +6,7 @@ const githubRepositoryBase = 'https://raw.githubusercontent.com/PNNL-Comp-Mass-S
 * @param {object} img The image element.
 */
 function imageError(img) { // eslint-disable-line no-unused-vars
-  if(img.imgError) {
+  if (img.imgError) {
     clearTimeout(img.imgError);
     img.onerror=null;
     img.src= githubRepositoryBase + 'metaboliteResources/images/default.jpg';
@@ -59,8 +59,9 @@ $(document).ready(function() {
   */
   function parseNumber(num) {
     let result = parseFloat(num).toFixed(2);
-    if (isNaN(result))
+    if (isNaN(result)) {
       result = 'N/A';
+    }
     return result;
   }
   /**
@@ -69,13 +70,14 @@ $(document).ready(function() {
   * @return {boolean} True if at least one valid number is available in object.
   */
   function isCcsAvailable(d) {
-    if(isNaN(parseFloat(d.mPlusHCCS)) &&
+    if (isNaN(parseFloat(d.mPlusHCCS)) &&
       isNaN(parseFloat(d.mPlusNaCCS)) &&
       isNaN(parseFloat(d.mMinusHCCS)) &&
       isNaN(parseFloat(d.mPlusKCCS)) &&
       isNaN(parseFloat(d.mPlusCCS)) &&
-      isNaN(parseFloat(d.mPlusDotCCS)))
+      isNaN(parseFloat(d.mPlusDotCCS))) {
         return false;
+      }
     return true;
   }
   /**
@@ -104,8 +106,9 @@ $(document).ready(function() {
   * @return {string} the proper display or an empty string
   */
   function ccsString(display, value) {
-    if(value)
+    if (value) {
       return display + ': ' + parseNumber(value) + '<br>';
+    }
     return '';
   }
   /**
@@ -289,7 +292,7 @@ $(document).ready(function() {
       let ordering = table.order();
       let currentOrderClass;
       let currentOrderSubclass;
-      if(ordering.length > 1) {
+      if (ordering.length > 1) {
         currentOrderClass = table.order()[0];
         currentOrderSubclass = table.order()[1];
         if (currentOrderClass[0] === 0 && currentOrderClass[1] === 'asc') {
@@ -309,7 +312,7 @@ $(document).ready(function() {
       let ordering = table.order();
       let currentOrderClass;
       let currentOrderSubclass;
-      if(ordering.length > 1) {
+      if (ordering.length > 1) {
         currentOrderClass = table.order()[0];
         currentOrderSubclass = table.order()[1];
         if (currentOrderSubclass[0] === 1
@@ -332,7 +335,7 @@ $(document).ready(function() {
       this.setAttribute('data-variation', 'basic');
     });
     // debug information when in dev environement
-    if(window.location.href.indexOf('localhost')>=0) {
+    if (window.location.href.indexOf('localhost')>=0) {
       table.$('tr').on('mouseover', function() {
         $(this).popup('show');
       }).on('mouseout', function() {
@@ -348,9 +351,10 @@ $(document).ready(function() {
     * otherwise.
     */
     Array.prototype.in = function(arr) {
-      for(let a in arr) {
-        if(this.indexOf(arr[a])>=0)
+      for (let a in arr) {
+        if (this.indexOf(arr[a])>=0) {
           return true;
+        }
       }
       return false;
     };
@@ -396,8 +400,9 @@ $(document).ready(function() {
             && compoundList[d.path].in(compounds);
         });
         let pathwayMap = data.reduce(function(a, d) {
-          if(!a.hasOwnProperty(d.path))
+          if (!a.hasOwnProperty(d.path)) {
             a[d.path] = d.name;
+          }
           return a;
         }, {});
         data = [
@@ -416,7 +421,7 @@ $(document).ready(function() {
           +'</div>'
         ).dropdown({
           onChange: function(value, text, $selectedItem) {
-            if(value == 'missing') {
+            if (value == 'missing') {
               table.column(2)
                 .search('^$', true, false)
                 .draw();
@@ -429,10 +434,12 @@ $(document).ready(function() {
             let subclass = [];
             let mainClass = [];
             filteredData.each(function(d) {
-              if(subclass.indexOf(d.subclass)<0)
+              if (subclass.indexOf(d.subclass)<0) {
                 subclass.push(d.subclass);
-              if(mainClass.indexOf(d.class)<0)
+              }
+              if (mainClass.indexOf(d.class)<0) {
                 mainClass.push(d.class);
+              }
             });
             $('#classFilter').find('.menu')
               .empty()
@@ -446,7 +453,7 @@ $(document).ready(function() {
               }));
             $('#pathway_modal .content').empty();
             $('#pathway_modal .header').html(pathwayMap[value]);
-            if(value && value != 'missing') {
+            if (value && value != 'missing') {
               pathwayModal = new Pathway({
                 pathwayId: value,
                 container: '#pathway_modal .content',
@@ -457,8 +464,9 @@ $(document).ready(function() {
                   return 'red';
                 },
                 data: filteredData.reduce(function(a, d) {
-                  if(!a.hasOwnProperty(d.kegg))
+                  if (!a.hasOwnProperty(d.kegg)) {
                     a[d.kegg] = d;
+                  }
                   return a;
                 }, {}),
               });
@@ -500,13 +508,15 @@ $(document).ready(function() {
         let filteredData = table.rows({filter: 'applied'}).data();
         let subclass = [];
         filteredData.each(function(d) {
-          if(subclass.indexOf(d.subclass)<0)
+          if (subclass.indexOf(d.subclass)<0) {
             subclass.push(d.subclass);
+          }
         });
-        if(pathwayModal) {
+        if (pathwayModal) {
           pathwayModal.data(filteredData.reduce(function(a, d) {
-            if(!a.hasOwnProperty(d.kegg))
+            if (!a.hasOwnProperty(d.kegg)) {
               a[d.kegg] = d;
+            }
             return a;
           }, {}))
           .draw();
@@ -534,15 +544,83 @@ $(document).ready(function() {
           .search(value.replace(/,/g, '|'), true, false)
           .draw();
         let filteredData = table.rows({filter: 'applied'}).data();
-        if(pathwayModal) {
+        if (pathwayModal) {
           pathwayModal.data(filteredData.reduce(function(a, d) {
-            if(!a.hasOwnProperty(d.kegg))
+            if (!a.hasOwnProperty(d.kegg)) {
               a[d.kegg] = d;
+            }
             return a;
           }, {}))
           .draw();
         }
       },
+    });
+    /**
+    * this function creates a anchor element and applies the text to it
+    * creating a file.
+    * @param {string} filename the name for the file.
+    * @param {string} text the string contents of the file
+    *
+    */
+    function download(filename, text) {
+      let element = document.createElement('a');
+      element.setAttribute('href',
+       'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+      element.setAttribute('download', filename);
+
+      element.style.display = 'none';
+      document.body.appendChild(element);
+
+      element.click();
+
+      document.body.removeChild(element);
+    }
+    /**
+     * this function creates a opens the metabolitedata file and finds the
+     * seleceted ids using the cas number
+     * @param {array} ids an array of cas numbers ids.
+     * @param {string} fileName the name for the file
+     *
+     */
+    function createDownload(ids, fileName) {
+      d3.tsv(githubRepositoryBase + 'data/metabolitedata.tsv',
+         function(d) {
+            return d;
+         }, function(d) {
+            let headers = d.columns;
+            // create tsv from data
+            d = d.filter(function(e) {
+               return ids.indexOf(e.cas) >= 0;
+            });
+            let dataStr = headers.join('\t') + '\n';
+            dataStr += d.map(function(e) {
+               return headers.map(function(f) {
+                  return e[f];
+               }).join('\t');
+            }).join('\n');
+            download(fileName, dataStr);
+      });
+   }
+    $('#currentPageDownload').on('click', function(evt) {
+      let visibleRows = $('#tablecontainer tbody tr').filter(function(i, d) {
+         return !$(d).hasClass('group') && !$(d).hasClass('sub_group');
+      });
+      let visibleDataIds = visibleRows.map(function(i, d) {
+         return table.row(d).data().cas;
+      }).toArray();
+      createDownload(visibleDataIds,
+         'page_'+(table.page.info().page + 1)
+         +'_of_'+table.page.info().pages+'_metabolitedata.tsv');
+    });
+    $('#currentSearchDownload').on('click', function(evt) {
+       let filteredData = table.rows({filter: 'applied'})
+         .data().map(function(d) {
+            return d.cas;
+         });
+       // create tsv from data
+       createDownload(filteredData,
+          $('#pathwayFilter').dropdown('get text')
+          .replace(/ /g, '_') + '_' + table.search() + '_metabolitedata.tsv');
     });
   });
   // load about modal when about button clicked
