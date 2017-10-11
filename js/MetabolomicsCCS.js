@@ -585,27 +585,71 @@ $(document).ready(function() {
      * seleceted ids using the cas number
      * @param {array} ids an array of cas numbers ids.
      * @param {string} fileName the name for the file
+     * @param {string} dataFile the relitive path to the datafile to load from
      *
      */
-    function createDownload(ids, fileName) {
-      d3.tsv(githubRepositoryBase + 'data/metabolitedata.tsv',
+    function createDownload(ids, fileName, dataFile) {
+      let keepFirstRow = true;
+      let filterFunction = function(e) {
+         return ids.indexOf(e.CAS) >= 0;
+      };
+      if (!dataFile) {
+         dataFile = 'data/metabolitedata.tsv';
+         keepFirstRow = false;
+         filterFunction = function(e) {
+            return ids.indexOf(e.cas) >= 0;
+         };
+      }
+      let complete = function(d) {
+         let row;
+         let headers = d.columns;
+         if (keepFirstRow) {
+            row = d[0];
+         }
+         // create tsv from data
+         d = d.filter(filterFunction);
+         let dataStr = headers.join('\t') + '\n';
+         if (row) {
+            dataStr += headers.map(function(f) {
+               return row[f];
+            }).join('\t') + '\n';
+         }
+         dataStr += d.map(function(e) {
+            return headers.map(function(f) {
+               return e[f];
+            }).join('\t');
+         }).join('\n');
+         download(fileName, dataStr);
+      };
+      d3.tsv(githubRepositoryBase + dataFile,
          function(d) {
             return d;
-         }, function(d) {
-            let headers = d.columns;
-            // create tsv from data
-            d = d.filter(function(e) {
-               return ids.indexOf(e.cas) >= 0;
-            });
-            let dataStr = headers.join('\t') + '\n';
-            dataStr += d.map(function(e) {
-               return headers.map(function(f) {
-                  return e[f];
-               }).join('\t');
-            }).join('\n');
-            download(fileName, dataStr);
-      });
+         }, complete);
    }
+   $('#currentPageDownloadAgilent').on('click', function(evt) {
+     let visibleRows = $('#tablecontainer tbody tr').filter(function(i, d) {
+        return !$(d).hasClass('group') && !$(d).hasClass('sub_group');
+     });
+     let visibleDataIds = visibleRows.map(function(i, d) {
+        return table.row(d).data().cas;
+     }).toArray();
+     createDownload(visibleDataIds,
+        'page_'+(table.page.info().page + 1)
+        +'_of_'+table.page.info().pages+'_metabolitedataAgilent.tsv',
+        'data/metabolitedataAgilent.tsv');
+   });
+   $('#currentSearchDownloadAgilent').on('click', function(evt) {
+      let filteredData = table.rows({filter: 'applied'})
+        .data().map(function(d) {
+           return d.cas;
+        });
+      // create tsv from data
+      createDownload(filteredData,
+         $('#pathwayFilter').dropdown('get text')
+         .replace(/ /g, '_') + '_' + table.search()
+         + '_metabolitedataAgilent.tsv',
+         'data/metabolitedataAgilent.tsv');
+   });
     $('#currentPageDownload').on('click', function(evt) {
       let visibleRows = $('#tablecontainer tbody tr').filter(function(i, d) {
          return !$(d).hasClass('group') && !$(d).hasClass('sub_group');
