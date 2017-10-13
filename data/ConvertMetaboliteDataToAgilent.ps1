@@ -13,63 +13,13 @@
 ##################################################################
 
 $inputFilePath  = "metabolitedata.tsv";
-$outputFilePath = "metabolitedataAgilent.tsv";
+$outputFileName = "metabolitedataAgilent.tsv";
 
-try
-{
-    # Create the output file
-    $outFile = [System.IO.StreamWriter]::new( $outputFilePath );
-
-    # Add the headers
-    $headers = ("#Formula", "Mass", "Cpd", "KEGG", "CAS", "Polarity", "Ion Species", "CCS", "Z", "Gas", "CCS Standard", "Notes");
-    $outFile.WriteLine($headers -join "`t");
-
-    if ( !(Test-Path $inputFilePath) ) {
-        Write-output "File not found: $inputFilePath"
-        exit
-    }
-
-    Write-output "Opening $inputFilePath";    
-
-    # Parse the file line-by-line
-    Import-Csv $inputFilePath -Delimiter "`t" | ForEach-Object {
-
-        $outLineBase = ($_.formula, $_.mass, $_."Neutral Name", $_.kegg, $_.cas);
-
-        $added = $false
-
-        if (Is-Numeric $_.mPlusHCCS)
-        {
-            Append-Compound $outFile $outLineBase "positive" "(M+H)+" $_.mPlusHCCS
-            $added = $true
-        }
-
-        if (Is-Numeric $_.mPlusNaCCS)
-        {
-            Append-Compound $outFile $outLineBase "positive" "(M+Na)+" $_.mPlusNaCCS;
-            $added = $true
-        }
-
-        if (Is-Numeric $_.mMinusHCCS)
-        {
-            Append-Compound $outFile $outLineBase "negative" "(M-H)-" $_.mMinusHCCS;
-            $added = $true
-        }
-
-        if (!$added -and !(Is-Numeric $_.mPlusDotCCS)) {
-            Write-output "compound has no known CCS values and should be removed from the input file: $($_."Neutral Name")"
-        }
-    }
-
+# Check if the number is an integer or floating point value
+# Recognizes scientific notation of the form 1.34E+43
+function Is-Numeric ($Value) {
+    return $Value -match "^-?[\d\.]+(E[+-]?\d+)?$"
 }
-finally
-{
-    $outFile.close()
-
-    Write-output "Results written to $outputFilePath";
-}
-
-exit $LASTEXITCODE
 
 function Append-Compound ($outFile, $outLineBase, $polarity, $ionSpecies, $ccs) {
  
@@ -88,8 +38,65 @@ function Append-Compound ($outFile, $outLineBase, $polarity, $ionSpecies, $ccs) 
     $outFile.WriteLine($outLine -join "`t");
 }
 
-# Check if the number is an integer or floating point value
-# Recognizes scientific notation of the form 1.34E+43
-function Is-Numeric ($Value) {
-    return $Value -match "^-?[\d\.]+(E[+-]?\d+)?$"
+try
+{
+    $inputFileDirectory = (Get-Item -Path $inputFilePath).DirectoryName
+
+    $outputFilePath = Join-Path -Path $inputFileDirectory -ChildPath $outputFileName
+
+    # Create the output file
+    $outFile = [System.IO.StreamWriter]::new( $outputFilePath );
+
+    # Add the headers
+    $headers1 = ("###Formula", "Mass", "Compound name", "KEGG", "CAS", "Polarity", "Ion Species", "CCS", "Z", "Gas", "CCS Standard", "Notes");
+    $headers2 = ("#Formula", "Mass", "Cpd", "KEGG", "CAS", "Polarity", "Ion Species", "CCS", "Z", "Gas", "CCS Standard", "Notes");
+
+    $outFile.WriteLine($headers1 -join "`t");
+    $outFile.WriteLine($headers2 -join "`t");
+
+    if ( !(Test-Path $inputFilePath) ) {
+        Write-output "File not found: $inputFilePath"
+        exit
+    }
+
+    Write-output "Opening $inputFilePath";    
+
+    # Parse the file line-by-line
+    Import-Csv $inputFilePath -Delimiter "`t" | ForEach-Object {
+
+        $massRounded = [math]::Round($_.mass, 4);
+
+        $outLineBase = ($_.formula, $massRounded, $_."Neutral Name", $_.kegg, $_.cas);
+
+        $added = $false
+
+        if (Is-Numeric $_.mPlusHCCS)
+        {
+            Append-Compound $outFile $outLineBase "positive" "(M+H)+" $([math]::Round($_.mPlusHCCS, 2))
+            $added = $true
+        }
+
+        if (Is-Numeric $_.mPlusNaCCS)
+        {
+            Append-Compound $outFile $outLineBase "positive" "(M+Na)+" $([math]::Round($_.mPlusNaCCS, 2))
+            $added = $true
+        }
+
+        if (Is-Numeric $_.mMinusHCCS)
+        {
+            Append-Compound $outFile $outLineBase "negative" "(M-H)-" $([math]::Round($_.mMinusHCCS, 2))
+            $added = $true
+        }
+
+        if (!$added -and !(Is-Numeric $_.mPlusDotCCS)) {
+            Write-output "compound has no known CCS values and should be removed from the input file: $($_."Neutral Name")"
+        }
+    }
+
+}
+finally
+{
+    $outFile.close()
+
+    Write-output "Results written to $outputFilePath";
 }
