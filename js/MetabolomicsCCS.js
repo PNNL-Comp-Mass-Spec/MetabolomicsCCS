@@ -681,5 +681,11 @@ $(document).ready(function() {
   // load help modal when help button clicked
   $('#helpBtn').on('click', function(evt) {
     $('#help_modal').modal('show');
+    $('.enlarge-hover').each(function(d) {
+      $(this).popup( {
+         html: '<img width:"600" height="auto" src="'
+            + $(this).attr('src') + '"></img>',
+      });
+   });
   });
 });
