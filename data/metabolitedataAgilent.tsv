@@ -2,7 +2,7 @@
 #Formula	Mass	Cpd	KEGG	CAS	Polarity	Ion Species	CCS	Z	Gas	CCS Standard	Notes
 C4H9NO2	103.1203	N,N-Dimethylglycine	C01026	1118-68-9	positive	(M+H)+	123.9		N2		
 C3H7NO3	105.0419	L-Serine	C00065	56-45-1	negative	(M-H)-	136.66		N2		
-C5H9NO2	115.0633	L-Proline	C00148	147-85-3	positive	(M+H)+	129.86		N2		
+C5H9NO2	115.0633	L-Proline	C00148	147-85-3	positive	(M+H)+	126.48		N2		
 C5H9NO2	115.0633	L-Proline	C00148	147-85-3	negative	(M-H)-	133.51		N2		
 C5H11NO2	117.0783	Betaine	C00719	107-43-7	positive	(M+H)+	122.15		N2		
 C5H11NO2	117.0783	Betaine	C00719	107-43-7	positive	(M+Na)+	135.56		N2		
@@ -20,40 +20,37 @@ C6H13NO2	131.0946	L-Norleucine	C01933	327-57-1	positive	(M+H)+	142.63		N2
 C6H13NO2	131.0946	L-Norleucine	C01933	327-57-1	negative	(M-H)-	140.07		N2		
 ‎C6H13NO2	131.0946	L-Allo-Isoleucine	C21096	1509-34-8	negative	(M-H)-	134.45		N2		
 ‎C6H13NO2	131.0946	D-Leucine	C01570	328-38-1	negative	(M-H)-	135.76		N2		
-C6H13NO2	131.0946	L-Leucine	C00123	61-90-5	positive	(M+H)+	139.65		N2		
-C6H13NO2	131.0946	L-Leucine	C00123	61-90-5	negative	(M-H)-	138.71		N2		
-‎C6H13NO2	131.0946	L-Isoleucine	C00407	73-32-5	positive	(M+H)+	137.7		N2		
-‎C6H13NO2	131.0946	L-Isoleucine	C00407	73-32-5	negative	(M-H)-	135.59		N2		
+C6H13NO2	131.0946	L-Leucine	C00123	61-90-5	positive	(M+H)+	136.54		N2		
+C6H13NO2	131.0946	L-Leucine	C00123	61-90-5	negative	(M-H)-	133.89		N2		
+‎C6H13NO2	131.0946	L-Isoleucine	C00407	73-32-5	positive	(M+H)+	134.8		N2		
+‎C6H13NO2	131.0946	L-Isoleucine	C00407	73-32-5	negative	(M-H)-	132.62		N2		
 C4H8N2O3	132.0535	L-Asparagine	C00152	70-47-3	positive	(M+H)+	131.54		N2		
 C4H8N2O3	132.0535	L-Asparagine	C00152	70-47-3	positive	(M+Na)+	131.94		N2		
 C4H8N2O3	132.0535	L-Asparagine	C00152	70-47-3	negative	(M-H)-	127.11		N2		
 C5H12N2O2	132.0899	L-Ornithine	C00077	70-26-8	positive	(M+H)+	129.79		N2		
 C5H12N2O2	132.0899	L-Ornithine	C00077	70-26-8	negative	(M-H)-	136.8		N2		
 C4H7NO4	133.0368	D-Aspartic acid	C16433	617-45-8	negative	(M-H)-	121.85		N2		
-C4H7NO4	133.0375	L-Aspartic Acid	C00049	56-84-8	negative	(M-H)-	121.92		N2		
+C4H7NO4	133.0375	L-Aspartic Acid	C00049	56-84-8	negative	(M-H)-	120.71		N2		
 C4H9NO2S	135.0348	Homocysteine	C05330	454-29-5	positive	(M+H)+	130.53		N2		
 C4H9NO2S	135.0348	Homocysteine	C05330	454-29-5	negative	(M-H)-	159.62		N2		
 C5H10N2O3	146.0691	Glutamine	C00064	56-85-9	positive	(M+H)+	133.45		N2		
 C5H10N2O3	146.0691	Glutamine	C00064	56-85-9	positive	(M+Na)+	138.11		N2		
 C5H10N2O3	146.0691	Glutamine	C00064	56-85-9	negative	(M-H)-	132.11		N2		
-C6H14N2O2	146.1055	L-Lysine	C00047	56-87-1	positive	(M+H)+	133.11		N2		
-C6H14N2O2	146.1055	L-Lysine	C00047	56-87-1	negative	(M-H)-	141.76		N2		
+C6H14N2O2	146.1055	L-Lysine	C00047	56-87-1	positive	(M+H)+	131.8		N2		
 C5H9NO4	147.0532	L-Glutamic Acid	C00025	56-86-0	positive	(M+H)+	134.59		N2		
-C5H9NO4	147.0532	L-Glutamic Acid	C00025	56-86-0	negative	(M-H)-	127.72		N2		
-C5H11NO2S	149.051	L-Methionine	C00073	63-68-3	positive	(M+H)+	137.1		N2		
-C5H11NO2S	149.051	L-Methionine	C00073	63-68-3	negative	(M-H)-	152.05		N2		
+C5H9NO4	147.0532	L-Glutamic Acid	C00025	56-86-0	negative	(M-H)-	125.64		N2		
+C5H11NO2S	149.051	L-Methionine	C00073	63-68-3	positive	(M+H)+	133.65		N2		
 C6H9N3O2	155.0694	L-Histidine	C00135	71-00-1	positive	(M+H)+	133.51		N2		
-C6H9N3O2	155.0694	L-Histidine	C00135	71-00-1	positive	(M+Na)+	137		N2		
-C6H9N3O2	155.0694	L-Histidine	C00135	71-00-1	negative	(M-H)-	131.47		N2		
+C6H9N3O2	155.0694	L-Histidine	C00135	71-00-1	positive	(M+Na)+	134.85		N2		
+C6H9N3O2	155.0694	L-Histidine	C00135	71-00-1	negative	(M-H)-	130.13		N2		
 C7H11NO3	157.0739	Tiglyl Glycine		35842-45-6	positive	(M+Na)+	146.68		N2		
 C7H11NO3	157.0739	Tiglyl Glycine		35842-45-6	negative	(M-H)-	142.93		N2		
 C6H11NO4	161.0681	N-Methyl-L-glutamate	C01046	35989-16-3	positive	(M+H)+	133.71		N2		
-C9H11NO2	165.079	L-Phenylalanine	C00079	63-91-2	positive	(M+H)+	145.24		N2		
-C9H11NO2	165.079	L-Phenylalanine	C00079	63-91-2	positive	(M+Na)+	141.89		N2		
-C9H11NO2	165.079	L-Phenylalanine	C00079	63-91-2	negative	(M-H)-	146.52		N2		
+C9H11NO2	165.079	L-Phenylalanine	C00079	63-91-2	positive	(M+H)+	141.02		N2		
+C9H11NO2	165.079	L-Phenylalanine	C00079	63-91-2	negative	(M-H)-	140.95		N2		
 C6H10N2O4	174.0634	N-Alpha-Acetyl-L-Asparagine		4033-40-3	negative	(M-H)-	137.87		N2		
 C6H14N4O2	174.1117	L-Arginine	C00062	74-79-3	positive	(M+H)+	137.87		N2		
-C6H14N4O2	174.1117	L-Arginine	C00062	74-79-3	negative	(M-H)-	132.24		N2		
+C6H14N4O2	174.1117	L-Arginine	C00062	74-79-3	negative	(M-H)-	138.24		N2		
 C6H9NO5	175.0474	N-Acetyl-L-aspartic acid	C01042	997-55-7	positive	(M+Na)+	143.7		N2		
 C6H13N3O3	175.0957	L-Citrulline	C00327	372-75-8	negative	(M-H)-	139.51		N2		
 C5H9NO4S	179.0252	S-Carboxymethyl-L-cysteine	C03727	638-23-3	positive	(M+H)+	141.13		N2		
@@ -61,8 +58,8 @@ C5H9NO4S	179.0252	S-Carboxymethyl-L-cysteine	C03727	638-23-3	positive	(M+Na)+	14
 C5H12N2O3S	180.0569	L-Methionine sulfoximine	C03510	15985-39-4	positive	(M+H)+	139.3		N2		
 C5H12N2O3S	180.0569	L-Methionine sulfoximine	C03510	15985-39-4	positive	(M+Na)+	143.1		N2		
 C5H12N2O3S	180.0569	L-Methionine sulfoximine	C03510	15985-39-4	negative	(M-H)-	141.23		N2		
-C9H11NO3	181.0739	L-Tyrosine	C00082	60-18-4	positive	(M+H)+	148.49		N2		
-C9H11NO3	181.0739	L-Tyrosine	C00082	60-18-4	negative	(M-H)-	148.26		N2		
+C9H11NO3	181.0739	L-Tyrosine	C00082	60-18-4	positive	(M+H)+	146.55		N2		
+C9H11NO3	181.0739	L-Tyrosine	C00082	60-18-4	negative	(M-H)-	145.75		N2		
 C7H11NO5	189.0637	N-Acetyl-L-glutamate	C00624	1188-37-0	positive	(M+H)+	139.03		N2		
 C7H11NO5	189.0637	N-Acetyl-L-glutamate	C00624	1188-37-0	positive	(M+Na)+	149.63		N2		
 C7H11NO5	189.0637	N-Acetyl-L-glutamate	C00624	1188-37-0	negative	(M-H)-	139.63		N2		
@@ -709,6 +706,13 @@ C24H38N7O19P3S	853.1156	Malonyl-CoA	C00083	524-14-1	negative	(M-H)-	253.05		N2
 C43H66N12O12S2	1006.4364	Oxytocin	C00746	50-56-6	negative	(M-H)-	298.97		N2		
 C7H11N3O2	169.0851	3-Methyl-L-histidine	C01152	368-16-1	positive	(M+H)+	136.57		N2		
 C7H11N3O2	169.0851	3-Methyl-L-histidine	C01152	368-16-1	negative	(M-H)-	141.53		N2		
+C10H12N2O	176.095	Serotonin	C00780	50-67-9	positive	(M+H)+	188.17		N2		
+C10H12N2O	176.095	Serotonin	C00780	50-67-9	positive	(M+Na)+	186.7		N2		
+C10H12N2O	176.095	Serotonin	C00780	50-67-9	negative	(M-H)-	147.57		N2		
+C43H58N4O12	822.4051	Rifampicin	D00211	13292-46-1	positive	(M+H)+	287.13		N2		
+C43H58N4O12	822.4051	Rifampicin	D00211	13292-46-1	positive	(M+Na)+	285.07		N2		
+C43H58N4O12	822.4051	Rifampicin	D00211	13292-46-1	negative	(M-H)-	288.84		N2		
+C4H9NO2	103.0633	2-Amino-2-Methylpropanoate	C03665	62-57-7	negative	(M-H)-	129.44		N2		
 C6H6O2	110.0368	Hydroquinone	C00530	123-31-9	positive	(M+H)+	128.79		N2		
 C6H6O2	110.0368	Hydroquinone	C00530	123-31-9	negative	(M-H)-	119.07		N2		
 C2H8NO3P	125.0235	2-Aminoethylphosphonate	C03557	2041-14-7	positive	(M+H)+	132.21		N2		
