@@ -1,4 +1,5 @@
-const githubRepositoryBase = 'https://raw.githubusercontent.com/PNNL-Comp-Mass-Spec/MetabolomicsCCS/master/';
+const githubRepositoryBase = '/';
+// const githubRepositoryBase = 'https://raw.githubusercontent.com/PNNL-Comp-Mass-Spec/MetabolomicsCCS/master/';
 /**
 * Event handler for when an error occurs when loading a strcuture image from
 * PubChem. If error occurs during downloading image it will wait .5 seconds then
