@@ -140,6 +140,42 @@
       "name": "mPlusDotRsd",
       "type": "number",
       "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus two hydrogens",
+      "name": "mPlusTwoH",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus two hydrogens collision cross section",
+      "name": "mPlusTwoHCCS",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "Mass plus two hydrogens relative standard deviation",
+      "name": "mPlusTwoHRsd",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "M+",
+      "name": "mPlus",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "M+ collision cross section",
+      "name": "mPlusCCS",
+      "type": "number",
+      "missingValues": ["N/A"]
+    },
+    {
+      "description": "M+ relative standard deviation",
+      "name": "mPlusRsd",
+      "type": "number",
+      "missingValues": ["N/A"]
     }
   ],
   "primaryKey": "cas"
