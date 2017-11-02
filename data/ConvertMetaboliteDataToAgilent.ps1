@@ -88,7 +88,7 @@ try
             $added = $true
         }
 
-        if (!$added -and !(Is-Numeric $_.mPlusDotCCS)) {
+        if (!$added -and !(Is-Numeric $_.mPlusDotCCS) -and !(Is-Numeric $_.mPlusCCS)) {
             Write-output "compound has no known CCS values and should be removed from the input file: $($_."Neutral Name")"
         }
     }
