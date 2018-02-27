@@ -48,7 +48,13 @@ $(document).ready(function() {
     'mPlusRsd': 'RSD_[M]<sup>+</sup>',
     'mPlusTwoH': '[M+2H]<sup>2+</sup>',
     'mPlusTwoHCCS': 'Average_[M+2H]<sup>2+</sup>',
-    'mPlusTwoHRsd': 'RSD_[M+H<sub>2</sub>]<sup>+</sup>',
+    'mPlusTwoHRsd': 'RSD_[M+2H]<sup>2+</sup>',
+    'mPlusC2H3O2': '[M+C2H3O2]<sup>-</sup>',
+    'mPlusC2H3O2CCS': 'Average_[M+C2H3O2]<sup>-</sup>',
+    'mPlusC2H3O2Rsd': 'RSD_[M+C2H3O2]<sup>-</sup>',
+    'mPlusCHO2': '[M+CHO2]<sup>-</sup>',
+    'mPlusCHO2CCS': 'Average_[M+CHO2]<sup>-</sup>',
+    'mPlusCHO2Rsd': 'RSD_[M+CHO2]<sup>-</sup>',
     'CCS': '<sup>DT</sup>CCS<sub>N<sub>2</sub></sub>(&#x212B<sup>2</sup>)',
     'structure': 'Structure',
   };
@@ -78,6 +84,8 @@ $(document).ready(function() {
        && isNaN(parseFloat(d.mPlusCCS))
        && isNaN(parseFloat(d.mPlusDotCCS))
        && isNaN(parseFloat(d.mPlusTwoHCCS))
+       && isNaN(parseFloat(d.mPlusC2H3O2CCS))
+       && isNaN(parseFloat(d.mPlusCHO2CCS))
        ) {
         return false;
       }
@@ -129,7 +137,9 @@ $(document).ready(function() {
          + ccsString(columns.mPlusK, d.mPlusKCCS)
          + ccsString(columns.mPlus, d.mPlusCCS)
          + ccsString(columns.mPlusTwoH, d.mPlusTwoHCCS)
-         + ccsString(columns.mPlusDot, d.mPlusDotCCS);
+         + ccsString(columns.mPlusDot, d.mPlusDotCCS)
+         + ccsString(columns.mPlusC2H3O2, d.mPlusC2H3O2CCS)
+         + ccsString(columns.mPlusCHO2, d.mPlusCHO2CCS);
   }
   /**
   * Used with filter function to remove elements from array that don't have a
