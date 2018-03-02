@@ -55,6 +55,12 @@ $(document).ready(function() {
     'mPlusCHO2': '[M+CHO2]<sup>-</sup>',
     'mPlusCHO2CCS': 'Average_[M+CHO2]<sup>-</sup>',
     'mPlusCHO2Rsd': 'RSD_[M+CHO2]<sup>-</sup>',
+    'mMinusClO': '[M-Cl+O]<sup>-</sup>',
+    'mMinusClOCCS': 'Average_[M-Cl+O]<sup>-</sup>',
+    'mMinusClORsd': 'RSD_[M-Cl+O]<sup>-</sup>',
+    'mMinusBrO': '[M-Br+O]<sup>-</sup>',
+    'mMinusBrOCCS': 'Average_[M-Br+O]<sup>-</sup>',
+    'mMinusBrORsd': 'RSD_[M-Br+O]<sup>-</sup>',
     'CCS': '<sup>DT</sup>CCS<sub>N<sub>2</sub></sub>(&#x212B<sup>2</sup>)',
     'structure': 'Structure',
   };
@@ -86,6 +92,8 @@ $(document).ready(function() {
        && isNaN(parseFloat(d.mPlusTwoHCCS))
        && isNaN(parseFloat(d.mPlusC2H3O2CCS))
        && isNaN(parseFloat(d.mPlusCHO2CCS))
+       && isNaN(parseFloat(d.mMinusClOCCS))
+       && isNaN(parseFloat(d.mMinusBrOCCS))
        ) {
         return false;
       }
@@ -139,7 +147,9 @@ $(document).ready(function() {
          + ccsString(columns.mPlusTwoH, d.mPlusTwoHCCS)
          + ccsString(columns.mPlusDot, d.mPlusDotCCS)
          + ccsString(columns.mPlusC2H3O2, d.mPlusC2H3O2CCS)
-         + ccsString(columns.mPlusCHO2, d.mPlusCHO2CCS);
+         + ccsString(columns.mPlusCHO2, d.mPlusCHO2CCS)
+         + ccsString(columns.mPlusCHO2, d.mMinusClOCCS)
+         + ccsString(columns.mPlusCHO2, d.mMinusBrOCCS);
   }
   /**
   * Used with filter function to remove elements from array that don't have a
