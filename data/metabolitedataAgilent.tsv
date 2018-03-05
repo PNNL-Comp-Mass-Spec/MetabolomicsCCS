@@ -917,34 +917,26 @@ C13H8O	180.0575	Perinaphthenon (PEN)		548-39-0	positive	(M+H)+	134.59		N2
 C12H6O2	182.0368	Acenaphthenequinone	C02807	82-86-0	positive	(M+H)+	145.51		N2		
 C15H12	192.0939	2-Methylanthracene (2ME)		613-12-7	positive	(M+H)+	138.61		N2		
 C16H10	202.0782	Pyrene (PE5)	C14335	129-00-0	positive	(M+H)+	137.97		N2		
-C16H10	202.0782	Fluoranthene (FA)	C19425	206-44-0	positive	(M+H)+	138.84		N2		
 C16H10	202.0782	Fluoranthene (FA)		206-44-0	positive	(M+H)+	138.1		N2		
 C16H14	206.1095	2, 3-Dimethylanthracene (23D)		613-06-9	positive	(M+H)+	145.37		N2		
 C16H14	206.1095	3,6-Dimethylphenanthrene (36T)		1576-67-6	positive	(M+H)+	144.8		N2		
 C14H8O2	208.0524	Anthraquinone (AQU)	C16207	84-65-1	positive	(M+H)+	141.89		N2		
 C17H10O	230.0732	Benzanthrone (BHR)		82-05-3	positive	(M+H)+	145.71		N2		
-C17H10O	230.0732	Benzanthrone (BHR)		82-05-3	positive	(M+H)+	145.71		N2		
 C16H8O2	232.0524	Pyrene-4,5 dione (PY4)	C18251	6217-22-7	positive	(M+H)+	144.3		N2		
 C20H12	252.0939	Benz(j)aceanthrylene (BJY)	C19195	202-33-5	positive	(M+H)+	155.08		N2		
 C20H12	252.0939	Benzo(k)fluoranthene (BKF)	C14321	207-08-9	positive	(M+H)+	154.36		N2		
-C20H12	252.0939	Benzo(k)fluoranthene (BKF)	C14321	207-08-9	positive	(M+H)+	154.36		N2		
-C20H12	252.0939	Benzo(a)Pyrene (BAP)	C07535	50-32-8	positive	(M+H)+	152.05		N2		
 C20H12	252.0939	Benzo(a)Pyrene (BAP)	C07535	50-32-8	positive	(M+H)+	152.05		N2		
 C18H10O2	258.0681	5,12-Naphthacenequinone (5NA)		1090-13-7	positive	(M+H)+	157.54		N2		
 C22H12	276.0939	Benzo(g,h,i)perylene (BGI)	C14318	191-24-2	positive	(M+H)+	157.31		N2		
 C22H12	276.0939	Indeno(1,2,3-cd)pyrene (I12)	C19251	193-39-5	positive	(M+H)+	159.65		N2		
-C24H14	302.1095	Dibenzo(a,h)pyrene (DAH)	C19222	189-64-0	positive	(M+H)+	166.49		N2		
 C24H14	302.1095	Dibenzo(a,h)pyrene (DAH)		189-64-0	positive	(M+H)+	166.49		N2		
-C26H16	302.1095	Dibenzochrysene (DBC)		191-68-4	positive	(M+H)+	166.69		N2		
 C26H16	302.1095	Dibenzochrysene (DBC)		N/A	positive	(M+H)+	166.69		N2		
 C10H8O2	160.0524	1, 5 dihydroxynaphthalene (1DH)		83-56-7	negative	(M-H)-	134.35		N2		
 C10H8O2	160.0524	2, 3-dihydroxynaphthalene (23A)		92-44-4	negative	(M-H)-	132.44		N2		
 C10H8O2	160.0524	2, 6- dihydroxynaphthalene (26T)		581-43-1	positive	(M+H)+	137.47		N2		
-C20H12O	268.0888	12-Hydroxybenzo(a)pyrene (1AE)		N/A	positive	(M+H)+	163.1		N2		
-C20H12O	268.0888	7-hydroxybenzo(a)pyrene (7AR)		N/A	positive	(M+H)+	163.2		N2		
-C18H12O	244.0888	6-Hydroxychrysene		37515-51-8	negative	(M-H)-	158.68		N2		
+C20H12O	268.0888	12-Hydroxybenzo(a)pyrene (1AE)	C14563	56892-33-2	positive	(M+H)+	163.1		N2		
+C20H12O	268.0888	7-hydroxybenzo(a)pyrene (7AR)	C14558	37994-82-4 	positive	(M+H)+	163.2		N2		
 C18H12O	244.0888	6-Hydroxychrysene		37515-51-8	positive	(M+H)+	157.83		N2		
-C16H10O	218.0732	1-Hydroxypyrene		5315-79-7	negative	(M-H)-	149.26		N2		
 C16H10O	218.0732	1-Hydroxypyrene		5315-79-7	positive	(M+H)+	148.47		N2		
 C18H30O3	294.2195	13-OxoODE	C14765	54739-30-9	positive	(M+H)+	179.4		N2		
 C18H30O3	294.2195	13-OxoODE	C14765	54739-30-9	positive	(M+Na)+	193.37		N2		
