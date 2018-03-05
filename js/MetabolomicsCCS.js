@@ -148,8 +148,8 @@ $(document).ready(function() {
          + ccsString(columns.mPlusDot, d.mPlusDotCCS)
          + ccsString(columns.mPlusC2H3O2, d.mPlusC2H3O2CCS)
          + ccsString(columns.mPlusCHO2, d.mPlusCHO2CCS)
-         + ccsString(columns.mPlusCHO2, d.mMinusClOCCS)
-         + ccsString(columns.mPlusCHO2, d.mMinusBrOCCS);
+         + ccsString(columns.mMinusClO, d.mMinusClOCCS)
+         + ccsString(columns.mMinusBrO, d.mMinusBrOCCS);
   }
   /**
   * Used with filter function to remove elements from array that don't have a
