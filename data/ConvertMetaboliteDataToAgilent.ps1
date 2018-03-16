@@ -4,16 +4,16 @@
 # into a format compatible with the Agilent software suite 
 # for metabolite identification.
 #
-# Although this script is valid, the primary tool for creating
-# the .tsv files is a C# application tracked at
+# As an alternative to this script, you could use the C# app
 # https://github.com/PNNL-Comp-Mass-Spec/metaboliteValidation
+# though that tool creates .tsv files
 #
 # Written by Matthew Monroe for PNNL in 2017
 #
 ##################################################################
 
 $inputFilePath  = "metabolitedata.tsv";
-$outputFileName = "metabolitedataAgilent.tsv";
+$outputFileName = "metabolitedataAgilent.csv";
 
 # Check if the number is an integer or floating point value
 # Recognizes scientific notation of the form 1.34E+43
@@ -35,7 +35,7 @@ function Append-Compound ($outFile, $outLineBase, $polarity, $ionSpecies, $ccs) 
     $outLine.Add("") > $null
     $outLine.Add("") > $null
 
-    $outFile.WriteLine($outLine -join "`t");
+    $outFile.WriteLine($outLine -join ",");
 }
 
 try
@@ -51,8 +51,8 @@ try
     $headers1 = ("###Formula", "Mass", "Compound name", "KEGG", "CAS", "Polarity", "Ion Species", "CCS", "Z", "Gas", "CCS Standard", "Notes");
     $headers2 = ("#Formula", "Mass", "Cpd", "KEGG", "CAS", "Polarity", "Ion Species", "CCS", "Z", "Gas", "CCS Standard", "Notes");
 
-    $outFile.WriteLine($headers1 -join "`t");
-    $outFile.WriteLine($headers2 -join "`t");
+    $outFile.WriteLine($headers1 -join ",");
+    $outFile.WriteLine($headers2 -join ",");
 
     if ( !(Test-Path $inputFilePath) ) {
         Write-output "File not found: $inputFilePath"
@@ -66,7 +66,9 @@ try
 
         $massRounded = [math]::Round($_.mass, 4);
 
-        $outLineBase = ($_.formula, $massRounded, $_."Neutral Name", $_.kegg, $_.cas);
+		$compoundName = -join("`"", $_."Neutral Name", "`"");
+
+        $outLineBase = ($_.formula, $massRounded, $compoundName, $_.kegg, $_.cas);
 
         $added = $false
 
