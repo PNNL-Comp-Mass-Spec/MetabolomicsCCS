@@ -602,22 +602,24 @@ $(document).ready(function() {
       document.body.removeChild(element);
     }
     /**
-     * this function creates a opens the metabolitedata file and finds the
-     * seleceted ids using the cas number
-     * @param {array} ids an array of cas numbers ids.
-     * @param {string} fileName the name for the file
-     * @param {string} dataFile the relitive path to the datafile to load from
+     * This function creates a opens the metabolitedata file and finds the
+     * selected IDs using the CAS number
+     * @param {array} ids An array of CAS IDs.
+     * @param {string} fileName The name for the file
+     * @param {string} dataFile the relative path to the datafile to load from
+     * @param {string} delimiter The column delimiter; should be either a tab or a comma
      *
      */
-    function createDownload(ids, fileName, dataFile) {
+    function createDownload(ids, fileName, dataFile, delimiter) {
       let keepFirstRow = true;
       let filterFunction = function(e) {
+      	 // The CAS ID column is Uppercase in .csv files
          return ids.indexOf(e.CAS) >= 0;
       };
-      if (!dataFile) {
-         dataFile = 'data/metabolitedata.tsv';
+      if (dataFile.endsWith('.tsv')) {
          keepFirstRow = false;
          filterFunction = function(e) {
+         	// The CAS ID column is lowercase in .tsv files
             return ids.indexOf(e.cas) >= 0;
          };
       }
@@ -627,18 +629,18 @@ $(document).ready(function() {
          if (keepFirstRow) {
             row = d[0];
          }
-         // create tsv from data
+         // create tsv or csv from data
          d = d.filter(filterFunction);
-         let dataStr = headers.join('\t') + '\n';
+         let dataStr = headers.join(delimiter) + '\n';
          if (row) {
             dataStr += headers.map(function(f) {
                return row[f];
-            }).join('\t') + '\n';
+            }).join(delimiter) + '\n';
          }
          dataStr += d.map(function(e) {
             return headers.map(function(f) {
                return e[f];
-            }).join('\t');
+            }).join(delimiter);
          }).join('\n');
          download(fileName, dataStr);
       };
@@ -656,8 +658,9 @@ $(document).ready(function() {
      }).toArray();
      createDownload(visibleDataIds,
         'page_'+(table.page.info().page + 1)
-        +'_of_'+table.page.info().pages+'_metabolitedataAgilent.tsv',
-        'data/metabolitedataAgilent.tsv');
+        +'_of_'+table.page.info().pages+'_metabolitedataAgilent.csv',
+        'data/metabolitedataAgilent.csv',
+        ',');
    });
    $('#currentSearchDownloadAgilent').on('click', function(evt) {
       let filteredData = table.rows({filter: 'applied'})
@@ -668,8 +671,9 @@ $(document).ready(function() {
       createDownload(filteredData,
          $('#pathwayFilter').dropdown('get text')
          .replace(/ /g, '_') + '_' + table.search()
-         + '_metabolitedataAgilent.tsv',
-         'data/metabolitedataAgilent.tsv');
+         + '_metabolitedataAgilent.csv',
+         'data/metabolitedataAgilent.csv',
+         ',');
    });
     $('#currentPageDownload').on('click', function(evt) {
       let visibleRows = $('#tablecontainer tbody tr').filter(function(i, d) {
@@ -680,7 +684,9 @@ $(document).ready(function() {
       }).toArray();
       createDownload(visibleDataIds,
          'page_'+(table.page.info().page + 1)
-         +'_of_'+table.page.info().pages+'_metabolitedata.tsv');
+         +'_of_'+table.page.info().pages+'_metabolitedata.tsv',
+         'data/metabolitedata.tsv',
+         '\t');
     });
     $('#currentSearchDownload').on('click', function(evt) {
        let filteredData = table.rows({filter: 'applied'})
@@ -690,7 +696,9 @@ $(document).ready(function() {
        // create tsv from data
        createDownload(filteredData,
           $('#pathwayFilter').dropdown('get text')
-          .replace(/ /g, '_') + '_' + table.search() + '_metabolitedata.tsv');
+          .replace(/ /g, '_') + '_' + table.search() + '_metabolitedata.tsv',
+          'data/metabolitedata.tsv',
+          '\t');
     });
   });
   // load about modal when about button clicked
