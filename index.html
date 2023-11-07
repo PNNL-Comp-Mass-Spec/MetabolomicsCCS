@@ -81,6 +81,7 @@
     </div>
   </div>
   <div class="ui container">
+
     <!-- <div class="ui basic centered segment">
       <img id="bannerLogoBTRR" src="https://panomics.pnnl.gov/images/pnnlbtrr.jpg" width="940" height="163" alt="Proteomics Banner" />
       < <a id="bannerLogoNIH"  href="https://www.nigms.nih.gov/" target="_blank"><img src="https://panomics.pnnl.gov/images/Logo_NIH_2014_WhiteFill.png" width="95" height="60" alt="National Institutes of Health (NIH)"></a> >
@@ -110,7 +111,7 @@
       </div>
     </div>
     <!-- header for metabolite table -->
-    <div class="ui top attached segment centered">Results from manuscript "A Structural Examination and Collision Cross Section Database for Over 500 Metabolites and Xenobiotics Using Drift Tube Ion Mobility Spectrometry"</div>
+    <div class="ui top attached segment centered" id="TableHeader">Results from manuscript "A Structural Examination and Collision Cross Section Database for Over 500 Metabolites and Xenobiotics Using Drift Tube Ion Mobility Spectrometry"</div>
     <!-- contaner for metabolite table -->
     <div class="ui attached segment">
       <table class="ui small celled table" id="tablecontainer" cellspacing="0" width="100%"></table>
@@ -123,26 +124,44 @@
   </div>
 
   <div class="ui container">
+    
+    <script type="text/javascript">
+        function isIE() {
+        
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+        
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer
+            {
+                return true;
+            }
+            return false;
+        }
+    
+        if(isIE()) {
+           $("#tablecontainer").html(
+                 "<p>This page is not compatible with Internet Explorer. " + 
+                    "Please use Chrome, Firefox, or another modern browser. " +
+                    "See this <a href='http://outdatedbrowser.com/en'>list of browsers.</a></p>");
+        }
+    
+    </script>
+
+    <!-- This page is not compatible with Internet Explorer. Please use Chrome, Firefox, or another modern browser. 
+         See this <a href='http://outdatedbrowser.com/en'>list of browsers.</a>
+    -->
 
     <!--From "/shared/footernew.inc"-->
-
     <div id="footer">
-      <script>
-        (function(i, s, o, g, r, a, m) {
-          i['GoogleAnalyticsObject'] = r;
-          i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments);//eslint-disable-line
-          }, i[r].l = 1 * new Date();
-          a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-          a.async = 1;
-          a.src = g;
-          m.parentNode.insertBefore(a, m);
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-444452-2', 'auto');
-        ga('send', 'pageview');
-      </script>
-      <!--
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGJH7PZ2NQ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-EGJH7PZ2NQ');
+        </script>      <!--
       	<div id="footerBarStart">
       		<span id="footerBarStartTagline"></span>
       	</div>
@@ -154,7 +173,7 @@
       <div id="footerLinks">
         <a href="https://www.pnnl.gov/disclaimer.asp">Security &amp; Privacy</a> | <a href="https://www.pnnl.gov/contacts/">Contact PNNL</a>
       </div>
-      <span class="footerItem">Last Update: <span class="updatedDate">July 2015</span></span> | <span class="footerItem">Pacific Northwest National Laboratory</span>
+      <span class="footerItem">Last Update: <span class="updatedDate">July 2018</span></span> | <span class="footerItem">Pacific Northwest National Laboratory</span>
     </div>
   </div>
   <div id="about_modal" class="ui modal">
@@ -294,5 +313,6 @@
       </div>
     </div>
   </div>
+
 </body>
 </html>
