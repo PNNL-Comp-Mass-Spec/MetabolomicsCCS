@@ -12,7 +12,7 @@ This data has been manually checked for validity.
 <!--[![Goodtables](http://goodtables.io/badge/github/PNNL-Comp-Mass-Spec/MetabolomicsCCS.svg)](http://goodtables.io/github/PNNL-Comp-Mass-Spec/MetabolomicsCCS)-->
 
 ## Data usage
-This data is publically available, created by Dr. Erin S. Baker with funding from the [National Institutes of Health](http://www.nih.gov) grant R01-ES022190.
+This data is publicly available, created by Dr. Erin S. Baker with funding from the [National Institutes of Health](http://www.nih.gov) grant R01-ES022190.
 
 Within the dataset, we are using CAS numbers as a primary identifier. If you download the .tsv version of this dataset and try to view within Microsoft Excel there can be some problems, as Excel sometimes mistakes the CAS number as dates if imported as general data. If you want to use Excel to view the data, please follow these instructions.
 - start excel 
@@ -29,9 +29,9 @@ To setup the dev environment
 * run server
 
 I use [Atom](https://atom.io/) as my text editor with [eslint](https://atom.io/packages/eslint) and [eslint-config-google](https://devhub.io/repos/google-eslint-config-google).
-Please conform to the eslint style guide to keep code consistant and easy to read.
+Please conform to the eslint style guide to keep code consistent and easy to read.
 
-Check [DevReadme](DevReadme.md) for nuances about the code that might not be evedent from the comments.
+Check [DevReadme](DevReadme.md) for nuances about the code that might not be evident from the comments.
 
-## Hosting your own webserver
+## Hosting your own web server
 After starting the [Mongoose web server](https://www.cesanta.com/) open a modern browser and go to localhost:8080
